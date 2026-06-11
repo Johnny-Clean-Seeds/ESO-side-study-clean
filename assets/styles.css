@@ -1167,3 +1167,22 @@ body.chalk-repair-pass .story-board { --dup-left: 63%; --dup-top: 54%; --dup-wid
 @media (max-width: 900px) { .chalk-doodle { opacity: .18; } .chalk-notes, .chalk-mound { width: 70vw; } .chalk-serpent { width: 82vw; } body.chalk-repair-pass .story-board { --dup-left: 58%; --dup-top: 50%; --dup-width: 34%; --dup-height: 26%; } }
 /* === ESO CHALK REPAIR PASS END === */
 
+/* === ESO HERO LAYOUT PASS 4 BEGIN === */
+body.hero-layout-pass-4 { background: linear-gradient(180deg, rgba(0,0,0,.82), rgba(0,0,0,.97)), url("images/chalk/project-scribble-field.svg") center top / 1600px auto repeat, #050505 !important; }
+body.hero-layout-pass-4::before, body.hero-layout-pass-4::after { content: none !important; display: none !important; }
+body.hero-layout-pass-4 .story-hero { grid-template-columns: minmax(620px, 1.45fr) minmax(360px, .55fr) !important; min-height: 92vh !important; background: radial-gradient(circle at 24% 18%, rgba(214,185,113,.08), transparent 28%), linear-gradient(90deg, rgba(0,0,0,.50), rgba(0,0,0,.92)), url("images/chalk/project-scribble-field.svg") center / 1600px auto repeat !important; }
+body.hero-layout-pass-4 .story-hero::before, body.hero-layout-pass-4 .story-hero::after { content: none !important; display: none !important; }
+body.hero-layout-pass-4 .hero-chalk-layer { display: none !important; }
+body.hero-layout-pass-4 .story-board { min-height: clamp(660px, 82vh, 930px) !important; z-index: 2; box-shadow: 0 34px 100px rgba(0,0,0,.86) !important; }
+body.hero-layout-pass-4 .story-board img { min-height: clamp(620px, 78vh, 890px) !important; object-fit: cover !important; }
+body.hero-layout-pass-4 .duplicate-symbol-cover { display: none !important; }
+body.hero-layout-pass-4 .story-hero-copy { align-self: center !important; z-index: 3; max-width: 520px !important; background: linear-gradient(180deg, rgba(4,4,4,.82), rgba(4,4,4,.92)) !important; }
+body.hero-layout-pass-4 .story-hero-copy h1 { font-size: clamp(3.4rem, 5.6vw, 6.4rem) !important; }
+body.hero-layout-pass-4 .post-hero-start { border-top: 1px solid rgba(214,185,113,.28); border-bottom: 1px solid rgba(214,185,113,.24); background: linear-gradient(90deg, rgba(0,0,0,.93), rgba(8,8,8,.78)), url("images/chalk/project-scribble-field.svg") center 46% / 1600px auto repeat; padding: clamp(28px, 5vw, 64px) clamp(18px, 4vw, 54px); }
+body.hero-layout-pass-4 .post-hero-start-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+body.hero-layout-pass-4 .start-kicker { margin: 0; color: rgba(244,239,231,.72); font-family: "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; font-size: .9rem; }
+body.hero-layout-pass-4 .post-hero-start .hero-actions { display: flex; gap: 12px; margin: 0 !important; }
+body.hero-layout-pass-4 .post-hero-start .action-link { min-height: 48px; }
+@media (max-width: 1000px) { body.hero-layout-pass-4 .story-hero { grid-template-columns: 1fr !important; min-height: auto !important; } body.hero-layout-pass-4 .story-board { order: 1; } body.hero-layout-pass-4 .story-hero-copy { order: 2; max-width: none !important; } body.hero-layout-pass-4 .post-hero-start-inner { flex-direction: column; align-items: flex-start; } }
+/* === ESO HERO LAYOUT PASS 4 END === */
+

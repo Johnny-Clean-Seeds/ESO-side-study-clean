@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><filter id="chalk"><feGaussianBlur stdDeviation="0.45"/><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.25"/></filter></defs>
+<rect width="1600" height="1000" fill="#050505"/>
+<g fill="none" stroke="#eadfbe" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk)" opacity="0.18">
+<path d="M80 720 C220 540 390 820 560 600 C710 405 880 740 1100 465 C1260 260 1395 330 1510 210" stroke-width="6"/>
+<path d="M850 180 C900 250 900 335 850 405 C800 335 800 250 850 180Z" stroke-width="4"/>
+<circle cx="850" cy="292" r="105" stroke-width="4"/>
+<path d="M850 180 V405 M745 292 H955" stroke-width="3"/>
+<path d="M310 705 C340 620 410 580 485 602 C562 626 600 702 560 780" stroke-width="3"/>
+<path d="M1020 690 C1060 565 1165 520 1260 560 C1350 598 1380 700 1320 805" stroke-width="3"/>
+<path d="M1220 175 C1280 120 1358 132 1408 190 C1345 182 1288 190 1220 175Z" stroke-width="3"/>
+</g>
+<g font-family="Courier New, monospace" fill="#eadfbe" filter="url(#chalk)" opacity="0.13">
+<text x="115" y="150" font-size="48">SOUL ROAD</text>
+<text x="210" y="235" font-size="28">QUETZALCOATL</text>
+<text x="720" y="515" font-size="26">WORLD AXIS</text>
+<text x="1040" y="470" font-size="24">CROSS IN CIRCLE</text>
+<text x="110" y="840" font-size="25">MICTLAN / XIBALBA</text>
+<text x="1160" y="860" font-size="25">CAHOKIA / MOUNDVILLE</text>
+<text x="990" y="145" font-size="21">as above / so below</text>
+</g>
+</svg>
