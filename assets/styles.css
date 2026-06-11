@@ -1149,3 +1149,21 @@ body.top-portion-pass-2 .hero-actions {
 
 /* === ESO TOP PORTION PASS 2 FIXED END === */
 
+/* === ESO CHALK REPAIR PASS BEGIN === */
+body.chalk-repair-pass { background: linear-gradient(180deg, rgba(0,0,0,.78), rgba(0,0,0,.96)), url("images/chalk/black-paper.svg") center top / 1200px auto repeat, #050505 !important; }
+body.chalk-repair-pass::before, body.chalk-repair-pass::after, body.chalk-repair-pass .story-hero::before, body.chalk-repair-pass .story-hero::after { content: none !important; display: none !important; }
+body.chalk-repair-pass .story-hero { position: relative; isolation: isolate; background: radial-gradient(circle at 20% 14%, rgba(214,185,113,.10), transparent 28%), linear-gradient(90deg, rgba(5,5,5,.90), rgba(5,5,5,.72)), url("images/chalk/black-paper.svg") center / 1200px auto repeat !important; }
+.hero-chalk-layer { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.chalk-doodle { position: absolute; display: block; opacity: .30; mix-blend-mode: screen; filter: drop-shadow(0 0 2px rgba(245,235,205,.16)); }
+.chalk-notes { width: min(34vw, 520px); left: 4vw; top: 5vh; transform: rotate(-5deg); opacity: .25; }
+.chalk-serpent { width: min(46vw, 680px); right: -5vw; top: 14vh; transform: rotate(5deg); opacity: .28; }
+.chalk-mound { width: min(38vw, 560px); left: 6vw; bottom: 8vh; transform: rotate(3deg); opacity: .24; }
+body.chalk-repair-pass .story-board { position: relative; z-index: 2; overflow: hidden; background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.025)), url("images/chalk/black-paper.svg") center / 900px auto repeat, #0a0907 !important; }
+body.chalk-repair-pass .story-hero-copy { z-index: 3; }
+body.chalk-repair-pass .story-hero-copy .cut-label { display: none !important; }
+body.chalk-repair-pass .story-board { --dup-left: 63%; --dup-top: 54%; --dup-width: 28%; --dup-height: 23%; }
+.duplicate-symbol-cover { position: absolute; left: var(--dup-left); top: var(--dup-top); width: var(--dup-width); height: var(--dup-height); z-index: 5; display: block; transform: rotate(-2.5deg); opacity: .94; background: #050505; box-shadow: 0 16px 34px rgba(0,0,0,.45); border: 1px solid rgba(235,218,174,.12); }
+.duplicate-symbol-cover img { width: 100% !important; height: 100% !important; min-height: 0 !important; object-fit: cover !important; display: block; border: 0 !important; filter: none !important; }
+@media (max-width: 900px) { .chalk-doodle { opacity: .18; } .chalk-notes, .chalk-mound { width: 70vw; } .chalk-serpent { width: 82vw; } body.chalk-repair-pass .story-board { --dup-left: 58%; --dup-top: 50%; --dup-width: 34%; --dup-height: 26%; } }
+/* === ESO CHALK REPAIR PASS END === */
+

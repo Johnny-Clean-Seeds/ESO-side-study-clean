@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="270" viewBox="0 0 440 270">
+<rect width="440" height="270" rx="8" fill="#050505"/>
+<path d="M58 180 C112 86 180 205 238 118 C280 55 342 132 390 72" fill="none" stroke="#efe4c4" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+<path d="M62 205 H368" fill="none" stroke="#efe4c4" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<text x="48" y="58" fill="#efe4c4" font-family="Courier New, monospace" font-size="28" opacity="0.72">SOURCE?</text>
+<text x="48" y="232" fill="#efe4c4" font-family="Courier New, monospace" font-size="18" opacity="0.62">hold / not proof</text>
+</svg>

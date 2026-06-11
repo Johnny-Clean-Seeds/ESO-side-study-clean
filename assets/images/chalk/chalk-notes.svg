@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="390" viewBox="0 0 560 390">
+<defs><filter id="chalk"><feGaussianBlur stdDeviation="0.42"/><feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.1"/></filter></defs>
+<g font-family="Courier New, monospace" fill="#eadfbe" filter="url(#chalk)" opacity="0.82">
+<text x="30" y="56" font-size="31">HALL SAYS</text>
+<text x="32" y="108" font-size="22">America = assignment</text>
+<text x="32" y="146" font-size="22">Great Plan / Silent Ones</text>
+<text x="32" y="184" font-size="22">source route not proof</text>
+<text x="32" y="256" font-size="18" opacity="0.66">frame custody / map custody</text>
+</g>
+<g fill="none" stroke="#eadfbe" stroke-width="3" opacity="0.62" stroke-linecap="round" filter="url(#chalk)">
+<path d="M24 72 L500 72 M24 202 L420 202"/>
+<path d="M465 98 l36 36 l-36 36 l-36 -36z"/>
+</g></svg>

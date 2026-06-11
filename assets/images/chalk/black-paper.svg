@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.2"/></feComponentTransfer></filter></defs>
+<rect width="1400" height="1000" fill="#050505"/>
+<rect width="1400" height="1000" filter="url(#grain)" opacity="0.62"/>
+<path d="M0 160 C250 120 420 205 690 130 C940 60 1120 150 1400 105" fill="none" stroke="#eadfbe" stroke-opacity="0.035" stroke-width="4"/>
+<path d="M-40 800 C260 725 510 840 780 750 C1010 675 1180 735 1440 675" fill="none" stroke="#eadfbe" stroke-opacity="0.028" stroke-width="3"/>
+</svg>

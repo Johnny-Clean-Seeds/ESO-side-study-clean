@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="310" viewBox="0 0 640 310">
+<defs><filter id="chalk"><feGaussianBlur stdDeviation="0.55"/><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6"/></filter></defs>
+<g fill="none" stroke="#eee4c8" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk)" opacity="0.86">
+<path d="M38 170 C100 62 188 252 270 138 C342 38 430 222 540 82" stroke-width="7"/>
+<path d="M540 82 L600 58 L573 120 Z" stroke-width="5"/>
+<path d="M148 124 L120 66 M178 137 L166 74 M212 150 L225 85 M366 125 L346 68 M402 140 L412 74 M442 152 L475 92" stroke-width="4" opacity="0.82"/>
+<circle cx="566" cy="84" r="4" fill="#eee4c8" stroke="none"/>
+<text x="38" y="276" fill="#eee4c8" stroke="none" font-family="Courier New, monospace" font-size="25" opacity="0.72">KUKULKAN / QUETZALCOATL</text>
+</g></svg>
