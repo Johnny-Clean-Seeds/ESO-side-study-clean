@@ -1526,3 +1526,30 @@ body.index-start-main-pass .story-hero::after {
 }
 /* === ESO INDEX START SIZE BLEND FIX END === */
 
+/* === ESO INDEX START DOUBLE SIZE FIX BEGIN === */
+body.index-start-main-pass .index-edge-doodle {
+  width: clamp(240px, 24vw, 440px) !important;
+  opacity: .84 !important;
+}
+body.index-start-main-pass .doodle-1 { left: -4vw;  top: 5vh;   width: clamp(250px, 25vw, 460px) !important; transform: rotate(-10deg); }
+body.index-start-main-pass .doodle-2 { right: -4vw; top: 6vh;   width: clamp(250px, 25vw, 460px) !important; transform: rotate(9deg); }
+body.index-start-main-pass .doodle-3 { left: -3vw;  top: 31%;   width: clamp(220px, 21vw, 390px) !important; transform: rotate(7deg); }
+body.index-start-main-pass .doodle-4 { right: -3vw; top: 31%;   width: clamp(220px, 21vw, 390px) !important; transform: rotate(-7deg); }
+body.index-start-main-pass .doodle-5 { left: 1vw;   bottom: 14%; width: clamp(210px, 19vw, 350px) !important; transform: rotate(-6deg); }
+body.index-start-main-pass .doodle-6 { right: 1vw;  bottom: 14%; width: clamp(210px, 19vw, 350px) !important; transform: rotate(6deg); }
+body.index-start-main-pass .doodle-7 { left: 12vw;  top: 1vh;   width: clamp(170px, 14vw, 260px) !important; transform: rotate(10deg); opacity: .72 !important; }
+body.index-start-main-pass .doodle-8 { right: 12vw; top: 1vh;   width: clamp(170px, 14vw, 260px) !important; transform: rotate(-10deg); opacity: .72 !important; }
+@media (max-width: 1100px) {
+  body.index-start-main-pass .index-edge-doodle {
+    width: clamp(150px, 18vw, 280px) !important;
+    opacity: .66 !important;
+  }
+}
+@media (max-width: 760px) {
+  body.index-start-main-pass .index-edge-doodle {
+    width: clamp(110px, 16vw, 190px) !important;
+    opacity: .46 !important;
+  }
+}
+/* === ESO INDEX START DOUBLE SIZE FIX END === */
+
