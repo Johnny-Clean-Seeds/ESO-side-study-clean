@@ -1,0 +1,539 @@
+HANDOFF 1 — CURRENT MULE JOB
+ESO / HALL_COOP_LEY LOCAL READER REBUILD
+SCOPE: MAIN PAGE + PARTS 1–5 ONLY
+
+MODE: SITE REBUILD HANDOFF
+ACTIVE OBJECT: ESO / HALL_COOP_LEY index website / local reader
+STATE: PAUSE RESEARCH / FIX THE READER FIRST
+CURRENT SCOPE: MAIN PAGE + PARTS 1–5 ONLY
+DO NOT TOUCH PART 6 OR PART 7
+
+This is the current mule job.
+
+Do not use Part 6.
+Do not use Part 7.
+Do not use Part 8.
+Do not expose them.
+Do not summarize them.
+Do not create placeholders that make them look ready.
+Do not infer later material from old files.
+
+Parts 6 and 7 are user-held and parked for later.
+
+CURRENT PROBLEM
+
+The index website looks good in concept, but the actual reader/index structure is wrong.
+
+The main index is too generic.
+Part 1 appears as a part but does not have a real page/body.
+Part 2 layout is broken; text is shoved to one side.
+Pages after Part 2 feel like cheap placeholder moves.
+Internal part links are being used as lazy exits.
+The actual built research is missing or flattened.
+The index pages need to reflect our work, not generic summaries.
+
+CORE RULE
+
+This site is not an archive dump.
+
+This site is the front-facing dossier built from the archive.
+
+Our content comes first.
+Citations and source routes come after claims.
+Links should help the user find out more about what they just read.
+Links should not replace our writing.
+
+ABSOLUTE LINK RULE
+
+Do not interlink unreleased parts.
+
+Only released pages may appear in navigation.
+
+For this current job, visible navigation should expose only:
+
+Main page.
+Part 1 only if released.
+Part 2 only if released.
+Part 3 only if released.
+Part 4 only if released.
+Part 5 only if released.
+
+If a part is drafted but not released, hide it from navigation.
+
+Do not expose Part 6 or Part 7.
+
+Allowed outbound links are citations/source routes only.
+
+Blocked behavior:
+
+No cheap internal jumps.
+No empty part pages.
+No dead Part 1.
+No generic “read more” pages.
+No unreleased menus.
+No links pretending to be content.
+
+SLOW REVEAL RULE
+
+The user wants to reveal the pages slowly.
+
+Release 1: Main page only.
+Later: Part 1.
+Then Part 2.
+Then Part 3.
+Then Part 4.
+Then Part 5.
+
+Do not expose future parts before approval.
+
+MANDATORY IMAGE RULE
+
+Use this image now:
+
+/mnt/data/720317456_2014484549944255_1023688007618138392_n.jpg
+
+This is the scrapbook/dossier design concept image.
+
+It must be placed intentionally on the main page.
+
+Use it as one of these:
+
+Hero image.
+Featured dossier board.
+Opening visual thesis panel.
+Main scrapbook reveal image.
+Investigation-board centerpiece.
+
+Do not bury it.
+Do not delay it.
+Do not treat it as optional.
+Do not call it unfinished.
+
+Future custom backgrounds, borders, menus, and part-specific themed boards will come later. Build the site so those can be added cleanly, but this selected image must be placed now.
+
+SCREENSHOT QA FILES
+
+Approved concept image:
+
+/mnt/data/720317456_2014484549944255_1023688007618138392_n.jpg
+
+Bad/generic index screenshot:
+
+/mnt/data/32662f07-167f-454e-9eb8-683b034f5f10.png
+
+Part 2 broken layout screenshot:
+
+/mnt/data/9f1463f7-9ee0-43ac-98b4-249b25f27ab8.png
+
+Use these for QA.
+
+VISUAL DIRECTION
+
+Build from the scrapbook style.
+
+Design language:
+
+scrapbook dossier.
+torn-paper panels.
+layered cards.
+archival paper.
+custom borders.
+custom backgrounds later.
+custom menus later.
+proof-status stamps.
+source-route tags.
+Soft Suit tags.
+map fragments.
+artifact cards.
+controlled visual density.
+investigation board, not corporate wiki.
+
+Do not make it messy.
+Do not make it generic.
+Do not make it look like a plain documentation site.
+Do not make it look like a cheap conspiracy page.
+
+MAIN PAGE PURPOSE
+
+The main page is the reveal/introduction.
+
+It should explain what the project is without dumping every detail.
+
+It should introduce:
+
+America’s Assignment.
+Hall / Cooper / Mercy Hunter.
+The video-map problem.
+The source-separated method.
+What the reader is.
+What is locked.
+What is still open.
+Why proof labels matter.
+Why citations/source routes matter.
+Why images are clues, not proof.
+Why part indexes will reveal slowly.
+
+The main page should include the selected scrapbook image prominently.
+
+MAIN PAGE STRUCTURE
+
+1. Hero / Visual Thesis
+
+Use the selected scrapbook image.
+
+Possible heading:
+
+ESO DOSSIER
+America’s Assignment Map Branch
+
+or:
+
+AMERICA’S ASSIGNMENT
+A Source-Separated Dossier
+
+2. Opening Statement
+
+Explain that this reader follows the Hall / Cooper / Mercy Hunter America’s Assignment branch. It tracks how Hall’s symbolic reading moves through Mesoamerican culture heroes, Feathered Serpent material, North American initiation systems, mound/earthwork symbolism, and Mercy Hunter’s visual map problem. It does not treat the map as proven lineage. It separates Hall’s claims, Cooper’s transmission, Mercy’s visuals, archaeology controls, official history controls when applicable, Bible/theology framing when applicable, and our inferences.
+
+3. Safe Sentence
+
+Use this meaning:
+
+Mercy Hunter’s blue map is best held as a layered symbolic compression image. It is a source-separated working model, not proof of direct historical lineage, final editor intent, official U.S. symbolism, theology, or a solved control grid.
+
+4. How To Read This Dossier
+
+Explain the voice split:
+
+Hall says.
+Cooper reads/transmits.
+Mercy Hunter shows.
+Archaeology verifies.
+Official sources control official claims.
+Bible frames theology when used.
+We infer.
+
+5. Release Status
+
+Show only released material.
+
+For Release 1:
+
+Main Dossier: open.
+Part 1: sealed / coming later.
+Part 2: sealed / coming later.
+Part 3: sealed / coming later.
+Part 4: sealed / coming later.
+Part 5: sealed / coming later.
+
+Do not make sealed parts clickable.
+
+6. Proof Boundary
+
+State:
+
+Images are clues until source route, timestamp/order, object label, and claim boundary are logged.
+Citations are source routes.
+Soft Suit means held, not proven.
+Blocked means do not say as fact.
+
+7. What Comes Next
+
+Tell the reader that Part 1 will open later as the front-door frame.
+
+PART INDEX SYSTEM FOR CURRENT JOB
+
+Create a reusable part-index template for Parts 1–5 only.
+
+Each part page should include:
+
+Part title.
+Dossier thesis.
+What this part does in the source-spine.
+Main objects.
+Main symbols.
+Main claims.
+Locked lanes.
+Soft Suit holds.
+Blocked claims.
+Open gaps.
+Visual targets.
+Citation/source routes.
+Next proof move.
+
+Do not make part pages generic.
+Do not make part pages just link lists.
+Do not make part pages raw markdown dumps.
+Do not make every page look identical.
+Each part needs a specific theme.
+
+PART 1 — FRONT DOOR FRAME
+
+Theme:
+
+America as Assignment / Great Plan / Mystery Schools.
+
+Build only if working on Part 1 release or draft.
+
+Part 1 should explain:
+
+America as assignment.
+Hall’s front-door doctrine frame.
+Silent Ones.
+Mystery Schools.
+Secret Societies.
+Western Hemisphere as destiny carrier.
+Bridge into Maya/Aztec material in Part 2.
+Exact Mercy transcript still pending.
+
+Boundary:
+
+This is Hall’s interpretive frame.
+It is not official civic proof.
+It is not archaeology proof.
+It is not final Mercy editor intent proof.
+
+PART 2 — MESOAMERICAN FOUNDATION GATE
+
+Theme:
+
+Votan / Itzamna / Kukulkan / Quetzalcoatl.
+
+Fix the broken Part 2 layout.
+
+Part 2 should explain:
+
+Votan.
+Palenque / House of Darkness.
+Itzamna / Dresden Codex.
+Kukulkan / Quetzalcoatl.
+Feathered Serpent.
+Venus / morning star.
+Source boundary: Palenque is real; Hall’s hidden-record story is not archaeology proof.
+Strong object lane: Dresden Codex.
+Strong symbol lane: Quetzalcoatl/Kukulkan.
+Watch lane: Itzamna Tau/T-cross.
+
+Blocked:
+
+Do not claim Votan record story as proven archaeology.
+Do not flatten Maya/Aztec traditions into one clean system.
+Do not claim Hall’s interpretation as external historical proof.
+
+PART 3 — QUETZALCOATL COMPRESSION ZONE
+
+Theme:
+
+Priest-king / Venus / robe-cross-beard-sickle / Tonalamatl / conflict.
+
+Part 3 should explain:
+
+Quetzalcoatl as priest-king.
+Robe/red-cross/beard/sickle lane.
+Why that lane is high value but dangerous.
+Venus / morning-star / death-return.
+Tonalamatl / Book of Fate.
+Tezcatlipoca conflict.
+Willard image plates still open.
+
+Blocked:
+
+No Christian-contact proof.
+No “white god” overpromotion.
+No image claim without plate/source custody.
+
+PART 4 — HIDDEN RECORDS / INITIATION BRIDGE
+
+Theme:
+
+Departure / hidden books / Le Plongeon / Popol Vuh / Xibalba.
+
+Part 4 should explain:
+
+Departure east / raft of serpents.
+Hidden records / Divine Book.
+Le Plongeon serpent-head photo.
+Getty custody.
+Popol Vuh / Ximénez manuscript.
+Xibalba.
+Camazotz / bat-god caution.
+Temple of Tigers / Temple of Jaguars imagery.
+Adela Breton mural copies.
+
+Blocked:
+
+Not every bat figure is Camazotz.
+Not every serpent-warrior image proves the Hall chain.
+Do not treat Le Plongeon as modern archaeology control.
+Separate old source claims from modern source controls.
+
+PART 5 — NORTH AMERICAN BRANCH
+
+Theme:
+
+Medicine-priest initiation / Midewiwin / Ghost Lodge / thunderbird-serpent / founder pattern.
+
+Part 5 should explain:
+
+Medicine-priest calling.
+Dream/trance travel.
+Road of light.
+Midewiwin birchbark scrolls.
+Hoffman diagrams.
+Open grove / east-west lodge.
+Ghost Lodge / spirit road.
+Three-world cosmology.
+Thunderbird / feathered snake upper-lower grammar.
+Thunderbird / underwater panther object control.
+SECC bird-serpent-panther field.
+Secret societies / grades.
+Parker / Red Hand death-and-raising.
+Deganawida / Hiawatha / Tree of Peace.
+Manco Capac / solar founder.
+Three-founder synthesis.
+
+Blocked:
+
+Native secret societies were Freemasonry.
+All Indigenous traditions are one universal mystery system.
+Thunderbird equals Great Seal eagle as official fact.
+Grove proves Hall.
+Hall proves Grove.
+
+CONTENT SOURCES TO USE
+
+Use only the active material already available to you for Parts 1–5.
+
+Use:
+
+00_AGENT_HANDOFF_LOAD_ORDER.md
+01_METHOD_WORKING_ORDER.md
+02_HALL_COOP_LEY_ACTIVE.md
+04_SOURCE_CUSTODY_MEDIA.md
+05_DOCUMENTARY_SOURCE_SPINE.md
+06_KEEP_PHOTO_BOARD.md
+HELPER_FILES_USED_20260611.md
+ESO_HALL_COOP_LEY_WORKING_METHOD_FULL_PACKET_20260611.md
+
+But for this current job, do not use those files to build Part 6 or Part 7.
+
+Use the documentary source spine for Part 1–5 bodies.
+Use Hall active branch for proof status, safe sentence, path board, source routes, map model, and open gaps.
+Use method packet for proof labels, voice split, source ladder, and blocked claims.
+Use keep-photo board for Part 1–5 image/source target routes.
+Use source custody file for media rules and transcript boundaries.
+
+Do not import YouTube auto captions as active transcript text.
+Current boundary remains NO_AUTO_CAPTIONS unless the user reverses it.
+
+CSS / LAYOUT REQUIREMENTS
+
+Audit existing HTML/CSS first.
+
+Fix:
+
+Part 2 shove-to-side layout.
+Overwide text columns.
+Broken flex/grid wrappers.
+Bad responsive behavior.
+Generic cards.
+Placeholder links.
+Dead part labels.
+Citation links mixed with internal navigation.
+Unreleased pages exposed.
+
+Build or repair CSS for:
+
+scrapbook main page.
+dossier board layout.
+hero image placement.
+torn-paper cards.
+proof-status stamps.
+Soft Suit tags.
+citation chips.
+source-route buttons.
+released/unreleased states.
+future custom background slot.
+future custom border slot.
+future custom menu slot.
+mobile and desktop readability.
+
+FILE / RELEASE HANDLING
+
+Before changing anything:
+
+Back up the current site files.
+
+Create backup folder with timestamp.
+Copy current HTML/CSS/assets into backup.
+Do not delete old files without backup.
+
+Then rebuild Release 1:
+
+Main page only visible.
+Selected scrapbook image placed.
+No unreleased part links.
+No Part 6 or Part 7 exposure.
+No cheap internal part jumps.
+Citations/source-route links allowed.
+Reader must feel like a finished introduction.
+
+Build draft structure for Parts 1–5 if useful, but keep unreleased pages hidden from navigation.
+
+QUALITY BAR
+
+The rebuilt main page must be polished enough to stand alone.
+
+The user should be able to open it and understand:
+
+what the project is,
+what the map problem is,
+what is locked,
+what is open,
+why proof labels matter,
+why the scrapbook image is the visual concept,
+and why parts will reveal slowly.
+
+SUCCESS CONDITION
+
+Success means:
+
+The site feels like our work.
+The main page feels like opening the dossier.
+The selected scrapbook image is placed and styled now.
+Parts 1–5 have a dedicated index structure ready.
+Part 6 and Part 7 are not touched.
+Unreleased parts are not interlinked.
+Citations/source routes let the user inspect more after reading our content.
+The layout is repaired.
+The old site is backed up.
+The mule returns a clean receipt.
+
+MULE RETURN FORMAT
+
+Return:
+
+1. Short human summary.
+2. Backup path.
+3. Changed files.
+4. New files.
+5. Image used and exact placement.
+6. Main page status.
+7. Parts 1–5 draft/release status.
+8. Confirmation that Part 6 and Part 7 were not touched.
+9. Navigation/release behavior.
+10. CSS/layout fixes.
+11. Links/citation handling.
+12. Remaining defects.
+13. Next recommended move.
+
+DO NOT SAY DONE UNLESS:
+
+The scrapbook image is actually placed.
+The main page no longer exposes unreleased part links.
+Part 1 is not a dead clickable label.
+Part 2 layout bug is fixed or explicitly listed as remaining.
+Internal links are not being used as lazy content exits.
+Part 6 and Part 7 are not touched.
+Old files are backed up.
+The receipt lists changed files.

@@ -1,0 +1,24 @@
+{
+  "status": "NO_LOCAL_MEDIA_BINARIES_FOUND",
+  "media_extensions_checked": [
+    ".bmp",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".m4a",
+    ".mov",
+    ".mp3",
+    ".mp4",
+    ".pdf",
+    ".png",
+    ".svg",
+    ".tif",
+    ".tiff",
+    ".wav",
+    ".webm",
+    ".webp"
+  ],
+  "local_media_files_found_count": 0,
+  "local_media_files_found": [],
+  "note": "External routes are listed separately. URLs are source routes, not downloaded media assets."
+}

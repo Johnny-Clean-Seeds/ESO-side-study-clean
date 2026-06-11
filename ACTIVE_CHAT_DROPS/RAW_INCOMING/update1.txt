@@ -1,0 +1,1258 @@
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 1 SOURCE-SPINE PRESSURE
+STATE: ON TRACK / FRONT-END PUSH / MULE CAN WORK TAIL IN PARALLEL
+
+Part 1 is route-confirmed, but the public transcript is still not fully exposed from here. The Facebook/BillCooperVideos surface shows **America’s Assignment | Passage Rewind - Bill Cooper (Part 1/13)** in the same Mercy Hunter production route, but direct Facebook opening is throttled. The YouTube channel surface also exposes the broader **Passage Rewind: America’s Assignment - Bill Cooper (A Mercy Hunter Presentation)** family. ([Facebook][1])
+
+The useful push is this: **Part 1 is probably the front-door framing**, not the deep map/image proof section. Hall’s source opens by framing America’s Assignment as a Western Hemisphere esoteric tradition, beginning with Maya and Aztec mysteries, North American medicine priests, Incas, Columbus, Bacon, German mystics, the Revolution, and Latin American patriots. That gives Part 1 its likely source-spine: not one object, but the whole “America has an esoteric assignment” frame. ([Internet Archive][2])
+
+Hall’s foreword then supplies the load-bearing doctrine: a “Great Plan,” “Silent Ones,” priesthoods, Mystery Schools, Secret Societies, and a long-range movement toward universal enlightenment/fraternity. That is the control text for any early visuals showing Hall, secret societies, America, founding imagery, world maps, light/darkness, or “destiny” language. ([Internet Archive][2])
+
+The first hard content hinge after the opening is the **Quetzalcoatl / Votan / Itzamna / Kukulkan** section. Hall explicitly says three culture heroes were associated with the origin of Mayan civilization: Votan, Itzamna/Zamna, and Kukulkan, and says they came from an eastern remote region, introduced arts/sciences, and founded religious cults or Mysteries. That is the bridge into Part 2’s exposed transcript snippet. ([Internet Archive][2])
+
+SOURCE-SPINE RESULT
+
+`PART 1-A — America’s Assignment front-door frame`
+Status: **SOURCE-LOCKED TO HALL / TRANSCRIPT EXACTNESS PENDING MULE**
+Meaning: America as esoteric assignment, Western Hemisphere mystery tradition, Great Plan.
+
+`PART 1-B — Silent Ones / Mystery Schools / Secret Societies`
+Status: **SOURCE-LOCKED TO HALL / VISUAL CLUE FAMILY ACTIVE**
+Likely visuals: secret society imagery, old books, symbolic America, light/darkness, founding imagery.
+
+`PART 1-C — Maya/Aztec opening bridge`
+Status: **SOURCE-LOCKED TO HALL / LEADS INTO PART 2**
+Likely visuals: Maya maps, Codex Dresden, Palenque, Quetzalcoatl, feathered serpent, temple imagery.
+
+`PART 1-D — exact spoken transcript`
+Status: **BLOCKED UNTIL MULE CAPTION RIP**
+Do not claim exact wording from Part 1 yet.
+
+What changed:
+
+We do not need to wait for the mule to start making progress. We can lock the **Hall control spine** now. Mule will later attach exact transcript text and timestamps to these source-spine blocks.
+
+Soft Suit update:
+
+`SS-PART1-HALL-FRONT-DOOR` — **ACTIVE LOAD-BEARING**
+`SS-PART1-SILENT-ONES-MYSTERY-SCHOOLS` — **ACTIVE VISUAL CLUE FAMILY**
+`SS-PART1-MAYA-AZTEC-BRIDGE` — **ACTIVE BRIDGE INTO PART 2**
+`SS-PART1-EXACT-TRANSCRIPT` — **PENDING MULE / DO NOT PROMOTE EXACT WORDING**
+
+Next run:
+
+**PART 2 — Votan / Itzamna / Kukulkan / Palenque / House of Darkness.**
+That is where the transcript and visual clues should start producing stronger object trails.
+
+[1]: https://www.facebook.com/BillCooperVideos?locale=fo_FO&utm_source=chatgpt.com "Bill Cooper 2026 (@BillCooperVideos)"
+[2]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 2 SOURCE-SPINE PRESSURE
+STATE: ON TRACK / PART 2 SPOKEN SPINE FOUND / VISUAL CLUE FAMILY ACTIVE
+
+Part 2 is now much tighter.
+
+The Facebook mirror for **America’s Assignment | Passage Rewind - Bill Cooper (Part 2/13)** exposes the transcript opening: “Three great cultural heroes were associated with the origin of Mayan civilization…” and then moves into Votan/“Botan,” Itzamna/“Itzama,” and Kukulkan/“Kulkulkan.” The spelling in the Facebook auto-transcript is dirty, but the source match is clear. ([Facebook][1])
+
+Hall’s text has the control passage almost exactly: he says three culture heroes were associated with the origin of Mayan civilization: **Votan**, **Itzama/Zamna**, and **Kulkulkan**, and says they came from an eastern remote region, introduced arts and sciences, and founded religious cults or Mysteries. ([Internet Archive][2])
+
+The next Hall block is the first real object-clue trail: **Votan → Palenque/Palanque → House of Darkness → subterranean chambers → records guarded by aged men**. This is not just “Maya mythology”; it is a specific Hall source-chain with visual targets: Palenque ruins, underground chambers, old manuscripts, guardians, serpent imagery, and “lost records.” ([Internet Archive][2])
+
+The Itzamna lane gives a second visual trail. Hall ties Itzamna to the **Codex Dresden**, an old god image, plant/earth birth, serpent or turtle mouth, healing, resurrection language, Izamal, divided relics, and a Tau/T-cross emblem. The Dresden Codex is a real Maya manuscript; the Library of Congress notes it is one of only four surviving Mayan manuscripts and identifies it as the oldest and best preserved of them. ([Internet Archive][2])
+
+The Kukulkan/Quetzalcoatl lane gives the third trail. Hall equates Quetzalcoatl, Gucumatz, and Kulkulkan as feathered/plumed/winged serpent figures, then moves into Tula, Cholula, Venus/morning-star material, underground houses, serpent holes, priesthood, prophecy, and departure eastward over the sea. Britannica separately confirms Quetzalcoatl as the Feathered Serpent and notes feathered-snake representations at Teotihuacán-era sites, which gives us a control source outside Hall. ([Internet Archive][2])
+
+PART 2 SOURCE-SPINE RESULT
+
+`PART2-A — Three culture heroes / Maya origin frame`
+Status: **SPOKEN-SPINE FOUND / HALL SOURCE LOCKED**
+Boundary: this is Hall/Cooper/Mercy narration, not independent archaeology proof.
+
+`PART2-B — Votan / Palenque / House of Darkness`
+Status: **ACTIVE VISUAL CLUE TRAIL**
+Visual hunt terms: Palenque, Votan, House of Darkness, subterranean chambers, lost records, guardians, serpent, Chiapas bishop Núñez de la Vega.
+
+`PART2-C — Itzamna / Dresden Codex / Tau cross`
+Status: **ACTIVE OBJECT CLUE TRAIL**
+Visual hunt terms: Dresden Codex Itzamna, God D, Itzamna old god, Izamal, Tau cross Maya, serpent/turtle mouth.
+
+`PART2-D — Kukulkan / Quetzalcoatl / Feathered Serpent / Venus`
+Status: **ACTIVE SYMBOL-OBJECT TRAIL**
+Visual hunt terms: Kukulkan feathered serpent, Quetzalcoatl Venus morning star, Codex Vaticanus, Codex Ramirez, Cholula, Tula, Teotihuacan Feathered Serpent.
+
+What this gives us:
+
+Part 2 is not a generic “Maya” section. It is a **three-lane source machine**:
+
+**Votan = hidden records / Palenque / subterranean House of Darkness.**
+**Itzamna = codex image / old god / healing / Tau-cross clue.**
+**Kukulkan-Quetzalcoatl = feathered serpent / Venus / priesthood / eastward departure.**
+
+Soft Suit update:
+
+`SS-PART2-VOTAN-PALENQUE-HOUSE-DARKNESS` — **ACTIVE LOAD-BEARING CLUE TRAIL**
+
+`SS-PART2-ITZAMNA-DRESDEN-CODEX-TAU` — **ACTIVE OBJECT TRAIL**
+
+`SS-PART2-KUKULKAN-QUETZALCOATL-VENUS` — **ACTIVE SYMBOL-OBJECT TRAIL**
+
+`SS-PART2-ATLANTEAN-SECRET-SCHOOLS` — **HALL CLAIM ONLY / DO NOT PROMOTE AS HISTORY**
+
+Next run:
+
+**PART 2 VISUAL SOURCE HUNT — VOTAN / PALENQUE / HOUSE OF DARKNESS.**
+That is the strongest clue route because it names a place, a hidden structure, and a record-custody claim.
+
+[1]: https://www.facebook.com/BillCooperVideos/videos/americas-assignment-passage-rewind-bill-cooper-part-213/1748853363188306/?utm_source=chatgpt.com "America's Assignment | Passage Rewind - Bill Cooper (Part 2/13)"
+[2]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 2 VISUAL SOURCE HUNT — VOTAN / PALENQUE / HOUSE OF DARKNESS
+STATE: ON TRACK / SOURCE TRAIL SHARPENED / EXACT MERCY IMAGE SOURCE NOT LOCKED
+
+This Votan lane is now split into three layers.
+
+Layer 1 is **Hall/Cooper spoken-source layer**. Hall says Votan founded “Palanque,” built a temple with subterranean chambers called the **House of Darkness**, and deposited national records there under aged guardians. That is the exact source of the video’s Votan / hidden-record / underground-chamber claim. ([Internet Archive][1])
+
+Layer 2 is **older myth-source layer**. Brinton treats Votan as a Tzendal/Tzeltal culture-hero figure from the Chiapas/Tabasco region and warns that the Votan material has produced a lot of wild speculation. He also says the known manuscript trail is indirect: Nuñez de la Vega had a Tzendal manuscript around 1690, Cabrera later saw related material through Ordoñez, and the original’s fate is unknown. ([Project Gutenberg][2])
+
+Layer 3 is **archaeology-control layer**. Palenque is absolutely real and major: UNESCO identifies it as an outstanding Classic Maya site in Chiapas with exceptional architecture, sculpture, mythology, inscriptions, and about 1,400 recorded buildings, only a fraction explored. INAH confirms the Temple of the Inscriptions and Pakal tomb discovery, including tunnel/crypt architecture. But that does **not** prove Hall’s Votan “House of Darkness” story as archaeology. ([UNESCO World Heritage Centre][3])
+
+The strongest control finding is this: John T. Short’s older synthesis preserves the same Votan tradition family but also exposes the weakness. He says the Votan document’s history is indirect, that Nuñez de la Vega burned dangerous documents/treasure in 1691, that Cabrera’s later account came through Ordoñez, and that some details were probably distorted or imaginative. He ends by saying Votan’s true character or office is basically impossible to fix. ([Project Gutenberg][4])
+
+VISUAL CLUE RESULT
+
+If Mercy shows **Palenque ruins / Temple of the Inscriptions / Pakal tomb / pyramids**, that visual is likely illustrating the real Palenque archaeology-control layer.
+
+If Mercy shows **dark caves, tunnels, Yaxchilan, “Hall of Records,” secret caverns**, that is probably not direct Hall proof. It belongs to a later esoteric web-route that connects Votan’s House of Darkness to Yaxchilan/Piedras Negras/Hall-of-Records speculation. That route exists, but it is low-authority and must stay marked as speculative clue material. ([Ancient Origins][5])
+
+If Mercy shows **old book pages, engravings, Palenque drawings, Del Rio/Cabrera/Ordoñez-style material**, that is the best visual-source hunt route. That would connect closer to the old textual chain Hall was using, instead of just modern “lost cavern” speculation.
+
+SOFT SUIT UPDATE
+
+`SS-VOTAN-HALL-HOUSE-DARKNESS` — **ACTIVE / SPOKEN-SOURCE LOCKED TO HALL**
+
+`SS-VOTAN-TZENDAL-MYTH-CHAIN` — **ACTIVE / OLDER SOURCE FAMILY / INDIRECT CUSTODY**
+
+`SS-PALENQUE-ARCHAEOLOGY-CONTROL` — **ACTIVE / REAL SITE CONTROL / DOES NOT PROVE HALL CLAIM**
+
+`SS-YAXCHILAN-HALL-OF-RECORDS` — **WATCH / SPECULATIVE WEB-ROUTE / DO NOT PROMOTE**
+
+`SS-VOTAN-OLD-BOOK-VISUALS` — **HIGH-VALUE IMAGE-SOURCE TARGET**
+
+What changed:
+
+The Votan lane is not just “Palenque.” It is:
+
+**Hall claim → older Votan myth chain → Palenque real-site control → later speculative cave/Hall-of-Records web-route.**
+
+The clean boundary is:
+
+**Palenque is real. Votan tradition is old but indirect. Hall’s House of Darkness claim is symbolic/source-text material, not archaeology proof.**
+
+No new photo needed right now.
+
+Next run: **PART 2 VISUAL SOURCE HUNT — ITZAMNA / DRESDEN CODEX / TAU CROSS.** That one may be cleaner because Hall names a real image source: the Dresden Codex.
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://www.gutenberg.org/cache/epub/11029/pg11029-images.html "American Hero-Myths"
+[3]: https://whc.unesco.org/en/list/411/ "Pre-Hispanic City and National Park of Palenque - UNESCO World Heritage Centre"
+[4]: https://www.gutenberg.org/cache/epub/67101/pg67101-images.html "
+    The North Americans of Antiquity, by John T. Short—A Project Gutenberg eBook
+  "
+[5]: https://www.ancient-origins.net/ancient-places-americas/house-darkness-secret-caverns-legendary-yucatan-hall-records-found-yaxchilan-021843?utm_source=chatgpt.com "The House of Darkness & Secret Caverns—The legendary ..."
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 2 VISUAL SOURCE HUNT — ITZAMNA / DRESDEN CODEX / TAU CROSS
+STATE: ON TRACK / STRONG SOURCE FAMILY LOCKED / EXACT MERCY FRAME NOT LOCKED
+
+This lane is cleaner than Votan because Hall names the image source directly: **“From the Codex Dresden — Itzamna, the Father of the Itzas.”** Hall describes the figure as an old god with headdress and cape, seated at the right, facing a lesser divinity at the left; then he adds the long-nose/fang, plant-birth, serpent-or-turtle-mouth, healing, resurrection, Izamal burial, “Skillful Hand,” and Tau/T-cross material. ([Internet Archive][1])
+
+The outside control is real and strong: the **Dresden Codex / Codex Dresdensis** is an actual Maya manuscript. The Library of Congress says only four Maya manuscripts still exist worldwide and identifies the Dresden Codex as the oldest and best preserved, with 39 leaves, written on bark-paper material, containing ritual/divination calendars, Venus calculations, eclipse material, and deity imagery. ([The Library of Congress][2]) SLUB Dresden, the holding institution, also identifies it as a late postclassic Yucatán Maya codex with ritual/divination calendars, astronomical and meteorological tables, ritual instructions, and many depictions of gods. ([SLUB Dresden][3])
+
+So the visual clue result is this:
+
+**Itzamna/Dresden Codex = ACTIVE OBJECT TRAIL.**
+This is not just “Maya art.” It is a named manuscript source with official custody.
+
+The Itzamna control also holds outside Hall. Britannica identifies Itzamná as a principal pre-Columbian Maya deity, ruler of heaven, day, and night, associated with the world directions/colors, sometimes linked with Hunab Ku and Kinich Ahau, and treated as a culture hero connected to writing, the calendar, and medicine. ([Encyclopedia Britannica][4]) That matches the broad Hall lane, but not every esoteric detail Hall adds.
+
+The **Tau/T-cross** part is weaker. In this run, the direct Tau/T-cross tie remains Hall’s claim, apparently drawn through older comparative/esoteric sources. I did not find a strong institutional archaeology-control source that cleanly says “Itzamna’s emblem was the Tau/T cross.” So that stays **HALL CLAIM / SYMBOL WATCH**, not archaeology-locked proof.
+
+I also checked the current contact sheet you sent. I do not see a clean, obvious Dresden Codex / Itzamna plate lock in the thumbnails. That does not mean it is absent from the videos; it only means the current uploaded image set does not give us a decisive Itzamna frame. No new photo needed right now.
+
+SOFT SUIT UPDATE
+
+`SS-ITZAMNA-HALL-DRESDEN-PLATE` — **ACTIVE / SPOKEN-SOURCE LOCKED TO HALL**
+
+`SS-DRESDEN-CODEX-OFFICIAL-CUSTODY` — **ACTIVE / OBJECT CONTROL LOCKED**
+
+`SS-ITZAMNA-GOD-D-CREATOR-WRITING-MEDICINE` — **ACTIVE / OUTSIDE CONTROL SUPPORT**
+
+`SS-ITZAMNA-SERPENT-TURTLE-MOUTH` — **ACTIVE VISUAL CLUE / SOURCE IMAGE TARGET**
+
+`SS-ITZAMNA-TAU-T-CROSS` — **WATCH / HALL CLAIM ONLY / DO NOT PROMOTE**
+
+`SS-EXACT-MERCY-ITZAMNA-FRAME` — **OPEN / WAIT FOR MULE TRANSCRIPT OR TARGETED FRAME**
+
+What changed:
+
+The Itzamna lane gives us a real source-object trail:
+
+**Hall narration → Dresden Codex image → official manuscript custody → Itzamna deity-control → weaker Tau/T-cross symbol claim.**
+
+Clean boundary:
+
+**Dresden Codex is real. Itzamna is a real Maya deity figure. Hall’s use of Itzamna as an esoteric “adept” source is Hall’s interpretive layer. The Tau/T-cross claim is not independently locked yet.**
+
+Next run: **PART 2 VISUAL SOURCE HUNT — KUKULKAN / QUETZALCOATL / FEATHERED SERPENT / VENUS.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://www.loc.gov/resource/gdcwdl.wdl_11621/?st=grid "The Dresden Codex.  | Library of Congress"
+[3]: https://www.slub-dresden.de/en/explore/manuscripts/the-dresden-maya-codex "The Maya Codex in the SLUB Dresden - SLUB Dresden "
+[4]: https://www.britannica.com/topic/Itzamna "Itzamna | Definition & Facts | Britannica"
+
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 2 VISUAL SOURCE HUNT — KUKULKAN / QUETZALCOATL / FEATHERED SERPENT / VENUS
+STATE: ON TRACK / STRONG VISUAL-SOURCE TARGETS FOUND / EXACT MERCY FRAME NOT LOCKED
+
+This lane is strong, but it has to be split cleanly.
+
+Hall’s source spine says **Quetzalcoatl, Gucumatz, and Kulkulkan** are treated as one feathered/plumed/winged-serpent figure, then places the rite at **Tulla/Tula and Cholula**. Hall then moves into priest-king, wind, Venus, Codex Telleriano-Remensis, Codex Vaticanus A, Codex Chimalpopoca, underworld passage, morning star, priesthood, and departure-east material. That is the exact Hall/Cooper source machine for this section. ([Internet Archive][1])
+
+The best visual-source locks are not generic serpent pictures. They are Hall’s own cited image captions:
+
+**Seler’s Codex Vaticanus Nr. 3773** — Hall captions this as **Quetzalcoatl as god of the wind and presiding deity over the East**.
+**Codex Ramirez** — Hall captions this as **Quetzalcoatl as the principal deity of the people of Cholula**.
+Those two are now the highest-value Mercy image-source targets for this lane. ([Internet Archive][1])
+
+Outside control supports the broad Mesoamerican feathered-serpent field. Britannica identifies Quetzalcoatl as patron of priests, inventor of the calendar and books, tied to craftsmen, and identified with Venus as morning/evening star symbolism. The Met gives hard artifact/site control for the Feathered Serpent Pyramid and Ciudadela at Teotihuacan, dated roughly 150–250 CE, and separately catalogs a Teotihuacan feathered-serpent head as architectural sculpture. ([Encyclopedia Britannica][2])
+
+The Kukulkan side is also valid as a source family, but not as proof that Hall’s “one person” claim is history. Kukulkan is the Yucatec Maya plumed/feathered serpent figure and is closely related to Quetzalcoatl and Qʼuqʼumatz/Gucumatz across Mesoamerican traditions; prominent Kukulkan temple associations include Chichén Itzá and other Yucatán sites. That supports the **symbol-family bridge**, not Hall’s full esoteric biography. ([Wikipedia][3])
+
+The Venus/morning-star trail is especially important. Hall ties Quetzalcoatl to Venus through Codex Telleriano-Remensis, Codex Vaticanus A, and Codex Chimalpopoca: born/disappeared on calendrical days, identified with Venus, death/fire/underworld passage, and heart becoming the morning star. A separate Codex Chimalpopoca source route preserves the same morning-star transformation idea: Quetzalcoatl becomes the dawn star after death. ([Internet Archive][1])
+
+SOURCE-SPINE RESULT
+
+`PART2-E — Quetzalcoatl / Gucumatz / Kulkulkan equivalence`
+Status: **ACTIVE / HALL SOURCE LOCKED / OUTSIDE SYMBOL-FAMILY SUPPORT**
+Boundary: valid as comparative feathered-serpent family; not proof of one literal historical person.
+
+`PART2-F — Tula / Cholula priest-king lane`
+Status: **ACTIVE / HALL SOURCE LOCKED / VISUAL TARGETS OPEN**
+Best visual targets: Tula/Tollan, Cholula pyramid, Codex Ramirez plate, priest-king imagery.
+
+`PART2-G — Quetzalcoatl as wind/east deity`
+Status: **ACTIVE / HALL IMAGE CAPTION LOCKED**
+Best visual target: Seler’s Codex Vaticanus Nr. 3773 image.
+
+`PART2-H — Venus / Morning Star / death-and-return lane`
+Status: **ACTIVE / HALL SOURCE LOCKED / OUTSIDE SOURCE SUPPORT**
+Best visual targets: Venus star, dawn star, Codex Telleriano-Remensis, Codex Vaticanus A, Codex Chimalpopoca, Tlahuizcalpantecuhtli.
+
+`PART2-I — Teotihuacan Feathered Serpent`
+Status: **ACTIVE ARCHAEOLOGY CONTROL / NOT HALL BIOGRAPHY PROOF**
+Meaning: hard artifact/site control for feathered-serpent worship and imagery; does not prove Hall’s initiate-priest storyline.
+
+What changed:
+
+This lane gives us the strongest visual hunt so far because Hall names **specific image-source families**. We should hunt for Mercy frames matching:
+
+**Codex Vaticanus / Seler Quetzalcoatl wind-east plate**
+**Codex Ramirez Cholula Quetzalcoatl plate**
+**Codex Telleriano-Remensis Quetzalcoatl feathered serpent**
+**Venus / morning star / Tlahuizcalpantecuhtli imagery**
+**Cholula / Tula / Teotihuacan Feathered Serpent site imagery**
+
+Clean boundary:
+
+**Feathered Serpent / Quetzalcoatl / Kukulkan is a real Mesoamerican symbol-field. Hall’s “adept, priest-initiate, eastern teacher, secret priesthood” reading is Hall’s interpretive layer. Venus/morning-star material is stronger than the “foreign initiate” material because it appears in named codex traditions.**
+
+I do not need another photo yet. The current contact-sheet set does not force a decisive lock on these exact codex plates.
+
+Next run: **PART 2 CLOSEOUT FLOOR — three lanes together: Votan, Itzamna, Quetzalcoatl/Kukulkan.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://www.britannica.com/topic/Quetzalcoatl?utm_source=chatgpt.com "Quetzalcoatl | Definition, Myth, & Meaning"
+[3]: https://en.wikipedia.org/wiki/Kukulkan?utm_source=chatgpt.com "Kukulkan"
+
+
+
+
+
+
+
+
+
+
+MODE: FLOORS / CLOSEOUT
+RUN: HALL_COOP_LEY / PART 2 CLOSEOUT — VOTAN + ITZAMNA + KUKULKAN
+STATE: PART 2 STRUCTURE LOCKED / EXACT MERCY FRAMES STILL OPEN / NO PHOTO REQUEST
+
+Part 2 now has a clean three-lane structure.
+
+Hall’s source text gives the actual spoken machine: **Votan, Itzamna/Zamna, and Kulkulkan** are presented as the three culture heroes tied to the origin of Maya civilization, coming from the east, bringing arts/sciences, and founding religious cults or Mysteries. Hall then moves each figure into a different clue lane: Votan into hidden records and subterranean chambers, Itzamna into the Dresden Codex and healer/cross symbolism, and Kulkulkan/Quetzalcoatl into the feathered-serpent/Venus/priesthood lane. ([Internet Archive][1])
+
+What holds:
+
+**Votan lane holds as Hall-source proof, not archaeology proof.** The “House of Darkness” claim is clearly in Hall: Votan founds Palenque/Palanque, builds subterranean chambers, deposits records, and aged guardians keep them. That means Mercy/Cooper did not invent this lane; it comes from Hall. But the archaeology-control boundary stays strict: Palenque can support real site imagery, while Hall’s hidden-record chamber story remains an inherited esoteric/traditional claim until separately proven. ([Internet Archive][1])
+
+**Itzamna lane holds strongest as an object-custody trail.** Hall directly captions the image as coming from the Dresden Codex, and the Library of Congress identifies the Dresden Codex as one of only four surviving Maya manuscripts, held by the Saxon State and University Library, with ritual/divination calendars, Venus calculations, eclipse material, and deity imagery. SLUB Dresden separately describes it as a late postclassic Yucatán Maya codex with calendrical, astronomical, ritual, and deity content. ([Internet Archive][1])
+
+**Kukulkan/Quetzalcoatl lane holds as a real Mesoamerican symbol-field, but Hall’s “one person / initiate / secret-school” reading stays bounded.** Britannica supports Quetzalcoatl as the Feathered Serpent, tied to Teotihuacan-era feathered-snake imagery, Tula, priests, books, Venus, death/resurrection, eastward departure, and Cholula as a major cult center. That strongly supports the symbol-family and Venus lane, but not Hall’s full esoteric biography. ([Encyclopedia Britannica][2])
+
+What cracks:
+
+The **Votan hidden-record claim** does not become archaeology proof just because Palenque is real.
+
+The **Itzamna Tau/T-cross claim** stays weaker than the Dresden Codex object trail. Hall says it, but we do not yet have a clean institutional archaeology source proving “Tau/T-cross = Itzamna emblem.”
+
+The **Quetzalcoatl/Kukulkan equivalence** works as comparative symbol-family language, but Hall’s “were one person” phrasing should not be promoted as historical fact.
+
+What enters the index:
+
+`PART2-LOCK-001 — Three culture heroes frame`
+Status: **HALL SOURCE LOCKED / SPOKEN-SPINE EXPECTED / EXACT TRANSCRIPT PENDING MULE**
+
+`PART2-LOCK-002 — Votan / Palenque / House of Darkness`
+Status: **HALL SOURCE LOCKED / ARCHAEOLOGY CONTROL SEPARATE / VISUAL CLUE ACTIVE**
+
+`PART2-LOCK-003 — Itzamna / Dresden Codex`
+Status: **STRONG OBJECT CUSTODY / OFFICIAL CODEX CONTROL / VISUAL TARGET ACTIVE**
+
+`PART2-LOCK-004 — Itzamna Tau/T-cross`
+Status: **WATCH / HALL CLAIM ONLY**
+
+`PART2-LOCK-005 — Kulkulkan / Quetzalcoatl / Feathered Serpent / Venus`
+Status: **STRONG SYMBOL-FAMILY CONTROL / HALL INTERPRETATION BOUNDED**
+
+Current Part 2 conclusion:
+
+**Part 2 is the Mesoamerican foundation gate.** It gives Mercy/Cooper three clue engines: hidden records below the earth, sacred codex/deity imagery, and feathered-serpent/Venus transformation. The strongest factual trail is **Itzamna → Dresden Codex**. The strongest symbolic trail is **Kukulkan/Quetzalcoatl → Feathered Serpent/Venus**. The most dangerous overclaim trail is **Votan → House of Darkness**, because it feels like a hard place-object claim but is still source-text/esoteric tradition until controlled.
+
+Next run: **PART 3 SOURCE-SPINE PRESSURE** — find where the narration moves after the three Mesoamerican heroes and whether it stays in Maya/Mesoamerica or starts bridging toward North American medicine-priest / bird-serpent / mound-symbol material.
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://www.britannica.com/topic/Quetzalcoatl "Quetzalcoatl | Definition, Myth, & Meaning | Britannica"
+
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 3 SOURCE-SPINE PRESSURE
+STATE: ON TRACK / PART 3 RANGE SHARPENED / EXACT YOUTUBE TIMESTAMPS PENDING MULE
+
+Part 3 route is confirmed on the Facebook/BillCooperVideos mirror, but direct fetch is throttled. The stronger control is the Cooper transcript for **Mystery Babylon Hour 25 — America’s Assignment Part 1**, which preserves the reading sequence from Hall. That transcript shows Part 2’s three-hero opening, then continues through the Quetzalcoatl body, and the public Part 4 snippet begins right after Quetzalcoatl reaches the sea. So Part 3 is almost certainly the **middle Quetzalcoatl biography lane**, not a new subject lane. ([Facebook][1])
+
+Part 3’s working spine is:
+
+**Quetzalcoatl as priest-prophet-king → Tula/Cholula → long-robed strangers/artists/metalworkers → white robe/red crosses/sickle/beard imagery → Venus/morning-star/death-return material → underground houses/serpent holes → priesthood/order → Book of Fate/calendar → Tezcatlipoca conflict → departure toward Veracruz.**
+
+That matches Hall’s sequence closely. Hall places Quetzalcoatl at Tula and Cholula, describes him as an initiate-philosopher and teacher, then brings in Torquemada, Mendieta, Sahagún, Codex Telleriano-Remensis, Codex Vaticanus A, Codex Chimalpopoca, underground houses, priesthoods, and the Tonalamatl/Book of Fate. ([Internet Archive][2])
+
+This means Part 3 is not merely “Feathered Serpent.” It is the **Christian-looking / priest-looking / Venus-death-return / secret-priesthood** section. That is where the visuals may become very important, because Mercy may show crosses, bearded Quetzalcoatl art, Cholula/Tula imagery, Venus/star imagery, codex plates, or priesthood/order symbolism.
+
+SOURCE-SPINE RESULT
+
+`PART3-A — Quetzalcoatl as priest-prophet-king`
+Status: **HALL/COOPER SOURCE LOCKED / EXACT VIDEO TIMESTAMP PENDING**
+Boundary: Hall’s interpretive biography, not archaeology proof.
+
+`PART3-B — Tula / Cholula / long-robed strangers / metalworkers`
+Status: **ACTIVE VISUAL CLUE TRAIL**
+Visual targets: Tula, Cholula pyramid, black-robed wanderers, craftsmen, metalworking, old engravings.
+
+`PART3-C — white robe / red crosses / sickle / beard`
+Status: **HIGH-RISK CLUE TRAIL**
+This is powerful visually but dangerous: it can look like “Christian proof.” Keep it as Hall-source tradition unless independently controlled.
+
+`PART3-D — Venus / morning star / underworld / return`
+Status: **STRONG SYMBOL-FAMILY TRAIL**
+This is one of the better-controlled Quetzalcoatl lanes because Hall names codex traditions and outside references support Quetzalcoatl’s Venus association. ([Internet Archive][2])
+
+`PART3-E — Tonalamatl / Book of Fate / calendar prophecy`
+Status: **ACTIVE OBJECT-SOURCE TRAIL**
+Visual targets: tonalamatl, Aztec calendar manuscripts, Codex Borbonicus/Telleriano/Vaticanus-style imagery.
+
+`PART3-F — Tezcatlipoca conflict / corrupted priesthood`
+Status: **ACTIVE SYMBOLIC-CONFLICT TRAIL**
+This may feed Mercy’s later good-priesthood versus dark-priesthood framing.
+
+What changed:
+
+Part 3 is now defined as the **Quetzalcoatl compression zone**. Part 2 introduced the three culture heroes. Part 3 appears to expand the Quetzalcoatl/Kukulkan lane until the departure point. Part 4 then picks up with the raft/sea/departure and hidden-records continuation.
+
+Soft Suit update:
+
+`SS-PART3-QUETZALCOATL-PRIEST-KING` — **ACTIVE LOAD-BEARING**
+
+`SS-PART3-ROBE-CROSS-BEARD-SICKLE` — **KEEP / HIGH-VALUE VISUAL CLUE / HIGH OVERCLAIM RISK**
+
+`SS-PART3-VENUS-MORNING-STAR` — **KEEP / STRONG SYMBOL TRAIL**
+
+`SS-PART3-TONALAMATL-BOOK-OF-FATE` — **KEEP / OBJECT-SOURCE TARGET**
+
+`SS-PART3-TEZCATLIPOCA-CONFLICT` — **KEEP / SYMBOLIC CONFLICT LANE**
+
+No new photo needed.
+
+Next run: **PART 3 VISUAL SOURCE HUNT — white robe / red crosses / sickle / beard / Cholula-Tula imagery.** This is the dangerous but potentially revealing visual-clue lane.
+
+[1]: https://www.facebook.com/BillCooperVideos/videos/americas-assignment-passage-rewind-bill-cooper-part-313/1267749771746839/?utm_source=chatgpt.com "America's Assignment | Passage Rewind - Bill Cooper (Part 3/13)"
+[2]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+
+
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 3 VISUAL SOURCE HUNT — WHITE ROBE / RED CROSSES / SICKLE / BEARD
+STATE: ON TRACK / HIGH-VALUE CLUE HELD / NO FORCED CONCLUSION / NO PHOTO REQUEST
+
+This lane is real enough to hold. It is not something Mercy invented visually.
+
+Hall’s text directly gives the cluster: Quetzalcoatl is described through Mendieta as a white/bearded figure with a mitre, long white robe, red crosses, and a sickle. Hall also points the reader to **T. A. Willard’s *Kukulcan, the Bearded Conqueror*** “for further details and pictures.” That is a major clue because it means the visual source may not be a codex at all; it may be a 1941 illustrated book Hall was already using. ([Internet Archive][1])
+
+The same cluster appears in older secondary tradition chains. Ignatius Donnelly’s *Atlantis* repeats the white robe/red crosses/sickle passage and cites John T. Short’s *The North Americans of Antiquity*, showing this image-story was already circulating in nineteenth-century diffusionist/Atlantis-style literature before Hall. That does not make it true; it tells us the source family. ([Wikisource][2])
+
+Bancroft’s *Native Races* gives the cleaner control boundary. He says Spanish writers confused different Quetzalcoatl traditions, then records the same broad figure: fair complexion, beard, long white robe, and black or red crosses depending on the source. That means this clue belongs to a Spanish-colonial/older-synthesis tradition chain, not a clean artifact lock. ([Reading Rooms][3])
+
+The strongest factual control remains the broader Quetzalcoatl field: Britannica supports Quetzalcoatl as Feathered Serpent, Tula priest-king, patron of priests/books/calendar/crafts, Venus/morning/evening star, death-return symbolism, Tezcatlipoca conflict, and eastward departure. It also says Quetzalcoatl was often represented as a bearded man. That supports the lane, but not every Hall/Willard/Donnelly-style detail. ([Encyclopedia Britannica][4])
+
+New visual-source target locked:
+
+`T. A. Willard — Kukulcan, the Bearded Conqueror: New Mayan Discoveries`
+
+This is now a high-value image trail because Hall explicitly points to it for pictures, and WorldCat confirms the 1941 book exists with illustrations from original photographs. ([WorldCat][5])
+
+Current result:
+
+The **white robe / red crosses / sickle / beard** cluster is worth holding, but it enters as:
+
+**older textual-tradition clue + Hall source + possible Willard image source**, not as archaeology proof.
+
+Soft Suit update:
+
+`SS-PART3-ROBE-CROSS-BEARD-SICKLE` — **KEEP / HIGH-VALUE CLUE / NOT PROMOTED**
+
+`SS-WILLARD-KUKULCAN-BEARDED-CONQUEROR` — **NEW ACTIVE VISUAL-SOURCE TARGET**
+
+`SS-MENDIETA-SAHAGUN-TORQUEMADA-CHAIN` — **KEEP / SOURCE-CHAIN TARGET / PRIMARY TEXT STILL OPEN**
+
+`SS-DONNELLY-SHORT-DIFFUSIONIST-CHAIN` — **KEEP LIGHT / OLD TRANSMISSION FAMILY / NOT PROOF**
+
+`SS-QUETZALCOATL-BRITANNICA-CONTROL` — **KEEP / BROAD MYTH-SYMBOL CONTROL**
+
+What changed:
+
+This lane is now sharper. The next image/source hunt should not randomly search “red cross Quetzalcoatl.” It should pressure **Willard’s 1941 book** and the older source chain Hall names.
+
+Clean boundary:
+
+**The clue is real inside Hall’s source-world. The proof has not shown yet that the red-cross robe/sickle image is pre-Columbian, original, or archaeologically secure. We hold it and let later proof decide.**
+
+Next run: **PART 3 VISUAL SOURCE HUNT — Willard / Kukulcan the Bearded Conqueror / picture trail.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://en.wikisource.org/wiki/Atlantis%3A_The_Antediluvian_World/Part_3/Chapter_3 "Atlantis: The Antediluvian World/Part 3/Chapter 3 - Wikisource, the free online library"
+[3]: https://readingroo.ms/4/5/2/6/45268/45268-0.txt "readingroo.ms"
+[4]: https://www.britannica.com/topic/Quetzalcoatl "Quetzalcoatl | Definition, Myth, & Meaning | Britannica"
+[5]: https://search.worldcat.org/title/Kukulcan-the-bearded-conqueror-%3A-new-Mayan-discoveries-%3A-with-illustrations-from-original-photographs/oclc/3491500?utm_source=chatgpt.com "Kukulcan, the bearded conqueror : new Mayan discoveries"
+
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 3 VISUAL SOURCE HUNT — WILLARD / KUKULCAN PICTURE TRAIL
+STATE: ON TRACK / WILLARD CONFIRMED / OPEN IMAGE ACCESS NOT FOUND / HOLDING
+
+Willard is now a real source target, not a loose lead.
+
+**T. A. Willard’s *Kukulcan, the Bearded Conqueror: New Mayan Discoveries*** is confirmed as a 1941 print book from Murray and Gee, with WorldCat describing it as “with illustrations from original photographs.” That matters because Hall explicitly points readers to Willard for “further details and pictures,” so Willard may be one of the hidden image-source routes behind Mercy’s visuals. ([WorldCat][1])
+
+What did not lock: I did **not** find an open scanned copy, page-image cache, or clean plate list for Willard. The book appears mostly through library/catalog/seller routes, including a bookseller entry giving 402 pages and a 1941 first-edition description. That confirms the object, but not the actual pictures inside. ([Midway Book Store][2])
+
+The red-cross/robe/beard tradition is not only Hall/Willard. A modern Topiltzin Quetzalcoatl source excerpt preserves the same old-source cluster: Quetzalcoatl comes from Yucatán/Tula/Cholula traditions, is described as a white man with long hair, wearing a white garment like a friar’s robe, with a mantle covered in red crosses; the passage cites Mendieta and Tapia. That strengthens the **source-chain reality** of the motif, while still not proving it as archaeology. ([Scribd][3])
+
+Brinton’s *American Hero-Myths* also preserves the “long white robe strewn with red crosses” Quetzalcoatl tradition and points to Mendieta. So the cluster is older than Hall and Willard; Hall is using a pre-existing colonial/antiquarian tradition stream. ([Project Gutenberg][4])
+
+Current classification:
+
+`WILLARD-KUKULCAN-1941` — **CONFIRMED SOURCE OBJECT / IMAGE ACCESS BLOCKED**
+
+`WILLARD-PICTURE-TRAIL` — **ACTIVE HOLD / NOT LOCKED**
+
+`ROBE-CROSS-BEARD-SICKLE` — **REAL TRADITION-STREAM / NOT PROMOTED**
+
+`MENDIETA-TAPIA-BRINTON-CHAIN` — **ACTIVE SOURCE-CHAIN TARGET**
+
+What this means for Mercy:
+
+If Mercy shows old Maya ruins/photos, Chichén Itzá, Kukulcan temple imagery, bearded-conqueror art, or red-cross Quetzalcoatl material in this section, **Willard becomes a serious candidate source family**.
+
+But until we see a matching plate or a Willard scan, the correct holding is:
+
+**Hall names Willard. Willard exists and contains original photographs. The red-cross/beard motif exists in the older source chain. Exact Mercy image source remains open.**
+
+Next run: **PART 3 VISUAL SOURCE HUNT — MENDIETA / TAPIA / BRINTON SOURCE CHAIN.**
+
+[1]: https://search.worldcat.org/title/Kukulcan-the-bearded-conqueror-%3A-new-Mayan-discoveries-%3A-with-illustrations-from-original-photographs/oclc/3491500?utm_source=chatgpt.com "Kukulcan, the bearded conqueror : new Mayan discoveries"
+[2]: https://www.midwaybook.com/pages/books/90380/t-a-willard/kukulcan-the-bearded-conqueror-new-mayan-discoveries?utm_source=chatgpt.com "Kukulcan The Bearded Conqueror: New Mayan Discoveries"
+[3]: https://www.scribd.com/document/297336154/Topiltzin-Quetzalcoatl?utm_source=chatgpt.com "Topiltzin Quetzalcoatl | PDF | Culture Of The Americas"
+[4]: https://www.gutenberg.org/ebooks/11029.epub3.images?utm_source=chatgpt.com "American Hero-Myths: A Study in the Native Religions of ..."
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 3 SOURCE-CHAIN HUNT — MENDIETA / TAPIA / BRINTON / SHORT / BANCROFT
+STATE: ON TRACK / SOURCE-CHAIN SHARPENED / HOLDING, NOT PROMOTING
+
+This run cleaned up the red-cross / robe / beard / sickle chain.
+
+The strongest open-text match is **John T. Short, *The North Americans of Antiquity***. Short gives nearly the whole cluster: Quetzalcoatl from Hue hue Tlapalan, patron god/high-priest of the Toltecs, white man, flowing beard, mitre, long white robe covered with red crosses, sickle in hand, ascetic/chaste life, peace teaching, and condemnation of most sacrifices. That is very close to the Hall/Cooper wording family. ([Project Gutenberg][1])
+
+**Brinton** also preserves the same tradition stream, but he routes the red-cross robe version through **Veytia**, not cleanly through Mendieta. Brinton says Las Casas gives an eastern/Yucatán arrival tradition, Ixtlilxochitl repeats a similar tradition, while Veytia describes Quetzalcoatl as arriving from the north, full-grown, white-skinned, full-bearded, barefoot, bareheaded, in a long white robe with red crosses, carrying a staff. ([Project Gutenberg][2])
+
+**Bancroft is the control brake.** He warns that the white-face/beard detail may be partly interpretive: the beard appears in priestly descriptions, and “white” may have been inferred from the white robe rather than proving ethnicity or a foreign visitor. That supports our hold-rule: keep the clue, do not force it into Christian/European proof. ([Project Gutenberg][3])
+
+**Mendieta remains a live source target, but not yet a direct red-cross lock from this run.** A modern scholarly article’s source apparatus cites Gerónimo de Mendieta’s *Historia eclesiástica indiana* in the Quetzalcoatl/Tollan discussion, but the exact red-cross/sickle passage did not lock directly from Mendieta in open text here. ([SciELO][4])
+
+**Tapia is also live but weaker in open custody.** The accessible trail I found is a secondary/public excerpt saying Tapia’s account includes a white garment like a friar’s robe, a mantle covered with red crosses, and green-stone relics. Useful clue, but not enough to promote without the primary Tapia text. ([Scribd][5])
+
+Soft Suit update:
+
+`SS-SHORT-RED-CROSS-SICKLE-CLUSTER` — **UPGRADE / STRONG OPEN-TEXT MATCH**
+
+`SS-BRINTON-VEYTIA-ROBE-CROSS-STAFF` — **KEEP / SOURCE-CHAIN CONTROL**
+
+`SS-BANCROFT-SKEPTICAL-CONTROL` — **KEEP / PREVENTS FORCED READING**
+
+`SS-MENDIETA-DIRECT-PASSAGE` — **OPEN / SOURCE TARGET NOT LOCKED**
+
+`SS-TAPIA-RED-CROSS-RELICS` — **WATCH / SECONDARY EXCERPT ONLY**
+
+Current read:
+
+The robe/cross/beard/sickle motif is a **real old-source tradition stream**. It is not Mercy decoration, and it is not only Hall. But the cleanest current chain is:
+
+**Veytia / older colonial-antiquarian tradition → Short + Brinton + Bancroft → Hall/Cooper → Mercy visual clue field.**
+
+What did not promote:
+
+No proof yet that the red-cross robe image is pre-Columbian.
+No direct Mendieta passage lock yet.
+No exact Mercy frame lock yet.
+No Christian-contact conclusion.
+
+Next run: **PART 3 VISUAL OBJECT HUNT — find actual images/plates for the robe-cross-beard-sickle Quetzalcoatl tradition, especially Veytia/Short/Willard/old engravings.**
+
+[1]: https://www.gutenberg.org/files/67101/67101-h/67101-h.htm?utm_source=chatgpt.com "the north americans of antiquity"
+[2]: https://www.gutenberg.org/cache/epub/11029/pg11029-images.html?utm_source=chatgpt.com "American Hero-Myths: A Study in the Native Religions ..."
+[3]: https://www.gutenberg.org/files/43123/43123-h/43123-h.htm?utm_source=chatgpt.com "The Project Gutenberg eBook of The Native Races ..."
+[4]: https://www.scielo.org.mx/scielo.php?pid=S0185-12762020000200179&script=sci_arttext&utm_source=chatgpt.com "Topiltzin actor"
+[5]: https://www.scribd.com/document/297336154/Topiltzin-Quetzalcoatl?utm_source=chatgpt.com "Topiltzin Quetzalcoatl | PDF | Culture Of The Americas"
+
+
+
+
+
+
+
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 3 VISUAL OBJECT HUNT — ROBE-CROSS-BEARD-SICKLE IMAGE TRAIL
+STATE: ON TRACK / TEXT MOTIF LOCKED STRONGER / EXACT IMAGE OBJECT NOT LOCKED / HOLDING
+
+[![El papel de la vestimenta en los rituales mexicas de “personificación”](https://images.openai.com/static-rsc-4/jwp-5cebsp9q1Gcr3pcEMEDhDmZqZi7AV4APPXF6tVhGcJWKLYmdGWWLQGWXlEs7gmxRyOTMMe21n7BnFhfSZ6ndNnW98tc7CTgcNMS3We0l3JqJD8J9KHFi5bKRSEYEv_XSj6B5iDIadOogN8wsDpkwYVcUfd9TGB09FRDQbJs?purpose=inline)](https://journals.openedition.org/nuevomundo/69305?utm_source=chatgpt.com)
+
+The exact **white robe + red crosses + sickle + beard** image did **not** lock in this run. I did not find a clean old plate, engraving, codex image, or Willard scan showing that full cluster.
+
+What did lock harder is the **text-source motif**.
+
+Short gives the full cluster almost exactly: Quetzalcoatl comes from Hue Hue Tlapalan to Tulla, is described as white, bearded, wearing a mitre, dressed in a long white robe covered with red crosses, and holding a sickle. He also describes ascetic habits, rejection of most sacrifice, arts, letters, calendar, Tezcatlipoca conflict, Cholula, and departure eastward by serpent-skin canoe. ([Project Gutenberg][1])
+
+Donnelly repeats the same Short passage almost verbatim in *Atlantis*, which proves the motif became part of a later diffusionist/Atlantis transmission chain. That is useful for tracing Hall’s source-world, but it is not archaeology proof. ([Wikisource][2])
+
+The visual hunt found adjacent image families, not the exact object. Short/Le Plongeon gives a **Chichen-Itza bearded-men** visual trail: long-bearded men on columns or walls at Chichen-Itza, worshipping sacred trees, plus copied mural material from the Chaac Mol monument. That is a real old illustration/source trail, but it is **not** the robe-cross-sickle image. ([Project Gutenberg][1])
+
+The codex-image lane also stayed adjacent. Public image results surfaced Florentine/Codex-style Quetzalcoatl scenes and regalia, including Quetzalcoatl with Tezcatlipoca/pulque and Quetzalcoatl as wind/east/feathered-serpent deity. Those are useful visual controls for the real Mesoamerican iconography lane, but they do **not** show Hall’s full white-robe/red-cross/sickle cluster.
+
+So the clean read is:
+
+The **motif is real in the old written chain**.
+The **full image object is not yet found**.
+The nearest visual families are **Chichen-Itza bearded-men/Le Plongeon** and **codex Quetzalcoatl iconography**, but neither should be treated as the exact Hall/Mercy image.
+
+Soft Suit update:
+
+`SS-ROBE-CROSS-BEARD-SICKLE-TEXT-MOTIF` — **UPGRADE / STRONG TEXT LOCK**
+
+`SS-SHORT-QUETZALCOATL-FULL-CLUSTER` — **ACTIVE LOAD-BEARING SOURCE**
+
+`SS-DONNELLY-ATLANTIS-TRANSMISSION` — **KEEP LIGHT / TRANSMISSION FAMILY / NOT PROOF**
+
+`SS-CHICHEN-BEARDED-MEN-LE-PLONGEON` — **ACTIVE VISUAL ADJACENT / NOT EXACT ROBE-CROSS IMAGE**
+
+`SS-CODEX-QUETZALCOATL-ICONOGRAPHY` — **ACTIVE CONTROL / REAL ICONOGRAPHY / NOT EXACT HALL CLUSTER**
+
+`SS-WILLARD-IMAGE-PLATES` — **STILL OPEN / HIGH-VALUE TARGET / SCAN NOT FOUND**
+
+Current conclusion:
+
+**We hold the red-cross robe/sickle lane, but we do not promote it.** It is a strong clue because Hall’s source-world keeps pointing to it. But the proof has not yet produced the picture-object. Right now it is a **textual motif with adjacent visual trails**, not an image lock.
+
+Next run: **PART 3 VISUAL OBJECT HUNT — Chichen-Itza bearded-men / Le Plongeon / Chaac Mol / Willard bridge.** This is the closest actual picture trail to the robe-cross-beard lane.
+
+[1]: https://www.gutenberg.org/files/67101/67101-h/67101-h.htm "
+    The North Americans of Antiquity, by John T. Short—A Project Gutenberg eBook
+  "
+[2]: https://en.wikisource.org/wiki/Atlantis%3A_The_Antediluvian_World/Part_3/Chapter_3 "Atlantis: The Antediluvian World/Part 3/Chapter 3 - Wikisource, the free online library"
+
+
+
+
+
+
+
+
+
+[![Temple of the Bearded Men, Chichen Itza, a Mayan ruin](https://images.openai.com/static-rsc-4/oSGbMAQ5lvPA6ntjK8HETo2Nqsv-bEfui6tSNPPZK74kyNuxazIiDiUrwR_GKteTb3IFtvcHOOcicBHBZjgwD1bkcfZE5QalDpCLu5qsZJwJBfBKN_NEY94ZMtiZgw_GERkH9s2zJ_Tpf-H_ygxZNd9oVtYg-dGP0JAFTL0UylJ0c9imVbALoDWhfeSe3cqF?purpose=inline)](https://www.gettyimages.com/?utm_source=chatgpt.com)
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 3 VISUAL OBJECT HUNT — CHICHEN-ITZA BEARDED-MEN / LE PLONGEON / CHAAC MOL / WILLARD BRIDGE
+STATE: ON TRACK / KEEP-PHOTO TARGETS MARKED / EXACT MERCY IMAGE STILL OPEN
+
+Yes. Going forward, when a photo/image is worth saving for later comparison, I will mark it plainly as **KEEP PHOTO TARGET** like this.
+
+For this run, the strongest keep-photo target is the **Temple of the Bearded Man / Bearded Men at Chichén Itzá**. The image route is not the exact red-cross/sickle cluster, but it is the closest actual site-object family tied to the “bearded men at Chichén Itzá” tradition. Search results show the Temple of the Bearded Man at Chichén Itzá as a real visual/site target, and the old text chain says long-bearded men were carved on columns at Chichén Itzá with raised hands, worshipping sacred trees. ([Wikisource][1])
+
+**KEEP PHOTO TARGET 1 — Temple of the Bearded Man, Chichén Itzá**
+Status: **KEEP / VISUAL COMPARISON TARGET / NOT EXACT HALL RED-CROSS IMAGE**
+Use later to compare against Mercy frames showing small Chichén Itzá temple structures, ball-court end temples, carved columns, or “bearded man” labels.
+
+**KEEP PHOTO TARGET 2 — Chac Mool / Chaac-Mol at Chichén Itzá**
+Status: **KEEP / LE PLONGEON BRIDGE TARGET / NOT QUETZALCOATL PROOF**
+Le Plongeon excavated the reclining statue at Chichén Itzá and named it “Chaacmol,” later standardized as Chac Mool. That makes Chac Mool a strong Le Plongeon visual bridge, but it should not be fused with the red-cross Quetzalcoatl motif without proof. ([Wikipedia][2])
+
+**KEEP PHOTO TARGET 3 — Le Plongeon / Chichén Itzá bearded-men drawings or plates**
+Status: **HIGH-VALUE / IMAGE OBJECT NOT LOCKED YET**
+Le Plongeon’s own open works and later old sources preserve the “bearded men from the east” / Chichén Itzá visual claim family. But this run did not lock the exact plate we need. ([Reading Rooms][3])
+
+**KEEP PHOTO TARGET 4 — Willard’s *Kukulcan, the Bearded Conqueror* plates**
+Status: **HIGH-VALUE / STILL BLOCKED / DO NOT DROP**
+Willard remains important because Hall specifically points readers to Willard for “further details and pictures.” This run still did not expose the plates.
+
+What changed:
+
+The **robe + red crosses + sickle + beard** lane remains mostly a **text motif**.
+
+The **Chichén Itzá bearded-men** lane is the nearest actual image/site trail.
+
+The **Chac Mool** lane is a Le Plongeon bridge, not proof of Quetzalcoatl.
+
+Soft Suit update:
+
+`SS-KEEP-PHOTO-TEMPLE-BEARDED-MAN` — **KEEP / VISUAL TARGET**
+
+`SS-KEEP-PHOTO-CHAC-MOOL` — **KEEP / LE PLONGEON BRIDGE**
+
+`SS-LE-PLONGEON-BEARDED-MEN-PLATE` — **ACTIVE / IMAGE NOT LOCKED**
+
+`SS-WILLARD-PLATES` — **ACTIVE / STILL BLOCKED**
+
+Current conclusion:
+
+**Save the Temple of the Bearded Man and Chac Mool visual families for later comparison.** They are useful clue objects. They do not yet prove the Hall red-cross/sickle cluster, but they are now part of the visual evidence board.
+
+Next run: **PART 3 SOURCE-SPINE CONTINUE — Venus / Morning Star / Tonalamatl / Book of Fate.**
+
+[1]: https://en.wikisource.org/wiki/Page%3AAtlantis_-_The_Antediluvian_World_%281882%29.djvu/184?utm_source=chatgpt.com "Page:Atlantis - The Antediluvian World (1882).djvu/184"
+[2]: https://en.wikipedia.org/wiki/Chichen_Itza?utm_source=chatgpt.com "Chichen Itza"
+[3]: https://readingroo.ms/3/0/7/5/30752/30752-h/30752-h.htm?utm_source=chatgpt.com "The Project Gutenberg eBook of Vestiges of the Mayas ..."
+
+
+
+
+
+
+
+[![Aztec Codex Borbonicus, 'Tonalamatl', detail depicting Quetzalcoatl and ...](https://tse3.mm.bing.net/th/id/OIP.xm6fsswuX9wek7TZKNjI4wHaGg?r=0\&pid=Api)](https://www.meisterdrucke.uk/fine-art-prints/Pre-Columbian/167918/Aztec-Codex-Borbonicus%2C-%27Tonalamatl%27%2C-detail-depicting-Quetzalcoatl-and-Tezcatlipoca.html?utm_source=chatgpt.com)
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 3 SOURCE-SPINE CONTINUE — VENUS / MORNING STAR / TONALAMATL / BOOK OF FATE
+STATE: ON TRACK / KEEP-PHOTO TARGETS SHOWN / STRONG SYMBOL-OBJECT LANE / NO PHOTO REQUEST
+
+This lane is stronger than the robe/cross/sickle lane because it has real manuscript and calendar-control behind it.
+
+Hall says Quetzalcoatl is associated with pictorial writing and especially with the **Tonalamatl**, which he calls the **Book of Fate**. Hall frames it as more than a civil calendar: a destiny/prophecy instrument used by “master magicians” and astrological adepts. That is Hall’s esoteric reading, but the base object-family is real: tonalamatl material belongs to the 260-day divinatory calendar manuscript tradition. ([Internet Archive][1])
+
+The best outside-control source is the **Codex Vaticanus A / Codex Ríos** route. The manuscript description says Vaticanus A partly copied the divinatory **tonalamatl** section from the **Codex Telleriano-Remensis**, with trecenas, day signs, gods, and mystical influences. That gives this lane real manuscript structure, not just Hall vocabulary. ([Internet Archive][2])
+
+The Venus lane is also real. Oxford’s Aztec-planets source says creation myths and codices focus strongly on Venus gods, especially **Ehecatl-Quetzalcoatl** and **Tlahuizcalpantecuhtli**. It also says the Codex Borgia contains Venus almanacs tied to heliacal rise events, with Quetzalcoatl representing Venus through the synodic cycle and Tlahuizcalpantecuhtli appearing as the morning star. 
+
+The death-to-morning-star lane also has a strong text-control route. The Internet Archive record for Bierhorst’s ***History and Mythology of the Aztecs: The Codex Chimalpopoca*** identifies the Codex Chimalpopoca as a major source for Quetzalcoatl stories, especially through the **Annals of Cuauhtitlan** and **Legend of the Suns**. That is the right source family for the “Quetzalcoatl becomes the morning star” trail. ([Internet Archive][3])
+
+KEEP PHOTO TARGET 1 — **Codex Borbonicus / Tonalamatl / Quetzalcoatl + Tezcatlipoca**
+Status: **KEEP / TONALAMATL VISUAL CONTROL / NOT MERCY-LOCKED**
+Use this later if Mercy shows a calendar manuscript grid, deity panels, day signs, or Quetzalcoatl facing Tezcatlipoca. This is not proof of Mercy’s exact image, but it is a strong visual comparison target.
+
+KEEP PHOTO TARGET 2 — **Tlahuizcalpantecuhtli / Morning Star Venus codex image**
+Status: **KEEP / VENUS-MORNING-STAR VISUAL TARGET**
+Use this later if Mercy shows a bright feathered deity with darts, star spots, red-white-green costume, or “Lord of Dawn” imagery. This is one of the cleanest visual anchors for the Venus lane.
+
+KEEP PHOTO TARGET 3 — **Códice Maya de México / Venus deity comparison spread**
+Status: **KEEP / VENUS-CODEX COMPARISON TARGET**
+This is useful if Mercy bridges Maya Venus material with Central Mexican Venus/Quetzalcoatl imagery.
+
+KEEP PHOTO TARGET 4 — **Codex Telleriano-Remensis / trecena-tonalamatl page**
+Status: **KEEP / CALENDAR-MANUSCRIPT TARGET**
+Use this if Mercy shows a page with small boxed day signs, deity images, Spanish/European annotations, or calendrical rows.
+
+What holds:
+
+**Tonalamatl / Book of Fate** is a valid Part 3 object lane. Hall’s occult language is his interpretation, but the underlying manuscript/calendar tradition is real.
+
+**Venus / Morning Star / Quetzalcoatl** is a strong symbol-object lane, supported by codex and scholarship routes.
+
+**Tlahuizcalpantecuhtli** becomes a key visual target because he is the “Lord of Dawn” / Morning Star Venus figure and often appears in codex imagery.
+
+What stays bounded:
+
+Hall’s “master magicians / astrological adept / destiny prophecy” reading is not automatically archaeology. It is Hall’s esoteric overlay on a real divinatory-calendar manuscript tradition.
+
+Soft Suit update:
+
+`SS-PART3-TONALAMATL-BOOK-OF-FATE` — **UPGRADE / ACTIVE OBJECT-SOURCE LANE**
+
+`SS-CODEX-VATICANUS-A-TELLERIANO-TONALAMATL` — **KEEP / MANUSCRIPT CONTROL**
+
+`SS-TLAHUIZCALPANTECUHTLI-MORNING-STAR` — **KEEP / STRONG VISUAL TARGET**
+
+`SS-CODEX-CHIMALPOPOCA-MORNING-STAR` — **KEEP / TEXT-SOURCE TARGET**
+
+`SS-CODEX-BORGIA-VENUS-ALMANAC` — **KEEP / VENUS-CYCLE CONTROL**
+
+Current conclusion:
+
+Part 3 is now shaping into two connected lanes:
+
+**robe/cross/beard/sickle = old textual motif, image still open.**
+**Venus/Tonalamatl/Book of Fate = stronger manuscript-calendar-symbol lane.**
+
+Next run: **PART 3 CLOSEOUT FLOOR — Quetzalcoatl compression zone: robe/cross/beard, Venus/morning star, Tonalamatl/Book of Fate, Tezcatlipoca conflict.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://archive.org/details/codex-vaticanus-a "Codex Vaticanus A : Unknown Nahua Tlacuilo : Free Download, Borrow, and Streaming : Internet Archive"
+[3]: https://archive.org/details/historymythology0000unse "History and mythology of the Aztecs : the Codex Chimalpopoca : Free Download, Borrow, and Streaming : Internet Archive"
+
+
+
+
+
+
+MODE: FLOORS / CLOSEOUT
+RUN: HALL_COOP_LEY / PART 3 CLOSEOUT — QUETZALCOATL COMPRESSION ZONE
+STATE: PART 3 STRUCTURE LOCKED / HOLDING HIGH-VALUE CLUES / EXACT MERCY FRAMES PENDING MULE
+
+Part 3 now closes as the **Quetzalcoatl compression zone**.
+
+It is not one simple claim. It is four stacked lanes: the robe/cross/beard/sickle motif, the Venus/morning-star death-return lane, the Tonalamatl/Book-of-Fate manuscript lane, and the Tezcatlipoca conflict/corrupted-priesthood lane.
+
+What holds:
+
+The **robe/cross/beard/sickle** cluster is real inside the old text chain. Hall says Quetzalcoatl is described through Mendieta as bearded, robed in white, marked with red crosses, and holding a sickle, and he directly points to Willard’s *Kukulcan, the Bearded Conqueror* for pictures. ([Internet Archive][1]) Short gives nearly the same cluster in open text: distant eastern origin, Tulla, beard, mitre, long white robe, red crosses, and sickle. ([Project Gutenberg][2]) This enters the index as a **held clue**, not proof of Christian contact or European origin.
+
+The **Venus / morning-star** lane is stronger. Britannica supports Quetzalcoatl as tied to Venus, death and resurrection, Tula, priesthood, Tezcatlipoca conflict, eastward departure, and the snake-raft variant. ([Encyclopedia Britannica][3]) The Chimalpopoca/Annals route also preserves the “Quetzalcoatl becomes the morning star” pattern; the accessible University of Utah extract gives the morning-star transformation language clearly. ([The Ethics of Suicide Digital Archive][4])
+
+The **Tonalamatl / Book of Fate** lane is a real object-source lane with Hall’s esoteric overlay on top. Hall ties Quetzalcoatl to pictorial writing and the Tonalamatl, calling it the Book of Fate and a destiny/prophecy instrument. ([Internet Archive][1]) Codex Vaticanus A gives outside manuscript control: it identifies a 260-day divinatory book copied from Codex Telleriano-Remensis, with trecenas, day signs, gods, and mystical influences. ([Internet Archive][5])
+
+The **Tezcatlipoca conflict** holds as the structural conflict lane. Hall frames Tezcatlipoca as the sorcerer/old priesthood force that poisons or corrupts Quetzalcoatl’s doctrine, forcing departure. ([Internet Archive][1]) Britannica independently preserves the broad myth pattern: Tezcatlipoca expels Quetzalcoatl from Tula through black magic, after which Quetzalcoatl goes toward the coast and becomes Venus or departs eastward. ([Encyclopedia Britannica][3])
+
+What cracks or stays frozen:
+
+The robe/cross/sickle motif is not promoted as pre-Columbian image proof. We still do not have the exact image object.
+
+The Willard picture trail is still open. Hall points to it, WorldCat confirms the book, but we have not found the plates.
+
+The Tonalamatl lane is real, but Hall’s “master magicians / astrological adept / destiny prophecy” reading remains Hall’s interpretation, not automatically archaeology.
+
+The Tezcatlipoca lane is not just “bad guy mythology” in Hall’s system. It becomes the first clear version of Mercy’s likely later structure: original peaceful/priestly mystery current versus corrupted sorcery/war-sacrifice current.
+
+What enters the index:
+
+`PART3-LOCK-001 — Robe / red crosses / beard / sickle`
+Status: **REAL TEXT-STREAM / HIGH-VALUE HOLD / NOT PROMOTED**
+
+`PART3-LOCK-002 — Willard picture trail`
+Status: **ACTIVE VISUAL TARGET / IMAGE PLATES NOT LOCKED**
+
+`PART3-LOCK-003 — Venus / Morning Star / death-return`
+Status: **STRONG SYMBOL-OBJECT LANE**
+
+`PART3-LOCK-004 — Tonalamatl / Book of Fate`
+Status: **STRONG MANUSCRIPT-CALENDAR LANE / HALL OVERLAY BOUNDED**
+
+`PART3-LOCK-005 — Tezcatlipoca conflict`
+Status: **ACTIVE STRUCTURAL CONFLICT LANE**
+
+Current Part 3 conclusion:
+
+Part 3 is where Hall/Cooper compress Quetzalcoatl into a bridge figure: priest-king, culture bringer, calendar/book inventor, Venus death-return figure, and victim of corrupted sorcery/priesthood. The proof is mixed: **Venus/Tonalamatl is the strongest controlled lane**, **robe/cross/sickle is a high-value hold**, and **Tezcatlipoca conflict is the main structural bridge into later good-current versus corrupted-current symbolism**.
+
+Next run: **PART 4 SOURCE-SPINE PRESSURE — departure east, sea/raft, hidden return prophecy, and whether the narration turns from Mesoamerica toward North American medicine-priest / mound / bird-serpent material.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://www.gutenberg.org/files/67101/67101-h/67101-h.htm "
+    The North Americans of Antiquity, by John T. Short—A Project Gutenberg eBook
+  "
+[3]: https://www.britannica.com/topic/Quetzalcoatl "Quetzalcoatl | Definition, Myth, & Meaning | Britannica"
+[4]: https://ethicsofsuicide.lib.utah.edu/tradition/indigenous-cultures/central-and-south-american-native-cultures/aztec1/?utm_source=chatgpt.com "AZTEC#1 from Codex Chimalpopoca (1570)"
+[5]: https://archive.org/details/codex-vaticanus-a "Codex Vaticanus A : Unknown Nahua Tlacuilo : Free Download, Borrow, and Streaming : Internet Archive"
+
+
+
+
+
+
+[![Maya Mythos: Photos of the Le Plongeon Expedition to the Yucatan (1883-1875) are available via the L.A. Getty Center Digital archives](https://images.openai.com/static-rsc-4/EJElORFCh9H0kJEKZ4lApE_erHFayyO2uBj2dRu_6ZZYfjq7CAdirJ-YkCWd7bc9ievdoNbzWiZx3YM4KgQ4uWneOY8_mWNTma1zcEpBeryF4k1P1Twkdh6mwSjFdLPGQJbeh_GMSUTRG-2sqOlYDW2-q3-DGOBgRLwQW-xhSNM?purpose=inline)](https://ajchich1.blogspot.com/2014/09/photos-of-le-plongeon-expedition-to.html?utm_source=chatgpt.com)
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 4 SOURCE-SPINE PRESSURE — DEPARTURE / HIDDEN BOOKS / LE PLONGEON / POPOL VUH
+STATE: ON TRACK / PART 4 STRUCTURE LOCKED / KEEP-PHOTO TARGETS SHOWN / NO PHOTO REQUEST
+
+Part 4 is not yet the full North American medicine-priest turn. It is the **bridge section**: Quetzalcoatl departs east by sea, hidden sacred records survive or are suppressed, Le Plongeon becomes the image/source bridge, then Hall starts moving toward Popol Vuh, Xibalba, initiation trials, and finally the comparison to Northern Amerindian medicine-priest trance travel.
+
+Hall’s sequence is clear. Quetzalcoatl reaches the sea near Veracruz, promises future return, then departs on a **raft of serpents** into the “land of the sun’s beginning.” Hall immediately says a priesthood preserved the Mysteries of the Feathered Serpent, then turns to lost/suppressed records, the “Divine Book” of Tezcucan, Waldeck, de Bourbourg, Dresden Codex speculation, and surviving manuscripts. ([Internet Archive][1])
+
+The Cooper transcript matches this exact passage. After the break, Tom Swift reads the same Hall sequence: raft of serpents, secret Feathered Serpent priesthood, conflicting death/departure accounts, suppressed sacred records, Divine Book, Le Plongeon, Mayan esoteric schools, and then Lord Kingsborough’s Christian/Jewish comparison lane. ([AnoNews Vienna][2])
+
+The biggest visual clue in this section is **Augustus Le Plongeon seated among feathered serpent heads at Chichén Itzá**. Hall captions an image of Le Plongeon among feathered serpent heads, and Getty’s Le Plongeon collection confirms that the Le Plongeon papers contain photographs documenting Maya architecture and sculpture at Chichén Itzá, Uxmal, Ake, and Mayapan, including Chac Mool discovery material. ([Internet Archive][1]) Getty’s finding aid specifically lists **“Augustus Le Plongeon with serpent sculptures from the Platform of Venus, Chichén Itzá”** and describes the stone snake-head photograph from an 1883 negative. ([Getty][3])
+
+KEEP PHOTO TARGET 1 — **Le Plongeon among serpent heads, Chichén Itzá**
+Status: **KEEP / HIGH-VALUE HALL IMAGE TARGET**
+This is likely one of the best Part 4 image targets because Hall’s page itself contains the Le Plongeon serpent-head photo cue. If Mercy shows an old sepia expedition photo with men around serpent-head stones, this is a direct comparison target.
+
+KEEP PHOTO TARGET 2 — **Chichén Itzá feathered serpent heads / Platform of Venus / El Castillo serpent heads**
+Status: **KEEP / SITE-OBJECT COMPARISON TARGET**
+This helps compare later Mercy frames with the stone-serpent object family. It supports the Feathered Serpent visual lane, not the full esoteric-school claim.
+
+KEEP PHOTO TARGET 3 — **Camazotz / Bat God / Codex Fejérváry-Mayer-style image**
+Status: **KEEP / XIBALBA VISUAL TARGET / HANDLE CAREFULLY**
+Hall moves from Popol Vuh into Xibalba and the House of the Bat. Hall captions a bat-god image from Codex Fejérváry-Mayer, and scholarship also notes an anthropomorphic bat in Codex Fejérváry-Mayer holding a heart and severed head. ([Internet Archive][1]) This is a strong visual clue if Mercy shows bat-god, underworld, cave, skull, or ordeal imagery.
+
+KEEP PHOTO TARGET 4 — **Popol Vuh / Ximénez manuscript page**
+Status: **KEEP / MANUSCRIPT-CUSTODY TARGET**
+Hall presents the Popol Vuh as the recovered manuscript witness for Quiché/K’iche’ religious mysteries. The Newberry confirms that a digital version of the Popol Vuh is available in its Digital Collections, including the related Ximénez manuscripts. ([Newberry Library][4]) The Library of Congress route also identifies the Newberry manuscript as one of the best-known and possibly earliest surviving copies, transcribed between 1700 and 1715. ([The Library of Congress][5])
+
+What holds:
+
+`PART4-A — Quetzalcoatl departure / raft of serpents`
+Status: **HALL/COOPER SOURCE LOCKED / SYMBOLIC DEPARTURE LANE**
+
+`PART4-B — hidden sacred records / Divine Book / suppressed manuscripts`
+Status: **HALL SOURCE LOCKED / HIGH-VALUE CLUE / NOT PROOF OF EXISTING SECRET BOOK**
+
+`PART4-C — Le Plongeon / serpent heads / Chichén Itzá`
+Status: **STRONG VISUAL-SOURCE TARGET / GETTY CUSTODY SUPPORT**
+
+`PART4-D — Popol Vuh / Xibalba / initiation trials`
+Status: **STRONG MANUSCRIPT-MYTH LANE / OFFICIAL MANUSCRIPT CUSTODY SUPPORT**
+
+`PART4-E — Camazotz / House of the Bat`
+Status: **ACTIVE VISUAL TARGET / XIBALBA UNDERWORLD LANE**
+
+What stays bounded:
+
+Le Plongeon proves a real visual/source route, not that his esoteric interpretations are correct.
+
+The “Divine Book” and “suppressed sacred records” stay as Hall’s claim-chain until a real manuscript or catalog object is locked.
+
+Popol Vuh is real manuscript custody, but Hall’s “Mystery School initiation” reading is interpretive.
+
+Current Part 4 read:
+
+**Part 4 is the hidden-records and initiation bridge.** It closes the Quetzalcoatl departure story, opens the lost-book/suppressed-records lane, locks Le Plongeon as a major visual clue source, and begins the Popol Vuh/Xibalba road that will bridge into medicine-priest trance travel and eventually the North American lane.
+
+Next run: **PART 4 VISUAL SOURCE HUNT — Le Plongeon serpent-head photo / Getty collection / Temple of Tigers feathered-serpent tracing.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://viefag.wordpress.com/2012/02/15/mystery-babylon-bill-cooper-hour-25-americas-assignment-part-1/ "
+Mystery Babylon (Bill Cooper) – Hour 25 – America’s Assignment Part 1 | AnoNews Vienna"
+[3]: https://www.getty.edu/research/collections/static/pdf/2004.M.18.pdf?utm_source=chatgpt.com "Finding Aid for the Augustus and Alice Dixon Le Plongeon ..."
+[4]: https://www.newberry.org/collection/research-guide/popol-vuh?utm_source=chatgpt.com "Popol Vuh"
+[5]: https://www.loc.gov/resource/gdcwdl.wdl_19995/?sp=2&utm_source=chatgpt.com "Image 2 of Popol Vuh: Transcription in Quiché Mayan and ..."
+
+
+
+
+
+
+
+
+[![Maya Mythos: Photos of the Le Plongeon Expedition to the Yucatan (1883-1875) are available via the L.A. Getty Center Digital archives](https://images.openai.com/static-rsc-4/EJElORFCh9H0kJEKZ4lApE_erHFayyO2uBj2dRu_6ZZYfjq7CAdirJ-YkCWd7bc9ievdoNbzWiZx3YM4KgQ4uWneOY8_mWNTma1zcEpBeryF4k1P1Twkdh6mwSjFdLPGQJbeh_GMSUTRG-2sqOlYDW2-q3-DGOBgRLwQW-xhSNM?purpose=inline)](https://ajchich1.blogspot.com/2014/09/photos-of-le-plongeon-expedition-to.html?utm_source=chatgpt.com)
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 4 VISUAL SOURCE HUNT — LE PLONGEON SERPENT-HEAD PHOTO / GETTY CUSTODY
+STATE: ON TRACK / HIGH-VALUE PHOTO TARGET LOCKED / EXACT MERCY FRAME STILL OPEN
+
+This run produced a real keep-photo object.
+
+**KEEP PHOTO TARGET 1 — Augustus Le Plongeon with serpent sculptures from the Platform of Venus, Chichén Itzá**
+Status: **KEEP / HIGH-VALUE HALL IMAGE TARGET / GETTY CUSTODY LOCKED**
+Getty’s finding aid identifies the exact object as **2004.M.18-b11.10**, titled “Augustus Le Plongeon with serpent sculptures from the Platform of Venus, Chichén Itzá,” a gelatin silver print after 1885 from an 1883 negative, photographed by Alice Dixon Le Plongeon. The mount annotation says the stone snake heads were found by Dr. Le Plongeon in an ancient “Mausoleum (Cay)” at Chichén. This is now one of the strongest Part 4 visual targets. ([Getty][1])
+
+**KEEP PHOTO TARGET 2 — Excavation of the Platform of Venus, Chichén Itzá**
+Status: **KEEP / CONTEXT PHOTO TARGET / SAME GETTY BOX FAMILY**
+Getty lists **2004.M.18-b11.9** as “Excavation of the Platform of Venus, Chichén Itzá,” also a gelatin silver print from a negative made after 1883. This matters because if Mercy shows an old excavation pit, stone blocks, or platform context near the serpent-head image, it may belong to the same Le Plongeon photo set. ([Getty][1])
+
+**KEEP PHOTO TARGET 3 — Platform of Venus serpent heads / modern comparison**
+Status: **KEEP / SITE-OBJECT COMPARISON / NOT OLD PHOTO PROOF**
+Modern Platform of Venus serpent-head photos are useful comparison objects. They help us recognize the stone-serpent family if Mercy uses a modern image instead of the Le Plongeon print. They do not prove the exact Mercy source by themselves.
+
+**KEEP PHOTO TARGET 4 — Le Plongeon / Chichén Itzá artifact illustration, 1877-style route**
+Status: **KEEP LIGHT / ADJACENT OLD-IMAGE ROUTE / NOT EXACT GETTY PHOTO**
+The old illustrated “artifacts discovered at Chichén Itzá by Augustus Le Plongeon” image is useful as an adjacent visual-source route because it shows how Le Plongeon discoveries circulated in older illustrated media. It is not the Getty serpent-head photograph.
+
+The archaeology-history control also supports the importance of this photo family. A Desmond paper abstract says Alice and Augustus Le Plongeon excavated the Platform of Venus in November 1883, recorded artifact locations including tenoned serpent heads, noted painted colors on the serpent heads, made plans/sections, and photographed the excavation and objects. That makes the Platform of Venus photo set a real research-object family, not just a symbolic picture. ([Academia][2])
+
+What did not lock:
+
+The exact Mercy frame is still not locked.
+The Temple of Tigers / Upper Temple of Jaguars mural route is not yet cleanly locked as a Mercy image source.
+The Le Plongeon photo does not prove Hall’s esoteric interpretation. It proves a real visual/source object Hall could use.
+
+Soft Suit update:
+
+`SS-LE-PLONGEON-SERPENT-HEAD-PHOTO` — **UPGRADE / KEEP PHOTO / GETTY CUSTODY LOCKED**
+
+`SS-PLATFORM-OF-VENUS-EXCAVATION-PHOTO` — **KEEP / CONTEXT TARGET**
+
+`SS-MODERN-VENUS-PLATFORM-SERPENT-HEADS` — **KEEP / COMPARISON TARGET**
+
+`SS-LE-PLONGEON-OLD-ILLUSTRATED-ARTIFACTS` — **KEEP LIGHT / ADJACENT ROUTE**
+
+Current conclusion:
+
+This is a strong visual clue lock. If Mercy shows an old sepia photo with Le Plongeon or workers seated among carved serpent heads, we now have the target: **Getty 2004.M.18-b11.10, Alice Dixon Le Plongeon photo, Platform of Venus serpent sculptures.**
+
+Next run: **PART 4 VISUAL SOURCE HUNT — Popol Vuh / Xibalba / Camazotz / House of the Bat.**
+
+[1]: https://www.getty.edu/research/collections/static/pdf/2004.M.18.pdf?utm_source=chatgpt.com "Finding Aid for the Augustus and Alice Dixon Le Plongeon ..."
+[2]: https://www.academia.edu/48847201/Excavation_of_the_Platform_of_Venus_Chiche_n_Itza_Yucata_n_Me_xico_The_pioneering_fieldwork_of_Alice_Dixon_Le_Plongeon_and_Augustus_Le_Plongeon?utm_source=chatgpt.com "Excavation of the Platform of Venus, Chichén Itzá, Yucatán ..."
+
+
+
+
+
+
+[![Bat](https://tse3.mm.bing.net/th/id/OIP.BximtA3MhIt0rDlfzRXfpgHaFl?r=0\&pid=Api)](https://www.mexicolore.co.uk/aztecs/flora-and-fauna/bat?utm_source=chatgpt.com)
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 4 VISUAL SOURCE HUNT — POPOL VUH / XIBALBA / CAMAZOTZ / HOUSE OF THE BAT
+STATE: ON TRACK / STRONG MANUSCRIPT TARGET + BAT-GOD IMAGE TARGET / OVERCLAIM CONTROL ADDED
+
+This lane is strong, but it needs a brake.
+
+Hall’s Part 4 source-spine moves from hidden books into the **Popul Vuh / Popol Vuh**, then into **Xibalba**, then into **Camazotz / Lord of the Bats**, then into the “perilous journey” as initiation. Hall specifically captions an image as **“Representation of the Bat God from the Codex Fejérváry-Mayer 41”** and says Camazotz occurs as Lord of the Bats in the Mysteries of Xibalba. He then says the seventh test happened in the **House of the Bat**, a subterranean labyrinth ruled by Camazotz. ([Internet Archive][1])
+
+The manuscript-control side is real. Newberry says its Popol Vuh manuscript is one of the most widely known and possibly earliest surviving copies, transcribed between **1700 and 1715** by Francisco Ximénez at Chichicastenango, with K’iche’ text and Spanish translation side by side. ([Newberry Library][2]) The Library of Congress page for the same object confirms the title **“Popol Vuh: Transcription in Quiché Mayan and Translation into Spanish,”** describes it as the creation account of the K’iche’ Maya, and notes Ximénez’s transcription/translation format. ([The Library of Congress][3])
+
+**KEEP PHOTO TARGET 1 — Popol Vuh / Ximénez manuscript page**
+Status: **KEEP / MANUSCRIPT-CUSTODY TARGET / HIGH VALUE**
+Use this later if Mercy shows handwritten manuscript pages, old Spanish/K’iche’ text, “Popol Vuh” title material, or a book-page visual during this section. This is a strong source object because it ties to Newberry/LOC custody, not just a modern illustration.
+
+**KEEP PHOTO TARGET 2 — Codex Fejérváry-Mayer p. 41 bat-god image**
+Status: **KEEP / HALL IMAGE-CAPTION TARGET / HIGH VALUE**
+This is probably the main visual object for the Camazotz frame. Hall names the image family directly. If Mercy shows a black/green anthropomorphic bat with wings, heart, severed head, or codex styling, compare it to Codex Fejérváry-Mayer p. 41.
+
+**KEEP PHOTO TARGET 3 — Xibalba / House of the Bat visual family**
+Status: **KEEP / MYTH-SCENE TARGET / HANDLE CAREFULLY**
+Use this if Mercy shows caves, underworld chambers, bat demons, Hero Twins, skulls, ballcourt imagery, or “trial chamber” visuals. But this needs extra control because many modern Camazotz images are fantasy reconstructions, not manuscript objects.
+
+**KEEP PHOTO TARGET 4 — Codex Borgia / Vaticanus B / Fejérváry-Mayer bat-god comparison set**
+Status: **KEEP / ICONOGRAPHY CONTROL / NOT ALL CAMAZOTZ**
+This is the brake. Brady and Coltman’s “Bats and the Camazotz” paper says the Codex Borgia, Codex Vaticanus B, and Codex Fejérváry-Mayer contain anthropomorphic bat images with blood, severed heads, or hearts, but they warn that not every Mesoamerican bat figure should be automatically identified as Camazotz. They specifically stress that the Hero Twins in the chamber of Camazotz are not clearly depicted in ancient images. ([Academia][4])
+
+What changed:
+
+The Popol Vuh lane is now split into two clean pieces:
+
+**Text custody:** Popol Vuh / Ximénez manuscript / Newberry + LOC.
+**Visual clue:** Codex Fejérváry-Mayer bat-god image used by Hall.
+
+That means Mercy could be using two different kinds of images in the same spoken segment: manuscript pages for the Popol Vuh itself, and codex bat imagery for Camazotz/Xibalba.
+
+What holds:
+
+`PART4-F — Popol Vuh / Ximénez manuscript`
+Status: **STRONG MANUSCRIPT CUSTODY / KEEP PHOTO**
+
+`PART4-G — Xibalba / House of the Bat`
+Status: **HALL/COOPER SOURCE LOCKED / MYTH-INITIATION LANE**
+
+`PART4-H — Camazotz / Codex Fejérváry-Mayer p. 41`
+Status: **HALL IMAGE TARGET / KEEP PHOTO**
+
+`PART4-I — bat-god iconography control`
+Status: **KEEP / PREVENTS FORCED CAMAZOTZ IDENTIFICATION**
+
+What stays bounded:
+
+The Popol Vuh is real manuscript custody.
+Xibalba and the House of the Bat are real Popol Vuh myth material.
+Hall’s “Mysteries of Xibalba / initiation system” is Hall’s esoteric interpretation.
+The Codex Fejérváry-Mayer bat figure is a real image family, but it should not automatically be treated as a direct illustration of the Hero Twins’ House of the Bat scene.
+
+Current conclusion:
+
+**Part 4 is now the initiation-underworld bridge.** It connects hidden records, Popol Vuh manuscript custody, Xibalba trials, Camazotz/bat-god imagery, and then turns directly toward North American medicine-priest trance travel. The strongest keep-photo targets are **Ximénez manuscript pages** and **Codex Fejérváry-Mayer p. 41 bat-god imagery**.
+
+Next run: **PART 4 VISUAL SOURCE HUNT — Temple of the Tigers / Feathered Serpent protecting a warrior / Le Plongeon drawing.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://www.newberry.org/collection/research-guide/popol-vuh "Popol Vuh | Newberry Library"
+[3]: https://www.loc.gov/resource/gdcwdl.wdl_19995/?sp=3 "Image 3 of Popol Vuh: Transcription in Quiché Mayan and Translation into Spanish.  | Library of Congress"
+[4]: https://www.academia.edu/26409337/Bats_and_the_Camazotz_Correcting_a_Century_of_Mistaken_Identity "(PDF) Bats and the Camazotz: Correcting a Century of Mistaken Identity"
+
+
+
+
+
+
+
+[![Mexico - Chichen Itza - Platform of Eagles and Jaguars - stone bas-relief panel with carved feathered serpent and warrior figure on the wall](https://images.openai.com/static-rsc-4/G9bs9xliz0ZCfCz0OSjnYk3y5uVzgOubpWrUE8iaqcly9peKAuBYYXCh8t8owapC4QOErq44fxIOzxxdJE6k_BkvggIbxY75PclTeZ9lBW09uYYantEHoKLqWPDpyhZKE225i_G-XL_dPm4Xt5DL4EwcTtwymfav2ueObvuyj6hoYZVRp2ZAVhQReaac5XxW?purpose=inline)](https://www.gettyimages.com/?utm_source=chatgpt.com)
+
+MODE: RESEARCH RUN
+RUN: HALL_COOP_LEY / PART 4 VISUAL SOURCE HUNT — TEMPLE OF THE TIGERS / FEATHERED SERPENT PROTECTING A WARRIOR
+STATE: ON TRACK / HALL IMAGE CAPTION LOCKED / ORIGINAL IMAGE OUTSIDE HALL NOT LOCKED / KEEP-PHOTO TARGETS SHOWN
+
+This one gives us a clean Hall image target.
+
+Hall’s text directly captions the object: **“FEATHERED SERPENT PROTECTING A WARRIOR — An original tracing from the frescoes in the Temple of the Tigers at Chichen Itza.”** He places it exactly inside his explanation of the plumed serpent as wisdom becoming spirit-wisdom or illumination. That means this is not a random Mercy image trail; it is one of Hall’s own image anchors. ([Internet Archive][1])
+
+The exact independent Le Plongeon tracing did **not** surface outside Hall in this run. Search for the exact caption mainly returns Hall’s book. So the correct status is: **Hall image-caption locked; original tracing custody still open.**
+
+Modern control helps identify the real site family. The “Temple of the Tigers” language maps into the Chichén Itzá jaguar/warrior/serpent complex, especially the **Upper Temple of the Jaguars** and nearby Jaguar/Eagle/serpent relief families. Bristol’s Adela Breton exhibit says the Upper Temple of the Jaguars had wall paintings, now mostly lost, and that Breton’s copies are the only full color copy that exists. It also says the scenes are interpreted as warfare/victory imagery, though interpretation is not absolutely certain. ([Bristol Stories][2])
+
+The strongest scholarly brake is Ringle’s 2009 paper. He reexamines the Upper Temple of the Jaguars murals and argues they likely show actual military encounters between Chichén Itzá and enemies, connected to warfare and investiture, rather than purely mythic/symbolic episodes. That does not kill Hall’s symbolic reading, but it keeps the claim bounded. ([Cambridge University Press & Assessment][3])
+
+KEEP PHOTO TARGET 1 — **Feathered serpent + warrior relief / Chichén Itzá comparison image**
+Status: **KEEP / CLOSEST VISUAL COMPARISON / NOT EXACT LE PLONGEON TRACING**
+Use this later if Mercy shows a warrior beside or inside a serpent field, especially carved relief rather than manuscript art.
+
+KEEP PHOTO TARGET 2 — **Upper Temple of the Jaguars / Temple of Tigers structure**
+Status: **KEEP / SITE-IDENTIFICATION TARGET**
+Use this if Mercy shows a square temple above or beside the Great Ball Court, jaguar temple views, or old Chichén Itzá architectural photographs.
+
+KEEP PHOTO TARGET 3 — **Feathered serpent head / Chichén Itzá stone object**
+Status: **KEEP / SERPENT-OBJECT CONTROL**
+Good for comparing any frame showing stone serpent heads, open jaws, rattlesnake/feathered-serpent architecture, Platform of Venus, or Upper Temple/Warriors serpent columns.
+
+KEEP PHOTO TARGET 4 — **Jaguar/Eagle/warrior relief panels**
+Status: **KEEP / WARFARE-ICONOGRAPHY CONTROL**
+This keeps us from over-spiritualizing every warrior image. Some of the Chichén Itzá material is probably war/investiture/political iconography, not only mystery-school allegory.
+
+Soft Suit update:
+
+`SS-HALL-FEATHERED-SERPENT-PROTECTING-WARRIOR` — **UPGRADE / HALL IMAGE CAPTION LOCKED**
+
+`SS-LE-PLONGEON-ORIGINAL-TRACING` — **ACTIVE / ORIGINAL CUSTODY NOT FOUND**
+
+`SS-TEMPLE-OF-TIGERS-UPPER-TEMPLE-JAGUARS` — **KEEP / SITE FAMILY CONTROL**
+
+`SS-ADELA-BRETON-MURAL-COPIES` — **KEEP / COLOR-MURAL CONTROL**
+
+`SS-RINGLE-WARFARE-INVESTITURE-BRAKE` — **KEEP / PREVENTS FORCED SYMBOL READING**
+
+Current conclusion:
+
+This is a strong clue object, but the layers must stay separate:
+
+**Hall layer:** feathered serpent protecting warrior = wisdom / illumination symbol.
+**Object layer:** tracing from Chichén Itzá frescoes, named by Hall.
+**Archaeology-control layer:** Upper Temple of Jaguars/Tigers murals likely involve warfare, conquest, and elite investiture.
+**Open gap:** original Le Plongeon tracing/image source outside Hall still not locked.
+
+Next run: **PART 4 CLOSEOUT FLOOR — departure, hidden records, Le Plongeon, Popol Vuh/Xibalba, Bat God, Temple of Tigers, and the bridge toward North American medicine-priest trance travel.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://exhibitions.bristolmuseums.org.uk/adela-breton-ancient-mexico/chichen-itza/ "Chichén Itzá - Adela Breton: Ancient Mexico in Colour"
+[3]: https://www.cambridge.org/core/journals/ancient-mesoamerica/article/art-of-war-imagery-of-the-upper-temple-of-the-jaguars-chichen-itza/C4ABB92AF162B2EDCA45B5407DE228DB "THE ART OF WAR: IMAGERY OF THE UPPER TEMPLE OF THE JAGUARS, CHICHEN ITZA | Ancient Mesoamerica | Cambridge Core"
+
+
+
+
+
+
+
+MODE: FLOORS / CLOSEOUT
+RUN: HALL_COOP_LEY / PART 4 CLOSEOUT — DEPARTURE + HIDDEN RECORDS + LE PLONGEON + POPOL VUH/XIBALBA + TEMPLE OF TIGERS
+STATE: PART 4 STRUCTURE LOCKED / STRONG KEEP-PHOTO BOARD / BRIDGE TO NORTH AMERICAN LANE OPEN
+
+Part 4 closes as the **hidden-records and initiation bridge**.
+
+What holds:
+
+`PART4-LOCK-001 — Quetzalcoatl departure / raft of serpents`
+Status: **HALL/COOPER SOURCE LOCKED / SYMBOLIC DEPARTURE LANE**
+Hall gives the departure sequence directly: Quetzalcoatl reaches the sea near Veracruz, promises return, calls up a raft of serpents, and departs into the “land of the sun’s beginning.” Hall then says a priesthood preserved the Mysteries of the Feathered Serpent. ([Internet Archive][1])
+
+`PART4-LOCK-002 — hidden records / Divine Book / suppressed manuscripts`
+Status: **HIGH-VALUE HOLD / HALL CLAIM-CHAIN / NOT MANUSCRIPT-PROOF**
+Hall immediately turns from the departure story into destroyed or suppressed sources, “sacred records,” and the alleged **Divine Book** linked to Tezcucan, Waldeck, de Bourbourg, the Dresden Codex, and surviving native historians. This is a major clue lane, but it stays bounded as Hall’s source-chain until a concrete manuscript object is locked. ([Internet Archive][1])
+
+`PART4-LOCK-003 — Le Plongeon serpent-head photo`
+Status: **STRONG KEEP-PHOTO / GETTY CUSTODY LOCKED**
+Hall captions Le Plongeon seated among feathered serpent heads at Chichén Itzá, and Getty locks the custody object: **2004.M.18-b11.10**, “Augustus Le Plongeon with serpent sculptures from the Platform of Venus,” photographed by Alice Dixon Le Plongeon from an 1883 negative. ([Internet Archive][1])
+
+`PART4-LOCK-004 — Popol Vuh / Ximénez manuscript`
+Status: **STRONG MANUSCRIPT CUSTODY / KEEP-PHOTO**
+The Popol Vuh lane is real custody, not just Hall vocabulary. Newberry says its Popol Vuh manuscript is one of the most widely known and possibly earliest surviving copies, transcribed between 1700 and 1715 by Francisco Ximénez; LOC identifies the object as a Quiché Mayan transcription and Spanish translation. ([Newberry Library][2])
+
+`PART4-LOCK-005 — Camazotz / House of the Bat`
+Status: **HALL IMAGE TARGET / MYTH-INITIATION LANE / HANDLE CAREFULLY**
+Hall captions a bat-god image from Codex Fejérváry-Mayer 41 and ties Camazotz to Xibalba and the House of the Bat. This is a strong visual target, but it must not become “all bat images equal Camazotz.” ([Internet Archive][1])
+
+`PART4-LOCK-006 — Feathered Serpent protecting a warrior / Temple of the Tigers`
+Status: **HALL IMAGE CAPTION LOCKED / ORIGINAL TRACING OPEN / ARCHAEOLOGY BRAKE ACTIVE**
+Hall directly captions this as an original Le Plongeon tracing from frescoes in the Temple of the Tigers at Chichén Itzá. Bristol’s Adela Breton route shows the Chichén Itzá wall-painting copy problem: Breton’s copies are the only full color copy, but interpretation is not certain. Ringle’s Cambridge abstract gives the brake: Upper Temple of the Jaguars imagery may depict actual military encounters and investiture rather than purely mythic scenes. ([Internet Archive][1])
+
+What cracks or stays frozen:
+
+The “Divine Book” and suppressed-record lane is important but **not proof of a surviving secret manuscript**.
+
+Le Plongeon gives strong photo/source custody, but his esoteric conclusions do **not** automatically become true.
+
+Popol Vuh/Xibalba is real manuscript/myth custody, but Hall’s “Mystery initiation” reading stays interpretive.
+
+Temple of Tigers / Jaguars imagery can feed Hall’s serpent-wisdom reading, but the archaeology-control lane says some scenes may be warfare/investiture. Do not flatten it into only “spiritual protection.”
+
+KEEP PHOTO BOARD for later comparison:
+
+`KEEP PHOTO — Le Plongeon with serpent sculptures, Platform of Venus`
+Highest-value Part 4 image target.
+
+`KEEP PHOTO — Platform of Venus serpent heads / Chichén Itzá serpent stones`
+Comparison target if Mercy uses modern or old serpent-head imagery.
+
+`KEEP PHOTO — Popol Vuh / Ximénez manuscript page`
+Manuscript-custody target.
+
+`KEEP PHOTO — Codex Fejérváry-Mayer p. 41 bat-god`
+Camazotz/Xibalba target.
+
+`KEEP PHOTO — Feathered serpent protecting warrior / Temple of Tigers tracing`
+Hall image-caption target, original outside-Hall tracing still open.
+
+`KEEP PHOTO — Adela Breton Upper Temple of Jaguars mural copies`
+Color-mural control and interpretation brake.
+
+Current Part 4 conclusion:
+
+**Part 4 moves from Quetzalcoatl’s departure into hidden records, then into Le Plongeon as the visual-source bridge, then into Popol Vuh/Xibalba as the initiation bridge, and finally into feathered-serpent warrior imagery that opens the next move toward North American medicine-priest trance travel.**
+
+Next run: **PART 5 SOURCE-SPINE PRESSURE — American Indian Mysticism / medicine priests / dream-trance travel / road of light / beginning of North American branch.**
+
+[1]: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt "Full text of \"Manly P. Hall, America's Assignment with Destiny, (1951)\""
+[2]: https://www.newberry.org/collection/research-guide/popol-vuh "Popol Vuh | Newberry Library"
+
+
+
+
+
+
+MODE: BRIDGE
+RUN: HALL_COOP_LEY ↔ GROVE ORIENTATION CHECK
+STATE: YES, BUT DO NOT MERGE YET
+
+Yes — this is probably the first real doorway where **Grove could come back into play**, but not as proof yet.
+
+You are right that we started from the other way.
+
+The **Grove branch** started from the modern/place side: marker, lodge, club, node, address, civic-social structure, elite ritual setting.
+
+The **Hall/Cooper/Mercy branch** is moving from the myth/source side: Mesoamerican mystery current → feathered serpent → hidden records → Popol Vuh/Xibalba initiation → medicine priest / dream travel / road of light → North American symbolic field.
+
+So the two roads may be approaching the same middle from opposite sides.
+
+The possible shared bridge is not “Grove = Maya” or “Bohemian Grove proves Hall.” That would be a bad jump.
+
+The possible shared bridge is the **ritual grammar**:
+
+initiation setting,
+sacred/secluded place,
+priest/medicine-man role,
+trance or dream travel,
+upper/lower world movement,
+fire/light/darkness symbolism,
+death-rebirth performance,
+animal/bird/serpent/bat imagery,
+elite custody of symbols,
+public institution carrying older ritual forms.
+
+So yes, Part 5 is exactly where I would start watching for Grove overlap. But the rule is:
+
+**Grove enters as a comparison lane, not as merged evidence.**
+
+Correct active read:
+
+Hall branch is now approaching the **North American medicine-priest / trance / lodge-initiation** zone.
+
+Grove branch stays parked until we find a specific shared mechanism or image grammar strong enough to justify reopening it.
+
+The clean next move is still **Part 5 Source-Spine Pressure**, but with a side-watch column:
+
+`GROVE-WATCH — initiation/grove/lodge/fire/dream-road/elite-ritual grammar`
+
+Not merged. Just watched.
+
+
+
+
+
+
+
+
+
+

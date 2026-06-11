@@ -1,0 +1,303 @@
+# PATCH CARD — ACTION-FIRST / ANTI-RECAP OVERRIDE
+
+## Card ID
+
+`ACTION-FIRST / ANTI-RECAP OVERRIDE`
+
+## Status
+
+`ACTIVE / LOAD BEFORE HANDOFF`
+
+## Purpose
+
+This patch prevents agents from turning the project into endless recap, readiness gates, Bridge Court loops, and method invention.
+
+The research method stays intact.
+
+The change is operational:
+
+`When the user asks to move, the agent moves.`
+
+## Core rule
+
+Default action commands mean:
+
+`RUN THE NEXT RESEARCH PATH`
+
+not:
+
+`recap the board`
+`rewrite the handoff`
+`run Bridge Court`
+`invent another method`
+`ask for confirmation`
+`reload the whole project state`
+
+Action commands include:
+
+`next`
+`nxt`
+`go`
+`run`
+`begin`
+`continue`
+`ok lets begin`
+`run the next path`
+`do it`
+`move`
+`proceed`
+
+Default mode for those commands:
+
+`RESEARCH RUN`
+
+## Required mode label
+
+At the top of each response, choose exactly one mode:
+
+`RESEARCH RUN`
+
+`FREEZE`
+
+`BRIDGE COURT`
+
+`HANDOFF`
+
+`REVIEW`
+
+If the user gives an action command, default to:
+
+`RESEARCH RUN`
+
+unless the user explicitly asks for another mode.
+
+## Mode meanings
+
+### `RESEARCH RUN`
+
+Use when the user says to continue, run, begin, go, or next.
+
+The agent must run the named current path.
+
+No full recap.
+
+No Bridge Court unless directly blocked.
+
+No new handoff.
+
+No broad readiness speech.
+
+### `FREEZE`
+
+Use when a path has reached a hard source, contradiction, no-new-material point, or real fork.
+
+Freeze the result and name the next action.
+
+Do not turn the freeze into a full project recap.
+
+### `BRIDGE COURT`
+
+Use only when the gate is actually needed.
+
+Bridge Court is not automatic after every freeze.
+
+### `HANDOFF`
+
+Use only when the user asks for a handoff, load packet, agent instruction, or copyable control surface.
+
+### `REVIEW`
+
+Use only when the user asks whether another agent’s answer was good, where it drifted, what went wrong, or what should be corrected.
+
+## Bridge Court throttle
+
+Bridge Court may run only when one of these is true:
+
+1. A fork directly blocks the next path’s core question.
+2. Two possible next paths are competing.
+3. The user asks whether a path is ready.
+4. The path board has completed a full cycle and needs comparison.
+5. A prior run created a contradiction that changes the path order.
+
+Bridge Court must not run merely because:
+
+a path froze,
+a fork was registered,
+a path is “ready,”
+a previous answer said “next,”
+a response format has a Bridge Court slot,
+or the agent feels uncertain.
+
+## Short Bridge Court format
+
+When Bridge Court is needed, use this compressed format:
+
+`Decision:`
+
+`Reason:`
+
+`Allowed next run:`
+
+`Blocked claims:`
+
+`Next action:`
+
+Do not list the whole board unless the user asks.
+
+Do not rewrite the handoff.
+
+Do not create a new method unless the court genuinely needs one.
+
+## New method / room throttle
+
+New methods, rooms, tools, gates, or cards are allowed only when needed by the active run.
+
+A new method is allowed if it does at least one of these:
+
+finds a source route,
+fixes a recurring failure,
+blocks a known overclaim,
+separates two confused claim-types,
+improves custody,
+or lets the current path proceed.
+
+A new method is not allowed merely because:
+
+the format has a slot,
+the agent wants to sound thorough,
+a fork appeared,
+a bridge was found,
+or another method could theoretically exist.
+
+If no new method was needed, write:
+
+`New method/tool/room invented: NONE`
+
+## Stale packet override
+
+Older handoffs may contain old “current next run” commands.
+
+Latest user-confirmed state wins.
+
+If files disagree, use this priority order:
+
+1. Latest direct user instruction.
+2. Latest accepted freeze/ruling in the current conversation.
+3. Latest patch card.
+4. Latest handoff.
+5. Older handoff or method file.
+6. Earlier exploratory notes.
+
+Never restart from an old next-run label if a later accepted state superseded it.
+
+## Recap cap
+
+For a normal research run, the state recap is capped to one compact line.
+
+Allowed:
+
+`State: PATH-E frozen; next action is BRIDGE-COURT-002 unless user directs PATH-G.`
+
+Not allowed:
+
+multiple paragraphs restating the whole project,
+full source hierarchy reload,
+full path board replay,
+old hypothesis recap,
+repeating every guardrail.
+
+Full recaps are allowed only if the user asks for:
+
+`review`
+`audit`
+`handoff`
+`where are we`
+`what went wrong`
+`build the board`
+`make a packet`
+
+## Response format for action commands
+
+Use this format when the user says next/go/run/begin:
+
+`MODE: RESEARCH RUN`
+
+`State line:`
+
+`What was searched/tested:`
+
+`New material found:`
+
+`Source-control result:`
+
+`Index changes:`
+
+`Downgrades / blocked claims:`
+
+`New method/tool/room invented: NONE or name`
+
+`What was not proven:`
+
+`Path status:`
+
+`Next action:`
+
+Keep it results-first.
+
+## Response format for review commands
+
+Use this format when the user asks whether another agent messed up:
+
+`MODE: REVIEW`
+
+`Verdict:`
+
+`What went right:`
+
+`What went wrong:`
+
+`Rule causing the drift:`
+
+`Patch needed:`
+
+`Correct next action:`
+
+## Current project application
+
+Current issue:
+
+A new agent kept reverting into recap / gate / Bridge Court behavior.
+
+Root cause:
+
+`FORK-READINESS / BRIDGE-COURT GATE` had triggers that were too broad.
+
+`Start protocol` encouraged orientation recaps.
+
+Multiple handoffs contained stale next-run labels.
+
+New-method permission had no throttle.
+
+Fork-cycle rule rewarded finding a new fork and then immediately running another gate.
+
+Patch result:
+
+Bridge Court is demoted from automatic manager to emergency/decision gate.
+
+Research run is promoted as the default action.
+
+## Current active instruction after this patch
+
+Do not recap unless asked.
+
+Do not run Bridge Court unless it meets the throttle.
+
+Do not ask for more same-video screenshots.
+
+Do not invent a new method unless needed.
+
+Use the latest user-confirmed state.
+
+When the user says next/run/go/begin:
+
+`RUN THE NEXT PATH`

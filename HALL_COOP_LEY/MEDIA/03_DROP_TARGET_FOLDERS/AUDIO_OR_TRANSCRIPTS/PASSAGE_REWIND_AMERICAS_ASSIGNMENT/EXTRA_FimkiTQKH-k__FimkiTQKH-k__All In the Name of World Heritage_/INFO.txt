@@ -1,0 +1,19 @@
+Title: All In the Name of World Heritage?
+Video ID: FimkiTQKH-k
+URL: https://www.youtube.com/watch?v=FimkiTQKH-k
+Group: EXTRA
+Playlist/source position: Mercy Hunter related
+Uploader: Mercy Hunter
+Channel: Mercy Hunter
+Channel ID: UCLfD4t1ksPGqJ7eKrdB2nhQ
+Duration seconds: 685
+Upload date: 20220212
+Manual caption languages: 
+Automatic caption languages: 
+Caption source: No manual or automatic captions exposed by yt-dlp metadata.
+Status: NO_CAPTIONS_EXPOSED
+Extraction method/tool: House Transcript Puller V2 Fixed custody pattern; yt-dlp 2026.03.17; mode NO_AUTO_CAPTIONS
+Notes: America's Assignment related place/source follow-up
+Folder: C:\Users\13527\Desktop\ESO\HALL_COOP_LEY\MEDIA\03_DROP_TARGET_FOLDERS\AUDIO_OR_TRANSCRIPTS\PASSAGE_REWIND_AMERICAS_ASSIGNMENT\EXTRA_FimkiTQKH-k__FimkiTQKH-k__All In the Name of World Heritage_
+Extracted: 2026-06-11 03:38:18 -04:00
+Error/block note: No caption surface available.

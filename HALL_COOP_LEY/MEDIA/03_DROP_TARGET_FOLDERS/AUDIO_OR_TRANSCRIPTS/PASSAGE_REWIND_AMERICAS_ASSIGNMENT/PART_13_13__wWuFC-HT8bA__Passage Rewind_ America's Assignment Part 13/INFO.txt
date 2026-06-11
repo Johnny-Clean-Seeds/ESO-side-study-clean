@@ -1,0 +1,19 @@
+Title: Passage Rewind: America's Assignment Part 13
+Video ID: wWuFC-HT8bA
+URL: https://www.youtube.com/watch?v=wWuFC-HT8bA
+Group: SERIES
+Playlist/source position: 13/13
+Uploader: Mercy Hunter
+Channel: Mercy Hunter
+Channel ID: UCLfD4t1ksPGqJ7eKrdB2nhQ
+Duration seconds: 805
+Upload date: 20220331
+Manual caption languages: 
+Automatic caption languages: ab, aa, af, ak, sq, am, ar, hy, as, ay, az, bn, ba, eu, be, bho, bs, br, bg, my, ca, ceb, zh-Hans, zh-Hant, co, hr, cs, da, dv, nl, dz, en-orig, en, eo, et, ee, fo, fj, fil, fi, fr, gaa, gl, lg, ka, de, el, gn, gu, ht, ha, haw, iw, hi, hmn, hu, is, ig, id, iu, ga, it, ja, jv, kl, kn, kk, kha, km, rw, ko, kri, ku, ky, lo, la, lv, ln, lt, lua, luo, lb, mk, mg, ms, ml, mt, gv, mi, mr, mn, mfe, ne, new, nso, no, ny, oc, or, om, os, pam, ps, fa, pl, pt, pt-PT, pa, qu, ro, rn, ru, sm, sg, sa, gd, sr, crs, sn, sd, si, sk, sl, so, st, es, su, sw, ss, sv, tg, ta, tt, te, th, bo, ti, to, ts, tn, tum, tr, tk, uk, ur, ug, uz, ve, vi, war, cy, fy, wo, xh, yi, yo, zu
+Caption source: YouTube automatic captions present only; not harvested per user no-auto boundary.
+Status: BLOCKED_AUTO_CAPTIONS_ONLY
+Extraction method/tool: House Transcript Puller V2 Fixed custody pattern; yt-dlp 2026.03.17; mode NO_AUTO_CAPTIONS
+Notes: Mercy Hunter original series
+Folder: C:\Users\13527\Desktop\ESO\HALL_COOP_LEY\MEDIA\03_DROP_TARGET_FOLDERS\AUDIO_OR_TRANSCRIPTS\PASSAGE_REWIND_AMERICAS_ASSIGNMENT\PART_13_13__wWuFC-HT8bA__Passage Rewind_ America's Assignment Part 13
+Extracted: 2026-06-11 03:38:18 -04:00
+Error/block note: No manual subtitles exposed. Automatic captions available but blocked.

@@ -1,0 +1,295 @@
+
+
+
+# METHOD CARD — FORK-READINESS / BRIDGE-COURT GATE
+
+## Card ID
+
+`FORK-READINESS / BRIDGE-COURT GATE`
+
+## Purpose
+
+Use this card when frozen paths appear strong enough to open the next path, but one or more unresolved forks are still on the board.
+
+This card prevents two opposite errors:
+
+1. **False readiness** — opening a path too broadly and laundering unresolved questions into proof.
+2. **False blockage** — refusing to open a useful next path because a fork blocks one kind of claim, even though it does not block a limited source test.
+
+## Core principle
+
+A fork does not automatically block the next path.
+
+A fork blocks only the claim-type it actually touches.
+
+Therefore every readiness decision must separate:
+
+`PATH-OPENING READINESS`
+
+from
+
+`PROOF / LINEAGE / IDENTITY READINESS`
+
+Example:
+
+`FORK-003 — ARTIFACT-LINEAGE / STYLE-ORIGIN FORK`
+
+does block:
+
+`SECC → Great Seal lineage claims`
+
+but does not block:
+
+`Hall thunderbird / phoenix / eagle / Great Seal symbolic-source test`
+
+## Trigger
+
+Run this card when any of these happen:
+
+A path has been frozen as `STRONG_CANDIDATE`, `STRONG_BRIDGE_CANDIDATE`, `STRONG_MECHANISM_CANDIDATE`, or `STRONG_ARCHAEOLOGICAL_BRIDGE`.
+
+A new path appears ready, but unresolved forks remain.
+
+A previous agent says “ready,” “openable,” “next,” “blocked,” or “not blocked.”
+
+A fork might block proof but not exploration.
+
+A combo run has produced a bridge but not video-lock, lineage-lock, or artifact-lineage proof.
+
+## Required inputs
+
+Before making a readiness ruling, list:
+
+`Frozen lanes being compared`
+
+`Status of each frozen lane`
+
+`Unresolved forks on the board`
+
+`What each fork actually asks`
+
+`What the proposed next path asks`
+
+`Claim-types that would be blocked`
+
+`Claim-types that remain allowed`
+
+`Current custody limits`
+
+`Current proof labels`
+
+## Main question
+
+Ask:
+
+`Does the unresolved fork block the next path itself, or only block certain claims that the next path might be tempted to make?`
+
+If it blocks only certain claims, the path may open under limited scope.
+
+If it blocks the core question of the next path, run the fork first.
+
+## Decision labels
+
+Use one of these exact outputs.
+
+### `READY_FULL`
+
+The next path may run without special limitation beyond normal source rules.
+
+Use only when no unresolved fork materially affects the next path’s claim space.
+
+### `READY_LIMITED_SCOPE`
+
+The next path may run, but only inside a declared firewall.
+
+Use when an unresolved fork blocks lineage, identity, causation, or proof claims, but does not block a source-symbol, editor-sequence, Hall-text, archaeology-field, or mechanism test.
+
+This is the most common valid state.
+
+### `NOT_READY_BLOCKED`
+
+The next path cannot run because an unresolved fork blocks its core question.
+
+Use when the proposed path depends directly on the fork being solved.
+
+### `PARK_UNTIL_CYCLE`
+
+The next path is interesting but should wait because the fork-cycle has not come full circle.
+
+Use when opening it would skip the agreed path board.
+
+### `FORK_MUST_RUN_FIRST`
+
+A specific fork must run before the proposed path because the next path would otherwise overclaim or become meaningless.
+
+Use this when the fork is not merely adjacent but load-bearing.
+
+## Mandatory firewall for `READY_LIMITED_SCOPE`
+
+If the decision is `READY_LIMITED_SCOPE`, create a firewall with two sections.
+
+### Allowed test
+
+State what the next path may examine.
+
+Example:
+
+`PATH-E may test Hall’s own symbolic chain: thunderbird → feathered snake → phoenix/eagle → Great Seal.`
+
+### Blocked claims
+
+State what the next path may not claim.
+
+Example:
+
+`PATH-E may not claim SECC became the Great Seal, Mississippian symbols caused U.S. emblem symbolism, or Spiro/Craig/Etowah/Cahokia style lineage entered the Great Seal unless FORK-003 or another source-control path proves it.`
+
+## Claim-type classifier
+
+Every readiness ruling must classify the next path’s claim-type.
+
+Use these categories:
+
+`SOURCE-TEXT TEST`
+Testing what a source says.
+
+`EDITOR-SEQUENCE TEST`
+Testing what the video appears to show or argue.
+
+`SYMBOLIC-GRAMMAR TEST`
+Testing whether symbols share a structured grammar.
+
+`ARCHAEOLOGICAL-FIELD TEST`
+Testing whether a symbolic field is real in archaeology.
+
+`MECHANISM TEST`
+Testing how a symbol functions as emblem, power-channel, path, map, or office.
+
+`LINEAGE TEST`
+Testing whether one tradition, object style, or symbol descends from another.
+
+`IDENTITY TEST`
+Testing whether two things are the same institution, cult, tradition, or doctrine.
+
+`CAUSATION TEST`
+Testing whether one thing caused another.
+
+Most paths may open as source-text, symbolic-grammar, field, or mechanism tests before lineage/identity/causation is proven.
+
+Lineage, identity, and causation require the hardest proof.
+
+## Procedure
+
+1. List frozen lanes.
+2. List unresolved forks.
+3. Define the proposed next path’s actual question.
+4. Compare each fork against that question.
+5. Decide whether the fork blocks the whole path or only certain claims.
+6. Assign readiness label.
+7. If limited, write a firewall.
+8. Update the path board.
+9. Register any blocked claims.
+10. State the next action.
+
+## Bridge Court output format
+
+Use this format:
+
+`BRIDGE-COURT / FORK-READINESS GATE`
+
+`Frozen lanes compared:`
+
+`Unresolved forks:`
+
+`Proposed next path:`
+
+`Does each fork block the path or only certain claims?:`
+
+`Decision: READY_FULL / READY_LIMITED_SCOPE / NOT_READY_BLOCKED / PARK_UNTIL_CYCLE / FORK_MUST_RUN_FIRST`
+
+`Allowed test:`
+
+`Blocked claims:`
+
+`Required proof status:`
+
+`Index changes:`
+
+`Next action:`
+
+## Current application
+
+### Case
+
+`BRIDGE-COURT-001 — A/B/C/D Full-Circle Comparison`
+
+### Frozen lanes
+
+`PATH-A/B — Spiro Cosmogram + Cahokia Path of Souls`
+
+`PATH-C — Totem / Orenda / Manito / Guardian Daemon`
+
+`PATH-D — SECC / Southern Cult / Mississippian Symbol System`
+
+### Unresolved fork
+
+`FORK-003 — ARTIFACT-LINEAGE / STYLE-ORIGIN FORK`
+
+### Proposed next path
+
+`PATH-E — Hall Thunderbird / Phoenix / Eagle / Great Seal`
+
+### Ruling
+
+`PATH-E = READY_LIMITED_SCOPE`
+
+### Reason
+
+The frozen lanes are strong enough to open a Hall-symbolic continuation test.
+
+They are not strong enough to prove artifact lineage, direct transmission, or SECC-to-Great-Seal descent.
+
+### Allowed test
+
+`PATH-E may test Hall’s own symbolic chain from thunderbird / feathered snake / upper-lower mystery grammar into phoenix/eagle/Great Seal/American emblem symbolism.`
+
+`PATH-E may test whether Mercy Hunter is likely moving toward that Hall emblem layer after the Mississippian/SECC material.`
+
+### Blocked claims
+
+`SECC became the Great Seal`
+
+`Mound symbolism directly caused American national emblem symbolism`
+
+`Feathered Serpent cult became U.S. eagle symbolism`
+
+`Spiro/Craig/Etowah/Cahokia style lineage entered the Great Seal`
+
+`Masons encoded Mississippian cosmology into the Great Seal`
+
+`Mercy Hunter’s Ephesians frame proves archaeology`
+
+`Native symbols are evil`
+
+### Index changes
+
+`BRIDGE-COURT-001 = COMPLETED`
+
+`PATH-E = READY / LIMITED_SCOPE / HALL_SYMBOLIC_TEST`
+
+`FORK-003 = REGISTERED / BLOCKS_LINEAGE_CLAIMS / DOES_NOT_BLOCK_PATH-E`
+
+`PATH-E LINEAGE FIREWALL = ACTIVE`
+
+## Stop condition
+
+Stop this card once it produces:
+
+a readiness label,
+a firewall if needed,
+index changes,
+and the next action.
+
+Do not let Bridge Court become another research path.
+
+It is a gate, not a tunnel.
