@@ -1553,3 +1553,62 @@ body.index-start-main-pass .doodle-8 { right: 12vw; top: 1vh;   width: clamp(170
 }
 /* === ESO INDEX START DOUBLE SIZE FIX END === */
 
+/* === ESO HERO ASYMMETRIC DOODLE PASS BEGIN === */
+body.index-start-main-pass .index-edge-doodles {
+  z-index: 2 !important;
+}
+body.index-start-main-pass .index-edge-doodle {
+  opacity: .84 !important;
+  mix-blend-mode: screen !important;
+  filter: brightness(1.04) contrast(1.18) saturate(.78) !important;
+}
+/* make the image doodles feel tossed around, not mirrored */
+body.index-start-main-pass .doodle-1 { left: -5.8vw; top: 4.5vh; width: clamp(255px, 25vw, 470px) !important; transform: rotate(-13deg); opacity: .82 !important; }
+body.index-start-main-pass .doodle-2 { right: 1.5vw; top: 10.5vh; width: clamp(212px, 20vw, 360px) !important; transform: rotate(7deg); opacity: .76 !important; }
+body.index-start-main-pass .doodle-3 { left: 2vw; top: 38%; width: clamp(205px, 19vw, 340px) !important; transform: rotate(11deg); opacity: .72 !important; }
+body.index-start-main-pass .doodle-4 { right: -6.5vw; top: 26%; width: clamp(260px, 23vw, 430px) !important; transform: rotate(-9deg); opacity: .78 !important; }
+body.index-start-main-pass .doodle-5 { left: 7vw; bottom: 10.5%; width: clamp(195px, 18vw, 320px) !important; transform: rotate(-4deg); opacity: .68 !important; }
+body.index-start-main-pass .doodle-6 { right: -1vw; bottom: 18%; width: clamp(226px, 20vw, 360px) !important; transform: rotate(9deg); opacity: .73 !important; }
+body.index-start-main-pass .doodle-7 { left: 20vw; top: 1vh; width: clamp(156px, 13vw, 245px) !important; transform: rotate(16deg); opacity: .58 !important; }
+body.index-start-main-pass .doodle-8 { right: 12vw; top: 2.5vh; width: clamp(180px, 15vw, 290px) !important; transform: rotate(-15deg); opacity: .62 !important; }
+body.index-start-main-pass .hero-line-doodles {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+body.index-start-main-pass .hero-line-doodles .line-doodle {
+  position: absolute !important;
+  display: block !important;
+  overflow: visible !important;
+  opacity: .34 !important;
+  filter: drop-shadow(0 0 1px rgba(234,223,190,.08));
+}
+body.index-start-main-pass .hero-line-doodles text {
+  letter-spacing: .02em;
+}
+/* real hand-drawn doodles around the outer edges only */
+body.index-start-main-pass .ld-feathered-path { left: 8vw; top: 10vh; width: clamp(170px, 18vw, 290px) !important; opacity: .26 !important; transform: rotate(-4deg); }
+body.index-start-main-pass .ld-compass { right: 9vw; top: 7vh; width: clamp(88px, 8vw, 128px) !important; opacity: .27 !important; transform: rotate(8deg); }
+body.index-start-main-pass .ld-eye { right: 3vw; bottom: 10%; width: clamp(120px, 12vw, 185px) !important; opacity: .25 !important; transform: rotate(-8deg); }
+body.index-start-main-pass .ld-spiral { left: 18vw; bottom: 7%; width: clamp(72px, 7vw, 110px) !important; opacity: .23 !important; transform: rotate(11deg); }
+body.index-start-main-pass .ld-portal-mound { right: 16vw; bottom: 8%; width: clamp(130px, 12vw, 205px) !important; opacity: .26 !important; transform: rotate(3deg); }
+body.index-start-main-pass .ld-count-heart { left: 3vw; top: 56%; width: clamp(150px, 14vw, 220px) !important; opacity: .22 !important; transform: rotate(-6deg); }
+body.index-start-main-pass .ld-lower-world { right: 2vw; top: 48%; width: clamp(145px, 13vw, 215px) !important; opacity: .20 !important; transform: rotate(5deg); }
+@media (max-width: 1100px) {
+  body.index-start-main-pass .hero-line-doodles .line-doodle {
+    opacity: .20 !important;
+  }
+  body.index-start-main-pass .ld-count-heart,
+  body.index-start-main-pass .ld-lower-world {
+    display: none !important;
+  }
+}
+@media (max-width: 760px) {
+  body.index-start-main-pass .hero-line-doodles {
+    display: none !important;
+  }
+}
+/* === ESO HERO ASYMMETRIC DOODLE PASS END === */
+
