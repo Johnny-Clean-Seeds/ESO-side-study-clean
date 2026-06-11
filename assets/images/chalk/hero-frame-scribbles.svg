@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<defs>
+  <filter id="chalk"><feGaussianBlur stdDeviation="0.45"/><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.15"/></filter>
+</defs>
+<rect width="1800" height="1200" fill="#050505"/>
+<g fill="none" stroke="#eadfbe" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk)" opacity="0.16">
+  <path d="M80 1020 C220 860 390 1120 560 920 C710 740 900 1060 1120 770 C1300 540 1510 500 1700 350" stroke-width="6"/>
+  <path d="M125 190 C220 120 310 130 390 205" stroke-width="3"/>
+  <path d="M1380 180 C1470 120 1560 125 1648 198" stroke-width="3"/>
+  <path d="M138 875 C210 818 288 806 370 850" stroke-width="3"/>
+  <path d="M1375 910 C1465 840 1560 840 1660 900" stroke-width="3"/>
+  <circle cx="1450" cy="295" r="88" stroke-width="4"/>
+  <path d="M1450 207 V383 M1362 295 H1538" stroke-width="3"/>
+  <path d="M144 302 C168 250 224 220 286 236 C348 253 380 312 352 374" stroke-width="3"/>
+  <path d="M1448 872 C1488 760 1580 722 1662 760 C1730 792 1754 868 1712 946" stroke-width="3"/>
+  <path d="M800 120 C850 188 850 268 800 338 C750 268 750 188 800 120Z" stroke-width="3"/>
+  <circle cx="800" cy="230" r="92" stroke-width="4"/>
+  <path d="M800 138 V322 M708 230 H892" stroke-width="3"/>
+</g>
+<g font-family="Courier New, monospace" fill="#eadfbe" filter="url(#chalk)" opacity="0.12">
+  <text x="96" y="112" font-size="42">SOUL ROAD</text>
+  <text x="100" y="166" font-size="22">Quetzalcoatl</text>
+  <text x="1390" y="126" font-size="24">as above / so below</text>
+  <text x="1384" y="176" font-size="22">cross in circle</text>
+  <text x="72" y="1018" font-size="24">MICTLAN / XIBALBA</text>
+  <text x="1350" y="1038" font-size="24">CAHOKIA / MOUNDVILLE</text>
+  <text x="720" y="396" font-size="22">WORLD AXIS</text>
+  <text x="88" y="432" font-size="20">BIRDMAN</text>
+  <text x="1460" y="760" font-size="20">portal mound</text>
+</g>
+</svg>
