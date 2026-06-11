@@ -1286,3 +1286,155 @@ body.hero-focus-pass-5 .hero-actions {
 }
 /* === ESO HERO FOCUS PASS 5 END === */
 
+/* === ESO INDEX START MAIN PASS BEGIN === */
+body.index-start-main-pass {
+  background: #050505 !important;
+}
+body.index-start-main-pass::before,
+body.index-start-main-pass::after,
+body.index-start-main-pass .story-hero::before,
+body.index-start-main-pass .story-hero::after {
+  content: none !important;
+  display: none !important;
+}
+body.index-start-main-pass .hero-chalk-layer,
+body.index-start-main-pass .duplicate-symbol-cover {
+  display: none !important;
+}
+body.index-start-main-pass .story-hero {
+  position: relative !important;
+  isolation: isolate !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-items: center !important;
+  align-items: start !important;
+  gap: clamp(34px, 5vw, 76px) !important;
+  min-height: auto !important;
+  padding: clamp(34px, 4vw, 58px) clamp(18px, 4vw, 64px) clamp(46px, 6vw, 92px) !important;
+  background:
+    radial-gradient(circle at 9% 14%, rgba(214,185,113,.075), transparent 18%),
+    radial-gradient(circle at 91% 18%, rgba(214,185,113,.055), transparent 17%),
+    radial-gradient(circle at 7% 82%, rgba(71,96,126,.08), transparent 19%),
+    radial-gradient(circle at 92% 78%, rgba(126,58,45,.06), transparent 18%),
+    #050505 !important;
+  border-bottom: 1px solid rgba(214,185,113,.18) !important;
+  overflow: hidden !important;
+}
+body.index-start-main-pass .story-board {
+  order: 1 !important;
+  position: relative !important;
+  z-index: 3 !important;
+  width: min(88vw, 1360px) !important;
+  max-width: 1360px !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: 0 38px 120px rgba(0,0,0,.86) !important;
+  transform: none !important;
+}
+body.index-start-main-pass .story-board::before,
+body.index-start-main-pass .story-board::after {
+  content: none !important;
+  display: none !important;
+}
+body.index-start-main-pass .story-board img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  filter: contrast(1.04) saturate(.98) brightness(.98) !important;
+}
+body.index-start-main-pass .story-board figcaption {
+  display: none !important;
+}
+body.index-start-main-pass .story-hero-copy {
+  order: 2 !important;
+  position: relative !important;
+  z-index: 4 !important;
+  width: min(88vw, 980px) !important;
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  padding: clamp(24px, 3vw, 42px) !important;
+  background: linear-gradient(180deg, rgba(8,8,8,.90), rgba(8,8,8,.96)) !important;
+  border: 1px solid rgba(214,185,113,.20) !important;
+  box-shadow: 0 22px 70px rgba(0,0,0,.62) !important;
+  transform: none !important;
+}
+body.index-start-main-pass .story-hero-copy .cut-label {
+  display: none !important;
+}
+body.index-start-main-pass .story-hero-copy h1 {
+  font-size: clamp(2.6rem, 4.8vw, 5.7rem) !important;
+  line-height: .94 !important;
+}
+body.index-start-main-pass .story-dek {
+  color: rgba(244,239,231,.82) !important;
+  max-width: 72ch !important;
+}
+body.index-start-main-pass .index-edge-doodles {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+body.index-start-main-pass .index-edge-doodle {
+  position: absolute !important;
+  display: block !important;
+  width: clamp(62px, 8vw, 132px) !important;
+  height: auto !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  opacity: .58 !important;
+  mix-blend-mode: screen !important;
+  filter: contrast(1.04) brightness(.90) saturate(.75) !important;
+  user-select: none !important;
+}
+body.index-start-main-pass .doodle-1 { left: 2.4vw; top: 5.5vh; transform: rotate(-10deg); opacity: .50 !important; }
+body.index-start-main-pass .doodle-2 { right: 2.8vw; top: 7.5vh; transform: rotate(8deg); opacity: .50 !important; }
+body.index-start-main-pass .doodle-3 { left: 1.4vw; top: 31%; transform: rotate(7deg); opacity: .46 !important; }
+body.index-start-main-pass .doodle-4 { right: 1.6vw; top: 32%; transform: rotate(-8deg); opacity: .46 !important; }
+body.index-start-main-pass .doodle-5 { left: 4.5vw; bottom: 20%; transform: rotate(-6deg); opacity: .42 !important; }
+body.index-start-main-pass .doodle-6 { right: 4.2vw; bottom: 19%; transform: rotate(6deg); opacity: .42 !important; }
+body.index-start-main-pass .doodle-7 { left: 18vw; top: 2.2vh; width: clamp(44px, 5.5vw, 94px) !important; transform: rotate(12deg); opacity: .38 !important; }
+body.index-start-main-pass .doodle-8 { right: 18vw; top: 2.8vh; width: clamp(44px, 5.5vw, 94px) !important; transform: rotate(-12deg); opacity: .38 !important; }
+body.index-start-main-pass .doodle-9 { left: 16vw; bottom: 8%; width: clamp(44px, 5.8vw, 96px) !important; transform: rotate(5deg); opacity: .34 !important; }
+body.index-start-main-pass .doodle-10 { right: 16vw; bottom: 8%; width: clamp(44px, 5.8vw, 96px) !important; transform: rotate(-5deg); opacity: .34 !important; }
+body.index-start-main-pass .doodle-11 { left: 50%; top: 1.5vh; width: clamp(38px, 5vw, 84px) !important; transform: translateX(-50%) rotate(4deg); opacity: .30 !important; }
+body.index-start-main-pass .doodle-12 { left: 50%; bottom: 3.5%; width: clamp(38px, 5vw, 84px) !important; transform: translateX(-50%) rotate(-4deg); opacity: .28 !important; }
+@media (max-width: 980px) {
+  body.index-start-main-pass .story-board {
+    width: min(94vw, 1000px) !important;
+  }
+  body.index-start-main-pass .story-hero-copy {
+    width: min(94vw, 920px) !important;
+  }
+  body.index-start-main-pass .index-edge-doodle {
+    opacity: .24 !important;
+  }
+  body.index-start-main-pass .doodle-3,
+  body.index-start-main-pass .doodle-4,
+  body.index-start-main-pass .doodle-9,
+  body.index-start-main-pass .doodle-10,
+  body.index-start-main-pass .doodle-11,
+  body.index-start-main-pass .doodle-12 {
+    display: none !important;
+  }
+}
+@media (max-width: 640px) {
+  body.index-start-main-pass .index-edge-doodles {
+    display: none !important;
+  }
+}
+/* === ESO INDEX START MAIN PASS END === */
+
