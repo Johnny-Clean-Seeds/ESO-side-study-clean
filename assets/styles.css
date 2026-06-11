@@ -940,3 +940,212 @@ body.index-entry-page {
     min-height: 0;
   }
 }
+
+/* === ESO TOP PORTION PASS 2 FIXED BEGIN === */
+
+body.story-page.top-portion-pass-2 {
+  color: #f4efe7;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(187, 154, 83, 0.13), transparent 24%),
+    radial-gradient(circle at 78% 18%, rgba(59, 98, 132, 0.15), transparent 30%),
+    linear-gradient(180deg, #020202 0%, #090908 42%, #030303 100%) !important;
+}
+
+body.story-page.top-portion-pass-2::before {
+  content:
+    "HALL   GREAT PLAN   COOPER   MERCY HUNTER   VOTAN   ITZAMNA   KUKULKAN   QUETZALCOATL   PALENQUE   POPOL VUH   XIBALBA   MIDEWIWIN   GHOST LODGE   SPIRO   CAHOKIA   MOUNDVILLE   GREAT SEAL   EPHESIANS   SOURCE ROUTE   FRAME CUSTODY   ";
+  position: fixed;
+  inset: -8vh -8vw auto -8vw;
+  min-height: 118vh;
+  z-index: -2;
+  color: rgba(225, 211, 176, 0.055);
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(1.05rem, 2vw, 2.4rem);
+  font-weight: 800;
+  line-height: 2.25;
+  letter-spacing: 0.11em;
+  word-spacing: 0.65em;
+  transform: rotate(-8deg);
+  white-space: pre-wrap;
+  pointer-events: none;
+}
+
+body.story-page.top-portion-pass-2::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+    radial-gradient(circle at 22% 28%, rgba(214,185,113,0.10), transparent 18%),
+    radial-gradient(circle at 62% 16%, rgba(126,42,35,0.12), transparent 24%),
+    repeating-linear-gradient(-7deg, rgba(255,255,255,0.018) 0 2px, transparent 2px 11px);
+  background-size: 38px 38px, 38px 38px, auto, auto, auto;
+  mix-blend-mode: screen;
+  opacity: 0.88;
+}
+
+.story-hero.top-portion-pass-2,
+body.top-portion-pass-2 .story-hero {
+  min-height: clamp(720px, 92vh, 980px) !important;
+  grid-template-columns: minmax(420px, 1.34fr) minmax(300px, 0.66fr) !important;
+  align-items: stretch !important;
+  gap: clamp(18px, 3.2vw, 46px) !important;
+  padding: clamp(18px, 4vw, 54px) !important;
+  border-bottom: 1px solid rgba(214,185,113,0.36) !important;
+  background:
+    linear-gradient(90deg, rgba(2,2,2,0.18), rgba(2,2,2,0.87)),
+    radial-gradient(circle at 20% 16%, rgba(214,185,113,0.15), transparent 28%),
+    radial-gradient(circle at 65% 28%, rgba(61,95,126,0.14), transparent 32%),
+    #020202 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-hero.top-portion-pass-2::before,
+body.top-portion-pass-2 .story-hero::before {
+  content:
+    "AMERICA'S ASSIGNMENT   /   MAP IS A STORY OBJECT   /   SOURCE ROUTES ONLY   /   NO FINAL PROOF   /   HALL SAYS   COOPER TRANSMITS   MERCY HUNTER SHOWS   ";
+  position: absolute;
+  inset: 4% -12% auto -8%;
+  color: rgba(243, 226, 184, 0.09);
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.9rem, 1.45vw, 1.5rem);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 2.8;
+  transform: rotate(-5deg);
+  pointer-events: none;
+  white-space: pre-wrap;
+}
+
+.story-hero.top-portion-pass-2::after,
+body.top-portion-pass-2 .story-hero::after {
+  content: "✕  △  serpent / bird  ◇  cross-in-circle  map?  source?  frame?";
+  position: absolute;
+  right: 2vw;
+  bottom: 3vh;
+  color: rgba(214,185,113,0.11);
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(1rem, 1.9vw, 2.2rem);
+  font-weight: 800;
+  transform: rotate(3deg);
+  pointer-events: none;
+}
+
+body.top-portion-pass-2 .story-board {
+  align-self: stretch !important;
+  min-height: clamp(620px, 82vh, 900px);
+  display: grid;
+  align-content: stretch;
+  padding: clamp(10px, 1.4vw, 18px) !important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.20), rgba(255,255,255,0.035)),
+    #15110b !important;
+  border: 1px solid rgba(214,185,113,0.42) !important;
+  box-shadow:
+    0 30px 90px rgba(0,0,0,0.82),
+    0 0 0 1px rgba(255,255,255,0.04) inset !important;
+  transform: rotate(-0.18deg) !important;
+}
+
+body.top-portion-pass-2 .story-board::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 9%;
+  width: min(220px, 42%);
+  height: 34px;
+  background: rgba(215, 199, 158, 0.72);
+  border: 1px solid rgba(80, 65, 44, 0.7);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.32);
+  transform: rotate(-3deg);
+  z-index: 4;
+}
+
+body.top-portion-pass-2 .story-board img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: clamp(560px, 76vh, 840px);
+  object-fit: cover !important;
+  object-position: center center !important;
+  border: 1px solid rgba(214,185,113,0.32) !important;
+  filter: contrast(1.08) saturate(0.9) brightness(0.92) !important;
+}
+
+body.top-portion-pass-2 .story-board figcaption {
+  display: none !important;
+}
+
+body.top-portion-pass-2 .story-hero-copy {
+  align-self: center !important;
+  max-width: 560px;
+  padding: clamp(24px, 3.4vw, 42px) !important;
+  background:
+    linear-gradient(180deg, rgba(13,13,13,0.92), rgba(5,5,5,0.88)),
+    repeating-linear-gradient(-4deg, rgba(214,185,113,0.06) 0 7px, transparent 7px 17px) !important;
+  border: 1px solid rgba(214,185,113,0.32) !important;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.72) !important;
+  transform: rotate(0.18deg) !important;
+}
+
+body.top-portion-pass-2 .story-hero-copy .cut-label {
+  display: none !important;
+}
+
+body.top-portion-pass-2 .story-hero-copy h1 {
+  color: #fff7e8 !important;
+  font-size: clamp(3.2rem, 6vw, 6.6rem) !important;
+  line-height: 0.92 !important;
+  letter-spacing: -0.045em !important;
+  text-shadow: 0 12px 38px rgba(0,0,0,0.78);
+}
+
+body.top-portion-pass-2 .story-dek {
+  color: rgba(244,239,231,0.78) !important;
+  font-size: clamp(1.02rem, 1.45vw, 1.25rem) !important;
+  line-height: 1.55 !important;
+}
+
+body.top-portion-pass-2 .hero-actions {
+  gap: 12px !important;
+  margin-top: 28px !important;
+}
+
+@media (max-width: 980px) {
+  .story-hero.top-portion-pass-2,
+  body.top-portion-pass-2 .story-hero {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+
+  body.top-portion-pass-2 .story-board {
+    min-height: 520px;
+    order: 1;
+  }
+
+  body.top-portion-pass-2 .story-hero-copy {
+    order: 2;
+    max-width: none;
+  }
+
+  body.top-portion-pass-2 .story-board img {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 620px) {
+  body.top-portion-pass-2 .story-board,
+  body.top-portion-pass-2 .story-board img {
+    min-height: 360px;
+  }
+
+  body.top-portion-pass-2 .story-hero-copy h1 {
+    font-size: clamp(2.7rem, 16vw, 4.1rem) !important;
+  }
+}
+
+/* === ESO TOP PORTION PASS 2 FIXED END === */
+
