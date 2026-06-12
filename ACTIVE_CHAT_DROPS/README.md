@@ -26,6 +26,14 @@ Helper and handoff shelves:
 
 `HELPER_FILES/ESO_HALL_COOP_LEY_WORKING_METHOD_FULL_PACKET_20260611.md`
 
+`HELPER_FILES/HOUSE_HELPER_IMPORT_20260612`
+
+Current helper import from `C:\Users\13527\Desktop\123` lives in:
+
+`HELPER_FILES/HOUSE_HELPER_IMPORT_20260612/00_READ_FIRST.md`
+
+Imported scripts in that shelf are review-before-run only. They were copied for custody and future selection, not executed by default.
+
 `HANDOFFS/HANDOFF_1_LOCAL_READER_REBUILD_SCOPE.txt`
 
 Raw incoming files currently preserved:
@@ -37,6 +45,22 @@ Raw incoming files currently preserved:
 `RAW_INCOMING/Update_20260611_041416_PART5.txt`
 
 `RAW_INCOMING/UPDATE_WHEN_READY_20260611_042503_PART5_PART6.txt`
+
+Raw incoming asset drops currently preserved:
+
+`RAW_INCOMING/ASSET_DROPS/EXTRACTED_PAGE_ASSETS_20260612_012754`
+
+`RAW_INCOMING/ASSET_DROPS/ROOT_DUPLICATES_20260611_213843`
+
+Usable copied page-kit assets live under:
+
+`../assets/images/page-kit`
+
+Quarantine-only context, old scripts, and saved browser pages live under:
+
+`QUARANTINE`
+
+Do not load quarantine material by default. It is preserved for audit and recovery only.
 
 Read-along package:
 

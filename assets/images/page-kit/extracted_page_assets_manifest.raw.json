@@ -1,0 +1,236 @@
+{
+  "source_images": {
+    "front": "/mnt/data/america_s_assignment_a_research_journey.png",
+    "part1": "/mnt/data/a_richly_detailed_dark_antique_bookish_webpage_o.png"
+  },
+  "assets": [
+    {
+      "name": "front_hero_open_book_feather_keys",
+      "source": "front",
+      "box": [
+        455,
+        72,
+        1366,
+        592
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_hero_open_book_feather_keys.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_hero_open_book_feather_keys__transparent_edge.png"
+    },
+    {
+      "name": "front_icon_start_here_compass",
+      "source": "front",
+      "box": [
+        112,
+        647,
+        258,
+        754
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_icon_start_here_compass.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_icon_start_here_compass__transparent_edge.png"
+    },
+    {
+      "name": "front_icon_research_index_book",
+      "source": "front",
+      "box": [
+        323,
+        647,
+        468,
+        754
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_icon_research_index_book.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_icon_research_index_book__transparent_edge.png"
+    },
+    {
+      "name": "front_icon_source_records_document",
+      "source": "front",
+      "box": [
+        532,
+        647,
+        678,
+        754
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_icon_source_records_document.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_icon_source_records_document__transparent_edge.png"
+    },
+    {
+      "name": "front_icon_visual_notes_mountain",
+      "source": "front",
+      "box": [
+        742,
+        647,
+        888,
+        754
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_icon_visual_notes_mountain.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_icon_visual_notes_mountain__transparent_edge.png"
+    },
+    {
+      "name": "front_icon_documentary_spine_books",
+      "source": "front",
+      "box": [
+        952,
+        647,
+        1098,
+        754
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_icon_documentary_spine_books.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_icon_documentary_spine_books__transparent_edge.png"
+    },
+    {
+      "name": "front_icon_part_index_stack",
+      "source": "front",
+      "box": [
+        1162,
+        647,
+        1308,
+        754
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_icon_part_index_stack.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_icon_part_index_stack__transparent_edge.png"
+    },
+    {
+      "name": "front_bottom_left_trees",
+      "source": "front",
+      "box": [
+        0,
+        882,
+        260,
+        1040
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_bottom_left_trees.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_bottom_left_trees__transparent_edge.png"
+    },
+    {
+      "name": "front_bottom_right_lighthouse",
+      "source": "front",
+      "box": [
+        1175,
+        800,
+        1425,
+        1045
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/front/front_bottom_right_lighthouse.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/front/front_bottom_right_lighthouse__transparent_edge.png"
+    },
+    {
+      "name": "part1_hero_open_book_quill",
+      "source": "part1",
+      "box": [
+        575,
+        55,
+        1078,
+        410
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_hero_open_book_quill.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_hero_open_book_quill__transparent_edge.png"
+    },
+    {
+      "name": "part1_badge_part_1",
+      "source": "part1",
+      "box": [
+        35,
+        55,
+        190,
+        210
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_badge_part_1.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_badge_part_1__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_1_land_map",
+      "source": "part1",
+      "box": [
+        55,
+        515,
+        255,
+        640
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_1_land_map.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_1_land_map__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_2_first_people",
+      "source": "part1",
+      "box": [
+        315,
+        515,
+        515,
+        640
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_2_first_people.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_2_first_people__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_3_arrival_ships",
+      "source": "part1",
+      "box": [
+        575,
+        515,
+        775,
+        640
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_3_arrival_ships.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_3_arrival_ships__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_4_written_record",
+      "source": "part1",
+      "box": [
+        835,
+        515,
+        1035,
+        640
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_4_written_record.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_4_written_record__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_5_colonies_flag",
+      "source": "part1",
+      "box": [
+        55,
+        855,
+        255,
+        980
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_5_colonies_flag.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_5_colonies_flag__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_6_founding_seal",
+      "source": "part1",
+      "box": [
+        315,
+        855,
+        515,
+        980
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_6_founding_seal.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_6_founding_seal__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_7_early_nation_map",
+      "source": "part1",
+      "box": [
+        575,
+        855,
+        775,
+        980
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_7_early_nation_map.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_7_early_nation_map__transparent_edge.png"
+    },
+    {
+      "name": "part1_thumb_1_8_principles_document",
+      "source": "part1",
+      "box": [
+        835,
+        855,
+        1035,
+        980
+      ],
+      "file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_8_principles_document.png",
+      "transparent_edge_file": "/mnt/data/eso_extracted_page_assets/part1/part1_thumb_1_8_principles_document__transparent_edge.png"
+    }
+  ]
+}
