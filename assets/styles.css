@@ -1955,78 +1955,87 @@ body.full-page-scratch-pass .scratch-bottom-curl {
 
 /* === ESO FULL PAGE SCRATCH ART MOCKUP END === */
 
-/* === ESO LIGHTS ONLY SALVAGE BEGIN === */
+/* === ESO RESTORE DOODLES DROP SPOTLIGHTS BEGIN === */
 
-/* Hide the bitmap doodle assets because their black backgrounds are not truly transparent. */
-body.full-page-scratch-pass .scratch-img {
-  display: none !important;
+/* Correction: keep the doodle pictures, remove the spotlight/speckle layer. */
+
+body.full-page-scratch-pass .story-hero {
+  background: #000 !important;
 }
 
-/* Keep the subtle scratch/star atmosphere. */
 body.full-page-scratch-pass .full-page-scratch-layer {
   display: block !important;
-  opacity: 1 !important;
+  background: transparent !important;
 }
 
+/* This was the bad "little lights / spotlight" field. Kill it. */
 body.full-page-scratch-pass .full-page-scratch-layer::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  background-image:
-    radial-gradient(circle, rgba(234,223,190,.46) 0 1px, transparent 1.7px),
-    radial-gradient(circle, rgba(234,223,190,.22) 0 1px, transparent 1.8px),
-    radial-gradient(circle, rgba(234,223,190,.12) 0 1px, transparent 2px);
-  background-size: 76px 76px, 131px 131px, 211px 211px;
-  background-position: 12px 18px, 44px 69px, 99px 34px;
-  opacity: .72 !important;
+  content: none !important;
+  display: none !important;
+  background: none !important;
 }
 
-/* Keep only real transparent SVG linework. */
+/* Bring the picture doodles back. */
+body.full-page-scratch-pass .scratch-img {
+  display: block !important;
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  mix-blend-mode: screen !important;
+  filter: brightness(1.04) contrast(1.22) saturate(.78) !important;
+}
+
+/* Keep them softer so the black square problem is less obvious. */
+body.full-page-scratch-pass .scratch-follow {
+  opacity: .70 !important;
+}
+
+body.full-page-scratch-pass .scratch-soul {
+  opacity: .68 !important;
+}
+
+body.full-page-scratch-pass .scratch-path-a {
+  opacity: .66 !important;
+}
+
+body.full-page-scratch-pass .scratch-spiral-a {
+  opacity: .48 !important;
+}
+
+body.full-page-scratch-pass .scratch-stars-a {
+  opacity: .50 !important;
+}
+
+body.full-page-scratch-pass .scratch-moon-a {
+  opacity: .52 !important;
+}
+
+body.full-page-scratch-pass .scratch-portal-a {
+  opacity: .66 !important;
+}
+
+body.full-page-scratch-pass .scratch-eye-a {
+  opacity: .62 !important;
+}
+
+/* Keep only the real transparent SVG scratch lines, no background glow field. */
 body.full-page-scratch-pass .scratch-line {
   display: block !important;
-  opacity: .34 !important;
-  filter: drop-shadow(0 0 1px rgba(234,223,190,.12));
-}
-
-body.full-page-scratch-pass .scratch-line-left-top {
-  left: 1vw !important;
-  top: 17vh !important;
-  width: clamp(160px, 14vw, 280px) !important;
   opacity: .26 !important;
+  filter: none !important;
 }
 
-body.full-page-scratch-pass .scratch-line-right-tall {
-  right: -1vw !important;
-  top: 15vh !important;
-  width: clamp(210px, 18vw, 360px) !important;
-  opacity: .30 !important;
-}
-
-body.full-page-scratch-pass .scratch-stars-left {
-  left: 2vw !important;
-  top: 54% !important;
-  width: clamp(150px, 12vw, 245px) !important;
-  opacity: .30 !important;
-}
-
-body.full-page-scratch-pass .scratch-bottom-curl {
-  left: 28vw !important;
-  bottom: 2% !important;
-  width: clamp(340px, 32vw, 600px) !important;
-  opacity: .20 !important;
-}
-
-/* Make the main work and title card feel intentional against the simpler background. */
+/* Make the main collage and title card sit on clean black. */
 body.full-page-scratch-pass .story-board {
-  box-shadow: 0 34px 115px rgba(0,0,0,.94) !important;
+  box-shadow: 0 34px 115px rgba(0,0,0,.96) !important;
 }
 
 body.full-page-scratch-pass .story-hero-copy {
-  background:
-    radial-gradient(circle at 12% 12%, rgba(234,223,190,.07), transparent 24%),
-    linear-gradient(180deg, rgba(8,8,8,.90), rgba(3,3,3,.97)) !important;
-  border-color: rgba(234,223,190,.28) !important;
+  background: rgba(3,3,3,.96) !important;
+  border-color: rgba(234,223,190,.26) !important;
+  box-shadow: 0 24px 78px rgba(0,0,0,.86) !important;
 }
 
-/* === ESO LIGHTS ONLY SALVAGE END === */
+/* === ESO RESTORE DOODLES DROP SPOTLIGHTS END === */
 
