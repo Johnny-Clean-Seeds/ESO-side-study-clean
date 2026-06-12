@@ -58,3 +58,10 @@ Any commit or push decision must keep public site files separate from internal h
 ## Public Boundary Note
 
 Likely public-safe site work should be reviewed separately from internal helper/control files. Hold the helper shelf, quarantine material, raw incoming asset drops, receipts, and this pointer local unless explicitly approved for publication.
+
+## Active Git / PowerShell Operator Rule
+
+Use `git --no-pager` by default for Git readout commands in PowerShell. This prevents the `:` pager screen from making the user think the terminal is loading or stuck.
+
+Canonical rule file:
+`docs/GIT_NO_PAGER_POWERHELL_RULE.md`
