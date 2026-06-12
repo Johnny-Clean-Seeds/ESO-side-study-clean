@@ -2039,3 +2039,81 @@ body.full-page-scratch-pass .story-hero-copy {
 
 /* === ESO RESTORE DOODLES DROP SPOTLIGHTS END === */
 
+/* === ESO KEEP STARS DROP GLOW BEGIN === */
+
+/*
+  Goal:
+  - keep picture doodles
+  - keep tiny stars
+  - remove spotlight / glow / hazy light blobs
+*/
+
+body.full-page-scratch-pass,
+body.full-page-scratch-pass .story-hero {
+  background: #000 !important;
+}
+
+/* kill any glow field */
+body.full-page-scratch-pass .full-page-scratch-layer {
+  display: block !important;
+  background: transparent !important;
+}
+
+/* keep tiny stars only — no glow clouds */
+body.full-page-scratch-pass .full-page-scratch-layer::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  background:
+    radial-gradient(circle, rgba(234,223,190,.50) 0 1px, transparent 1.6px),
+    radial-gradient(circle, rgba(234,223,190,.34) 0 1px, transparent 1.7px),
+    radial-gradient(circle, rgba(234,223,190,.18) 0 1px, transparent 1.8px) !important;
+  background-size: 82px 82px, 136px 136px, 210px 210px !important;
+  background-position: 10px 18px, 42px 66px, 94px 38px !important;
+  opacity: .58 !important;
+  pointer-events: none !important;
+}
+
+/* no extra background glow layer behind stars */
+body.full-page-scratch-pass .full-page-scratch-layer::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* keep picture doodles visible */
+body.full-page-scratch-pass .scratch-img {
+  display: block !important;
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  mix-blend-mode: screen !important;
+  filter: brightness(1.04) contrast(1.20) saturate(.78) !important;
+}
+
+/* keep line doodles too */
+body.full-page-scratch-pass .scratch-line {
+  display: block !important;
+  opacity: .26 !important;
+  filter: none !important;
+}
+
+/* remove any soft radial haze from the hero itself */
+body.full-page-scratch-pass .story-hero {
+  background: #000 !important;
+}
+
+/* keep the page elements sitting on clean black */
+body.full-page-scratch-pass .story-board {
+  box-shadow: 0 34px 115px rgba(0,0,0,.96) !important;
+}
+
+body.full-page-scratch-pass .story-hero-copy {
+  background: rgba(3,3,3,.96) !important;
+  border-color: rgba(234,223,190,.26) !important;
+  box-shadow: 0 24px 78px rgba(0,0,0,.86) !important;
+}
+
+/* === ESO KEEP STARS DROP GLOW END === */
+
