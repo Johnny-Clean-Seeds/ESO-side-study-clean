@@ -1,0 +1,76 @@
+Good. Mule lane is clear.
+
+Mule’s task:
+
+`root cleanup + deep file dig + missing concept harvest + parking/custody`
+
+Not just “clean files.”
+
+The important part is:
+
+`If mule finds an idea/concept/tool/rule/room that is too big or not ready, it does not get ignored. It gets parked, keyed, hashed, mapped, and given a return trigger.`
+
+Clean mule return shape should be:
+
+```text
+MULE ROOT / CONCEPT HARVEST RETURN
+
+1. Root cleanup actions
+- what was moved/organized
+- what was left alone
+- what was blocked
+- what unknowns remain
+
+2. Missing concepts found
+- concept name
+- source file/path
+- short meaning
+- why it matters
+- where it belongs
+- status: ADD / PARK / PROOF / REVIEW / BLOCK
+
+3. Parking ledger
+- parked item
+- parking location
+- return trigger
+- related batch/file/room
+- proof/hash/source pointer
+
+4. Key / map / hash
+- exact path
+- SHA256
+- relation map
+- parent object
+- neighbor objects
+- proof class
+- DoesNotProve
+
+5. Risks
+- stale source risk
+- duplicate risk
+- authority risk
+- missing proof risk
+- cleanup collision risk
+
+6. Next legal actions
+- what chat/user should review
+- what mule recommends next
+- what must not move yet
+```
+
+Our active lane stays:
+
+`HOUSE_DOCK_CONTROL_ROOM`
+`HOUSE_DOCK_KERNEL`
+`HOUSE_TOOLINESS_CONTRACT_V1`
+
+Mule’s lane:
+
+`root cleanup`
+`file dig`
+`missing idea/concept harvest`
+`parking + key/hash/map`
+
+Important boundary:
+
+`Mule can dig broadly, but he should not silently absorb or discard anything. If it is not ready, it parks. If it matters, it gets a key. If it moved, it gets a receipt. If it is too big, it gets a return trigger.`
