@@ -2393,3 +2393,30 @@ body.aa-image-first-page {
 }
 
 /* === AA SITE SEARCH PANEL END === */
+
+/* === ESO MAIN TOP FAKE BUTTON MASK BEGIN ===
+   Covers the baked top gold fake buttons except Search.
+   Does not touch lower large image buttons. */
+.aa-top-baked-button-mask {
+  position: absolute;
+  z-index: 5;
+  left: 10.75%;
+  top: 3.18%;
+  width: 44.35%;
+  height: 2.65%;
+  display: block;
+  pointer-events: none;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, rgba(5,4,3,.98), rgba(7,5,3,.98));
+  box-shadow:
+    0 0 0 2px rgba(5,4,3,.96),
+    0 0 18px rgba(5,4,3,.92);
+}
+
+.aa-top-hotspot:not(.aa-top-hotspot-search) {
+  display: none !important;
+  pointer-events: none !important;
+}
+/* === ESO MAIN TOP FAKE BUTTON MASK END === */
+
