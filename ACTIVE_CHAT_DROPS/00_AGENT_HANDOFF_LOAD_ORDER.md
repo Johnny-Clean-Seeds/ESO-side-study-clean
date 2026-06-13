@@ -7,15 +7,17 @@ This is the compact active ESO drop for another agent. The root is the local rea
 Load these files in order:
 
 1. `ACTIVE_CHAT_DROPS/00_AGENT_HANDOFF_LOAD_ORDER.md`
-2. `ACTIVE_CHAT_DROPS/01_METHOD_WORKING_ORDER.md`
-3. `ACTIVE_CHAT_DROPS/02_HALL_COOP_LEY_ACTIVE.md`
-4. `ACTIVE_CHAT_DROPS/03_GROVE_ACTIVE.md`
-5. `ACTIVE_CHAT_DROPS/GROVE_RAW.txt`
-6. `ACTIVE_CHAT_DROPS/04_SOURCE_CUSTODY_MEDIA.md`
-7. `ACTIVE_CHAT_DROPS/05_DOCUMENTARY_SOURCE_SPINE.md`
-8. `ACTIVE_CHAT_DROPS/06_KEEP_PHOTO_BOARD.md`
-9. `ACTIVE_CHAT_DROPS/STORY_INDEX_REBUILD_RECEIPT_20260611_1258.md`
-10. `HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/INDEX.md`
+2. `ACTIVE_CHAT_DROPS/07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`
+3. `ESO_HELPER_LOAD_POINTER_20260612.md`
+4. `ACTIVE_CHAT_DROPS/01_METHOD_WORKING_ORDER.md`
+5. `ACTIVE_CHAT_DROPS/02_HALL_COOP_LEY_ACTIVE.md`
+6. `ACTIVE_CHAT_DROPS/03_GROVE_ACTIVE.md`
+7. `ACTIVE_CHAT_DROPS/04_SOURCE_CUSTODY_MEDIA.md`
+8. `ACTIVE_CHAT_DROPS/05_DOCUMENTARY_SOURCE_SPINE.md`
+9. `ACTIVE_CHAT_DROPS/06_KEEP_PHOTO_BOARD.md`
+10. `ACTIVE_CHAT_DROPS/GROVE_RAW.txt`
+11. `ACTIVE_CHAT_DROPS/STORY_INDEX_REBUILD_RECEIPT_20260611_1258.md`
+12. `HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/INDEX.md`
 
 Optional visual files:
 
@@ -23,6 +25,16 @@ Optional visual files:
 12. `PICTURES/SOUTH_AMERICAN_BRANCH/*`
 
 Do not load the archive zip by default. It is for exact old wording, lost-file recovery, and custody audit only.
+
+Data-light rule:
+
+`Use helper files, maps, ledgers, indexes, and receipts to target reads. Do not bulk-load the repo just to know the repo.`
+
+The current compact map is:
+
+`ACTIVE_CHAT_DROPS/07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`
+
+It points to the Git remote, active ledgers, branch boards, helper shelf, tool cards, receipts, and `Desktop\123` boundary.
 
 `GROVE_RAW.txt` is required in the drop. Load it after the compact Grove active file when an agent needs the original workstream, original phrasing, or confirmation that the compact Grove packet still follows the raw method.
 
@@ -36,7 +48,7 @@ ESO is a two-branch research tree. The branches share one method, but their evid
 
 | Branch | Active object | Status | Next action |
 | --- | --- | --- | --- |
-| `HALL_COOP_LEY` | `AMERICA_ASSIGNMENT_MAP_BRANCH_A` | `ACTIVE / PART_5_STRUCTURE_LOCKED / PART_6_OPEN / EXACT_TRANSCRIPTS_PENDING` | `PART 6 SOURCE HUNT - COLUMBUS GREEN-CROSS BANNER / CRYPTIC SIGNATURE` |
+| `HALL_COOP_LEY` | `AMERICA_ASSIGNMENT_MAP_BRANCH_A` | `ACTIVE / PART6_SOURCE_ROUTES_ADDED / PART7_STAGED_ONLY / EXACT_TRANSCRIPTS_PENDING` | `PART 6 OBJECT-CONTROL CLOSEOUT - GREEN-CROSS IMAGE / SIGNATURE PAGE / FENDLER TEXT` |
 | `GROVE` | `BOHEMIAN_MARKER_LODGE_NODE_BRANCH` | `ACTIVE / BRANCH_A_NOT_EXHAUSTED` | `BATCH A1.2 - EARLY ADDRESS LOCK` |
 
 Tree law:
@@ -125,9 +137,9 @@ Use this shape:
 
 ## What The Next Agent Should Do
 
-For `HALL_COOP_LEY`, do not start by proving the blue lines. Start with the source spine now updated through Part 5 and opened into Part 6:
+For `HALL_COOP_LEY`, do not start by proving the blue lines. Start with the source spine now updated through Part 6 route separation:
 
-`PART 6 SOURCE HUNT - COLUMBUS GREEN-CROSS BANNER / TEMPLAR QUESTION / CRYPTIC SIGNATURE OBJECT`
+`PART 6 OBJECT-CONTROL CLOSEOUT - GREEN-CROSS IMAGE / SIGNATURE PAGE / FENDLER TEXT`
 
 Current Part 1-5 result:
 
@@ -144,6 +156,12 @@ Current Part 1-5 result:
 Part 6 opening:
 
 `Columbus / secret-society rediscovery claim-chain / green-cross banner / Templar question / cryptic signature object / Fendler source target`
+
+Part 7 boundary:
+
+`STAGED ONLY / AFTER PART6 / DO NOT BLEND / DO NOT PUBLIC RELEASE`
+
+Use `ACTIVE_CHAT_DROPS/ROOT_RECEIPTS/PART6_PART7_ROOT_CLEANLINESS_RECEIPT_20260612.md` for the latest Part 6/Part 7 closeout.
 
 The raw transcript surface must preserve:
 

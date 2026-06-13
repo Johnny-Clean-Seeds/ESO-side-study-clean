@@ -24,7 +24,8 @@ This is a compact source route map. Use `ARCHIVE/DROP_FILES/07_CITATION_BANK_AND
 | North American object controls | Smithsonian, AMNH, British Museum, and NMAI routes control comparison objects. | `MUSEUM ROUTES ADDED` |
 | Brinton / Swanton | Controls Part 5 grades, secret-society, and dramatized-myth pressure. | `BRINTON ROUTE ADDED / SWANTON EXACT ARTICLE OPEN` |
 | Parker / Haudenosaunee / Inka founder lanes | Controls Part 5 closeout: Red Hand, Great Law, Tree of Peace, and Manco Capac. | `PART5 CLOSEOUT ROUTES ADDED` |
-| Columbus transmission gate | Controls Part 6 pressure: green-cross banner, Templar question, cryptic signature, and standard-history brake. | `PART6 SOURCE HUNT OPEN` |
+| Columbus transmission gate | Controls Part 6 pressure: green-cross banner, Templar question, cryptic signature, and standard-history brake. | `PART6 SOURCE ROUTES ADDED / CLAIMS BOUNDED` |
+| Part 7 staged hidden-current lane | Controls staged Part 7 video/image/source-route material only after Part 6 is separated. | `STAGED / VIDEO AUTO-ONLY BLOCKED / BROAD CLAIMS HELD` |
 
 ## Key Routes Preserved From Draft
 
@@ -70,6 +71,18 @@ Use these as route starts, not as final proof by themselves:
 | NMAI Haudenosaunee educator guide | https://americanindian.si.edu/sites/1/files/pdf/education/haudenosauneeguide.pdf |
 | NMAI Inka Road, Children of the Sun | https://americanindian.si.edu/inkaroad/ancestors/creationstories/children-sun.html |
 | Britannica Columbus control | https://www.britannica.com/biography/Christopher-Columbus |
+| Columbus journal green-cross banner route | https://eada.lib.umd.edu/text-entries/journal/ |
+| LOC Columbus Book of Privileges publication route | https://www.loc.gov/programs/general-publishing/publications/deep-backlist/item/library-publications/christopher-columbus-book-of-privileges/ |
+| LOC Columbus Book of Privileges digital image route | https://www.loc.gov/resource/rbc0001.2013gen12566/?st=grid |
+| Fendler, New Truths about Columbus title route | https://openlibrary.org/works/OL7565912W/New_truths_about_Columbus |
+| Staged Part 6 visual page | ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_6FINAL.png |
+| Mercy Hunter Part 6 video custody route | HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/06__Passage_Rewind__Americas_Assignment_Part_6_of_13__cA0b3f2Ne28/INFO.txt |
+| Staged Part 7 Columbus-gate visual page | ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7.png |
+| Staged Part 7 hidden-current visual page | ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7V.png |
+| Mercy Hunter Part 7 video custody route | HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/07__Passage_Rewind__Americas_Assignment_Part_7_of_13__II2dKoOFeb4/INFO.txt |
+| Franklin and Lodge of Nine Sisters route | https://www.srmml.org/benjamin-franklin-and-the-lodge-of-nine-sisters/ |
+| Franklin Junto / APS civic-knowledge route | https://www.amphilsoc.org/blog/two-franklins-institutions-look-future-greater-collaboration |
+| Franklin Papers / APS route | https://as.amphilsoc.org/repositories/2/resources/1314 |
 
 ## Media Asset Inventory
 
@@ -96,6 +109,14 @@ The crop shows a North America / Gulf / Yucatan map with many red flags and an a
 Asset rule:
 
 `Images are evidence objects only after source route, capture date, timestamp/order, and claim boundary are logged.`
+
+Staged Part 6/Part 7 support images:
+
+| Asset | SHA256 | Status |
+| --- | --- | --- |
+| `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_6FINAL.png` | `BD5D0A7EAE23D055FAE817D279AE03F1AFCA952F7C32AF7A7838F141572C6414` | `PART6 STORY IMAGE TARGET / NOT SOURCE PROOF` |
+| `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7.png` | `CE7B5C23E577FC689F4EAADC3C8F39A336B622A0E5C58AFC7137DBFE7A2BBA22` | `PART7 STAGED SUPPORT / PART6-ADJACENT / NOT PROOF` |
+| `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7V.png` | `B038E85C99305D7C43A086316CCB25ABE7375EB7BDE81FBAB8EF68CCA7F656A8` | `PART7 STAGED SUPPORT / BROAD CLAIMS HELD` |
 
 ## Transcript Asset Inventory
 
@@ -131,9 +152,13 @@ What exact phrase, frame order, timestamp, source image, and preceding/following
 
 What non-auto source or local speech-to-text pass supplies raw transcript text with timestamps?
 
-`PART 6 COLUMBUS SOURCE HUNT GAP`
+`PART 6 COLUMBUS OBJECT-CONTROL GAP`
 
-Can the Columbus green-cross banner, Templar question, cryptic-signature object, Fendler source target, and Medici/Leonardo preparation lane be source-controlled without promoting Hall's hidden-plan claim-chain as standard history?
+Can the exact green-cross banner image/object, cryptic-signature page, Fendler source text, and Medici/Leonardo preparation lane be source-controlled without promoting Hall's hidden-plan claim-chain as standard history?
+
+`PART 7 SOURCE-SEQUENCE GAP`
+
+Can the staged Part 7 video/image/source routes be separated from Part 6, sourced without YouTube auto-caption truth, and prevented from promoting bloodline or global hidden-network claims without direct evidence?
 
 `GROVE-WATCH GAP`
 

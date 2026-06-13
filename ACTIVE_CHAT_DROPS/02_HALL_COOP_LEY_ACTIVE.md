@@ -37,10 +37,11 @@ Mercy Hunter's blue map is best held as a layered symbolic compression image: Sp
 | `PARTS 1-4 SOURCE-SPINE / UPDATE1` | `ACTIVE / STRUCTURE LOCKED / EXACT MERCY FRAMES PENDING` | Part 1 front-door frame, Part 2 Mesoamerican foundation gate, Part 3 Quetzalcoatl compression zone, Part 4 hidden-records/initiation bridge. |
 | `PART 5 SOURCE-SPINE / UPDATE_20260611_041416` | `ACTIVE / NORTH AMERICAN BRANCH UPDATED / EXACT MERCY FRAMES PENDING` | Medicine-priest trance road, Midewiwin scrolls, Hoffman diagrams, Ghost Lodge, Lummis phenomena, manito/orenda, thunderbird/serpent grammar, NMAI object control, SECC brake, secret societies/grades. |
 | `PART 5 CLOSEOUT + PART 6 OPEN / UPDATE_WHEN_READY` | `ACTIVE / PART5 STRUCTURE LOCKED / PART6 COLUMBUS GATE OPEN` | Red Hand/Parker, Deganawida/Hiawatha, Manco Capac, three-founder synthesis, then Columbus rediscovery claim-chain, green-cross banner, Templar question, and cryptic-signature lane. |
+| `PART 6 + PART 7 BOUNDED RUN / 2026-06-12` | `ACTIVE UPDATE / PART6 SOURCE ROUTES ADDED / PART7 STAGED FENCE CREATED` | Part 6 route support added for green-cross banner description, LOC signature/object custody, and Fendler title target. Part 7 remains staged only: video custody plus two images; no non-auto transcript truth; broad labels held. |
 
 Next action:
 
-`PART 6 SOURCE HUNT - COLUMBUS GREEN-CROSS BANNER / TEMPLAR QUESTION / CRYPTIC SIGNATURE OBJECT`
+`PART 6 OBJECT-CONTROL CLOSEOUT - GREEN-CROSS IMAGE / SIGNATURE PAGE / FENDLER TEXT`
 
 ## Main Nodes
 
@@ -72,7 +73,8 @@ Next action:
 | `RED-HAND-001` | Parker / Red Hand / death-and-raising | `MAJOR PIVOT / COMPARISON LOCKED / FREEMASONRY LINEAGE BLOCKED` |
 | `GREAT-LAW-001` | Deganawida / Hiawatha / Atotarho / Tree of Peace | `PEACE-LAW FOUNDER LANE / HALL OVERLAY BOUNDED` |
 | `MANCO-CAPAC-001` | Inka solar-founder / Cuzco / three-founder synthesis | `HALL SYNTHESIS LOCKED / PHOENIX CLAIM HALL-ONLY` |
-| `PART6-COLUMBUS-001` | Columbus rediscovery claim-chain / green-cross banner / cipher lane | `PART6 OPEN / HALL CLAIMS BOUNDED / PRIMARY SOURCE HUNT NEXT` |
+| `PART6-COLUMBUS-001` | Columbus rediscovery claim-chain / green-cross banner / cipher lane | `PART6 SOURCE ROUTES ADDED / HALL CLAIMS BOUNDED / OBJECT-CONTROL STILL OPEN` |
+| `PART7-STAGED-001` | Part 7 staged hidden-current lane: video custody, staged images, Nine Sisters route candidate, broad labels held | `STAGED / AFTER PART6 ONLY / AUTO-ONLY BLOCKED` |
 | `GROVE-WATCH-001` | Grove comparison lane: initiation, secluded place, fire/light/dark, dream-road grammar | `WATCH ONLY / DO NOT MERGE` |
 | `SECC-001` | Southeastern Ceremonial Complex / Southern Cult | `LOCKED UMBRELLA FIELD / STYLE SPLIT REQUIRED` |
 | `SPIRO-001` | Four winged/underwater serpents around cross-in-circle | `PRIMARY OBJECT KEY` |
@@ -168,6 +170,18 @@ Use these as route starts, not final proof by themselves:
 | NMAI Haudenosaunee educator guide | https://americanindian.si.edu/sites/1/files/pdf/education/haudenosauneeguide.pdf |
 | NMAI Inka Road, Children of the Sun | https://americanindian.si.edu/inkaroad/ancestors/creationstories/children-sun.html |
 | Britannica Columbus control | https://www.britannica.com/biography/Christopher-Columbus |
+| Columbus journal green-cross banner route | https://eada.lib.umd.edu/text-entries/journal/ |
+| LOC Columbus Book of Privileges publication route | https://www.loc.gov/programs/general-publishing/publications/deep-backlist/item/library-publications/christopher-columbus-book-of-privileges/ |
+| LOC Columbus Book of Privileges digital image route | https://www.loc.gov/resource/rbc0001.2013gen12566/?st=grid |
+| Fendler, New Truths about Columbus title route | https://openlibrary.org/works/OL7565912W/New_truths_about_Columbus |
+| Mercy Hunter Part 6 video custody route | HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/06__Passage_Rewind__Americas_Assignment_Part_6_of_13__cA0b3f2Ne28/INFO.txt |
+| Staged Part 6 visual page | ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_6FINAL.png |
+| Mercy Hunter Part 7 video custody route | HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/07__Passage_Rewind__Americas_Assignment_Part_7_of_13__II2dKoOFeb4/INFO.txt |
+| Staged Part 7 Columbus-gate visual page | ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7.png |
+| Staged Part 7 hidden-current visual page | ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7V.png |
+| Franklin and Lodge of Nine Sisters route | https://www.srmml.org/benjamin-franklin-and-the-lodge-of-nine-sisters/ |
+| Franklin Junto / APS civic-knowledge route | https://www.amphilsoc.org/blog/two-franklins-institutions-look-future-greater-collaboration |
+| Franklin Papers / APS route | https://as.amphilsoc.org/repositories/2/resources/1314 |
 
 ## Open Gaps
 
@@ -179,7 +193,8 @@ Use these as route starts, not final proof by themselves:
 | Passage Rewind transcript text | `BLOCKED / AUTO-ONLY CAPTIONS EXPOSED / NEED NON-AUTO STT OR MANUAL TRANSCRIPT` |
 | Non-auto transcription engine | `OPEN / HOUSE TOOL LOCATED BUT YOUTUBE PATH USES AUTO-SUBS BY DEFAULT` |
 | Exact Mercy frames for Parts 1-5 | `OPEN / SOURCE-SPINE UPDATED BUT VIDEO IMAGE/TIMESTAMP LOCK PENDING` |
-| Part 6 Columbus green-cross / Templar / cryptic signature lane | `NEXT / PRIMARY SOURCE HUNT AND IMAGE/OBJECT CONTROL NEEDED` |
+| Part 6 Columbus green-cross / Templar / cryptic signature lane | `SOURCE ROUTES ADDED / EXACT IMAGE-OBJECT CONTROL STILL NEEDED` |
+| Part 7 staged hidden-current lane | `STAGED / DO NOT MERGE WITH PART6 / SOURCE SEQUENCE OPEN` |
 | Grove overlap | `WATCH ONLY / COMPARISON GRAMMAR / NOT EVIDENCE MERGE` |
 | Editor intent for full center stack | `STRONG INFERENCE / NOT VIDEO-LOCKED` |
 | Literal lineage | `BLOCKED` |
@@ -211,11 +226,21 @@ Do not claim:
 
 `Hall made the blue map.`
 
+`Columbus was a proven Templar agent.`
+
+`The green-cross banner proves Templar identity.`
+
+`The Columbus signature proves a Baconian cipher.`
+
+`Part 7 bloodline or power-behind-nations visual labels are proven source claims.`
+
+`A Franklin/Nine Sisters route proves a global hidden-current network.`
+
 ## Next Run
 
-`PART 6 SOURCE HUNT - COLUMBUS GREEN-CROSS BANNER / TEMPLAR QUESTION / CRYPTIC SIGNATURE OBJECT`
+`PART 6 OBJECT-CONTROL CLOSEOUT - GREEN-CROSS IMAGE / SIGNATURE PAGE / FENDLER TEXT`
 
-Goal: pressure Hall's Columbus transmission gate: green-cross banner, Templar question, cryptic-signature object, Fendler source target, and the boundary between Hall's secret-society claim-chain and standard Columbus history.
+Goal: lock exact Part 6 object controls that remain open: green-cross banner image/source object, Columbus cryptic-signature page/object, Fendler full-text support, and the boundary between Hall's secret-society claim-chain and standard Columbus history.
 
 Keep exact Mercy transcript/timestamp harvest running as mule tail work. Use the existing house transcript-puller custody pattern, but keep the no-auto boundary unless the user explicitly changes it.
 
@@ -242,6 +267,8 @@ Required fields:
 Current follow-ups:
 
 `TRANSCRIPT-SPINE HARVEST / NON-AUTO TRANSCRIPTION ROUTE`
+
+`PART 7 SOURCE-SEQUENCE LOCK / AFTER PART6 OBJECT-CONTROL CLOSEOUT`
 
 `RETRACE-RUN-002 / ROUND 2 - RED-MARKER MAP FAMILY SPLIT`
 

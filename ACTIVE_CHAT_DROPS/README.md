@@ -11,14 +11,19 @@ Do not delete raw originals. New incoming updates go under:
 Active files for the next agent:
 
 1. `00_AGENT_HANDOFF_LOAD_ORDER.md`
-2. `01_METHOD_WORKING_ORDER.md`
-3. `02_HALL_COOP_LEY_ACTIVE.md`
-4. `03_GROVE_ACTIVE.md`
-5. `04_SOURCE_CUSTODY_MEDIA.md`
-6. `05_DOCUMENTARY_SOURCE_SPINE.md`
-7. `06_KEEP_PHOTO_BOARD.md`
-8. `HELPER_FILES_USED_20260611.md`
-9. `GROVE_RAW.txt`
+2. `07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`
+3. `01_METHOD_WORKING_ORDER.md`
+4. `02_HALL_COOP_LEY_ACTIVE.md`
+5. `03_GROVE_ACTIVE.md`
+6. `04_SOURCE_CUSTODY_MEDIA.md`
+7. `05_DOCUMENTARY_SOURCE_SPINE.md`
+8. `06_KEEP_PHOTO_BOARD.md`
+9. `HELPER_FILES_USED_20260611.md`
+10. `GROVE_RAW.txt`
+
+Data-light rule:
+
+`Use 07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md as the compressed project map. Open deeper ledgers only when the task needs them.`
 
 Loose receipts and root media moved from the front folder are kept here rather than deleted.
 
@@ -34,7 +39,15 @@ Current helper import from `C:\Users\13527\Desktop\123` lives in:
 
 Imported scripts in that shelf are review-before-run only. They were copied for custody and future selection, not executed by default.
 
+The root helper pointer is:
+
+`../ESO_HELPER_LOAD_POINTER_20260612.md`
+
+Use it before reading the imported helper shelf directly.
+
 `HANDOFFS/HANDOFF_1_LOCAL_READER_REBUILD_SCOPE.txt`
+
+That file is a site-rebuild scope handoff, not the current global outside-agent boot path. For current global boot, use `00_AGENT_HANDOFF_LOAD_ORDER.md` plus `07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`.
 
 Raw incoming files currently preserved:
 

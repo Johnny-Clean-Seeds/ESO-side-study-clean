@@ -32,6 +32,8 @@ A controlled source-separated investigation into how a Mercy Hunter / Passage Re
 | Spiro / Cahokia / Moundville / Etowah / SECC | Strong archaeology and object-symbol controls. |
 | Official Great Seal sources | Locked official civic/design lane, firewalled from Hall's esoteric reading. |
 | Bible / Ephesians | Mercy Hunter theological frame only. |
+| Columbus journal / LOC Book of Privileges / Fendler route | Part 6 route support for green-cross banner description, signature object custody, and Fendler title target. |
+| Part 7 staged hidden-current lane | Staged only after Part 6; video is auto-only blocked, images are support targets, broad claims are held. |
 
 ## Main Nodes
 
@@ -65,7 +67,8 @@ A controlled source-separated investigation into how a Mercy Hunter / Passage Re
 | `RED-HAND-001` | Parker / Red Hand / death-and-raising | `MAJOR PIVOT / COMPARISON LOCKED / FREEMASONRY LINEAGE BLOCKED` |
 | `GREAT-LAW-001` | Deganawida / Hiawatha / Atotarho / Tree of Peace | `PEACE-LAW FOUNDER LANE / HALL OVERLAY BOUNDED` |
 | `MANCO-CAPAC-001` | Inka solar-founder / Cuzco / three-founder synthesis | `HALL SYNTHESIS LOCKED / PHOENIX CLAIM HALL-ONLY` |
-| `PART6-COLUMBUS-001` | Columbus rediscovery claim-chain / green-cross banner / cipher lane | `PART6 OPEN / HALL CLAIMS BOUNDED / PRIMARY SOURCE HUNT NEXT` |
+| `PART6-COLUMBUS-001` | Columbus rediscovery claim-chain / green-cross banner / cipher lane | `PART6 SOURCE ROUTES ADDED / HALL CLAIMS BOUNDED / OBJECT-CONTROL STILL OPEN` |
+| `PART7-STAGED-001` | Part 7 staged hidden-current lane: video custody, staged images, Nine Sisters route candidate, broad labels held | `STAGED / AFTER PART6 ONLY / AUTO-ONLY BLOCKED` |
 | `GROVE-WATCH-001` | Grove overlap watch: initiation, secluded place, fire/light/dark, dream-road grammar | `WATCH ONLY / DO NOT MERGE` |
 | `SECC-001` | Southeastern Ceremonial Complex / Southern Cult | `LOCKED UMBRELLA FIELD / STYLE SPLIT REQUIRED` |
 | `SPIRO-001` | Four winged/underwater serpents around cross-in-circle | `PRIMARY OBJECT KEY` |
@@ -98,7 +101,8 @@ A controlled source-separated investigation into how a Mercy Hunter / Passage Re
 | Passage Rewind transcript text | `BLOCKED / AUTO-ONLY CAPTIONS EXPOSED / NEED NON-AUTO STT OR MANUAL TRANSCRIPT` |
 | Non-auto transcription engine | `OPEN / HOUSE TOOL LOCATED BUT YOUTUBE PATH USES AUTO-SUBS BY DEFAULT` |
 | Exact Mercy frames for Parts 1-5 | `OPEN / SOURCE-SPINE UPDATED BUT VIDEO IMAGE/TIMESTAMP LOCK PENDING` |
-| Part 6 Columbus green-cross / Templar / cryptic signature lane | `NEXT / PRIMARY SOURCE HUNT AND IMAGE/OBJECT CONTROL NEEDED` |
+| Part 6 Columbus green-cross / Templar / cryptic signature lane | `SOURCE ROUTES ADDED / EXACT IMAGE-OBJECT CONTROL STILL NEEDED` |
+| Part 7 staged hidden-current lane | `STAGED / DO NOT MERGE WITH PART6 / SOURCE SEQUENCE OPEN` |
 | Grove overlap | `WATCH ONLY / COMPARISON GRAMMAR / NOT EVIDENCE MERGE` |
 | Editor intent for full center stack | `STRONG INFERENCE / NOT VIDEO-LOCKED` |
 | Literal lineage | `BLOCKED` |
@@ -124,3 +128,7 @@ Do not claim:
 `Hall's Great Seal reading proves official emblem history.`
 `Columbus was a proven Templar agent.`
 `A cipher claim proves Hall's secret-society chain.`
+`The green-cross banner proves Templar identity.`
+`The Columbus signature proves a Baconian cipher.`
+`Part 7 bloodline or power-behind-nations visual labels are proven source claims.`
+`A Franklin/Nine Sisters route proves a global hidden-current network.`

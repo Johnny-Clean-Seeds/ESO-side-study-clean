@@ -44,13 +44,19 @@ Status: `ACTIVE / PART5 STRUCTURE LOCKED / PART6 COLUMBUS GATE OPEN`
 
 Result: Red Hand/Parker, Deganawida/Hiawatha, Manco Capac, and the three-founder synthesis close Part 5. Part 6 opens with Columbus as Hall's European transmission gate: secret-society rediscovery claim-chain, green-cross banner, Templar question, cryptic signature, Fendler source target, and standard-history brake.
 
+`PART 6 + PART 7 BOUNDED RUN / 2026-06-12`
+
+Status: `ACTIVE UPDATE / PART6 SOURCE ROUTES ADDED / PART7 STAGED FENCE CREATED`
+
+Result: Part 6 now has route support for the green-cross banner description, LOC Book of Privileges object custody, and the Fendler title target. Part 7 is separated as staged material only: video custody plus `PART_7.png` and `PART_7V.png`, with no non-auto transcript truth and broad bloodline/power labels held.
+
 ## Next Run
 
-`PART 6 SOURCE HUNT - COLUMBUS GREEN-CROSS BANNER / TEMPLAR QUESTION / CRYPTIC SIGNATURE OBJECT`
+`PART 6 OBJECT-CONTROL CLOSEOUT - GREEN-CROSS IMAGE / SIGNATURE PAGE / FENDLER TEXT`
 
 Goal:
 
-Pressure Hall's Columbus transmission gate: green-cross banner, Templar question, cryptic-signature object, Fendler source target, and the boundary between Hall's secret-society claim-chain and standard Columbus history.
+Lock the exact Part 6 object controls that remain open: green-cross banner image/source object, Columbus cryptic-signature page/object, Fendler full-text support, and the boundary between Hall's secret-society claim-chain and standard Columbus history.
 
 Required custody fields:
 
@@ -102,15 +108,15 @@ Method cards:
 
 Stop condition:
 
-`COLUMBUS GREEN-CROSS OR SIGNATURE OBJECT ROUTE LOCKED`
+`COLUMBUS GREEN-CROSS IMAGE/OBJECT LOCKED`
 
 or
 
-`FENDLER SOURCE ROUTE IDENTIFIED`
+`COLUMBUS SIGNATURE PAGE/OBJECT LOCKED`
 
 or
 
-`GROVE-WATCH STAYS COMPARISON ONLY`
+`FENDLER FULL-TEXT ROUTE IDENTIFIED`
 
 or
 
@@ -147,6 +153,10 @@ Walk all rooms and update the master index, source routes, photo board, blocked 
 `TRANSCRIPT-SPINE HARVEST / NON-AUTO TRANSCRIPTION ROUTE`
 
 Keep the exact text/timestamp task running as mule tail work.
+
+`PART 7 SOURCE-SEQUENCE LOCK - NINE SISTERS / FRANKLIN / HIDDEN-CURRENTS FENCE`
+
+Start only after Part 6 object-control closeout is clean. Keep `PART_7.png` and `PART_7V.png` as staged support, not proof. Source Franklin/Nine Sisters and civic-knowledge routes separately, and keep bloodline/power-behind-nations labels held unless direct sources appear.
 
 `RETRACE-RUN-002 / ROUND 2 - RED-MARKER MAP FAMILY SPLIT`
 

@@ -236,15 +236,18 @@ Part 6 does not jump straight into the Great Seal. The next gate is Columbus, wh
 
 The standard-history brake stays active. Columbus is controlled as a Genoese navigator sailing under Spain; "discoverer" language is historically qualified. Hall's hidden-plan language remains Hall's claim-chain until separate evidence carries it.
 
+This run adds a cleaner source split. The green-cross banner has an external journal route: the first-voyage account describes the royal standard separately from two banners of the green cross with the F/Y crowned initials. That supports the existence of a green-cross expedition banner, not Hall's Templar question. The cryptic-signature lane has a Library of Congress object route through the Columbus `Book of Privileges` and its digital image surface. That supports an object-custody target for the signature/cipher question, not a decoded cipher. Fendler is confirmed as a 1934 title route, but the open full text remains unlocated.
+
 Working locks:
 
 | ID | Block | Status |
 | --- | --- | --- |
 | `PART6-A` | America rediscovered under a hidden plan | `HALL CLAIM / HIGH-VALUE HOLD / NOT PROMOTED` |
-| `PART6-B` | Columbus as secret-society agent or chosen representative | `HALL/FENDLER CLAIM-CHAIN / SOURCE TARGET OPEN` |
-| `PART6-C` | Columbus banner: green cross on white field | `HALL VISUAL-SYMBOL TARGET / PRIMARY CONTROL NEEDED` |
-| `PART6-D` | Columbus cryptic signature / cipher lane | `ACTIVE SYMBOL-CUSTODY TARGET / DO NOT OVERREAD` |
+| `PART6-B` | Columbus as secret-society agent or chosen representative | `HALL/FENDLER CLAIM-CHAIN / TITLE ROUTE CONFIRMED / OPEN TEXT NOT LOCKED` |
+| `PART6-C` | Columbus banner: green cross on white field | `SOURCE-DESCRIPTION ROUTE ADDED / TEMPLAR CLAIM BLOCKED` |
+| `PART6-D` | Columbus cryptic signature / cipher lane | `LOC OBJECT ROUTE ADDED / DECODING CLAIM BLOCKED` |
 | `PART6-E` | Lorenzo / Leonardo / Medici / secret preparation lane | `HALL CLAIM / HIGH-VALUE HOLD / NOT PROMOTED` |
+| `PART6-F` | Part 6 staged visual page `PART_6FINAL.png` | `STORY IMAGE TARGET / NOT SOURCE PROOF` |
 
 Documentary sentence:
 
@@ -254,6 +257,42 @@ Primary routes:
 
 - Hall text: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt
 - Britannica Columbus control: https://www.britannica.com/biography/Christopher-Columbus
+- Columbus journal / green-cross banner route: https://eada.lib.umd.edu/text-entries/journal/
+- Library of Congress `Book of Privileges` publication route: https://www.loc.gov/programs/general-publishing/publications/deep-backlist/item/library-publications/christopher-columbus-book-of-privileges/
+- Library of Congress `Book of Privileges` digital image route: https://www.loc.gov/resource/rbc0001.2013gen12566/?st=grid
+- Open Library Fendler title route: https://openlibrary.org/works/OL7565912W/New_truths_about_Columbus
+- Staged Part 6 image target: `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_6FINAL.png`
+
+## Part 7 - Staged Hidden Currents Fence
+
+Status: `STAGED / NOT PUBLIC / AFTER_PART6_ONLY`
+
+Part 7 is not merged into Part 6. The usable staged material is limited to the existing Part 7 video custody metadata and two staged image assets: `PART_7.png` and `PART_7V.png`. No non-auto transcript text is available for Part 7, so the video remains a custody route rather than a claim source.
+
+`PART_7.png` still appears to sit inside the Columbus gate: cross-banner, cipher/signature lane, and Americke naming pressure. It stays as Part 7 support only if the story split later treats Part 7 as an extension of the Columbus gate.
+
+`PART_7V.png` jumps to broader hidden-current language: secret societies, Nine Sisters, bloodlines, transmission networks, and power behind nations. Only the source-routed items can move. The broad "bloodlines" and "power behind nations" labels are held as visual/hypothesis labels, not promoted claims.
+
+Working locks:
+
+| ID | Block | Status |
+| --- | --- | --- |
+| `PART7-STAGE-001` | Mercy Hunter Part 7 video custody | `INDEXED / AUTO-ONLY BLOCKED / NO TRANSCRIPT TRUTH` |
+| `PART7-STAGE-002` | `PART_7.png` Columbus-gate visual support | `STAGED IMAGE / PART6-ADJACENT / NOT PROOF` |
+| `PART7-STAGE-003` | `PART_7V.png` hidden-current visual support | `STAGED IMAGE / BROAD CLAIMS HELD` |
+| `PART7-STAGE-004` | Nine Sisters / Franklin lane | `SOURCE ROUTE CANDIDATE / SEPARATE FROM BLOODLINE CLAIMS` |
+| `PART7-STAGE-005` | Bloodlines / power behind nations labels | `HELD / UNSOURCED VISUAL LANGUAGE / DO NOT PROMOTE` |
+
+Primary routes:
+
+- Mercy Hunter Part 7 custody route: `HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/INDEX.md`
+- Mercy Hunter Part 7 video route: https://www.youtube.com/watch?v=II2dKoOFeb4
+- Staged Part 7 image target: `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7.png`
+- Staged Part 7 hidden-current image target: `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7V.png`
+- Hall text route for downstream secret-society claims: https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt
+- Scottish Rite Masonic Museum & Library, Franklin and Lodge of Nine Sisters: https://www.srmml.org/benjamin-franklin-and-the-lodge-of-nine-sisters/
+- American Philosophical Society Franklin/Junto route: https://www.amphilsoc.org/blog/two-franklins-institutions-look-future-greater-collaboration
+- APS Benjamin Franklin Papers route: https://as.amphilsoc.org/repositories/2/resources/1314
 
 ## Next Run
 

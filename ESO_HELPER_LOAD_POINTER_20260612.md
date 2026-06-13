@@ -4,6 +4,12 @@ Status: `HELPER_IMPORT_GOOD / OBSERVER_LEDGER_FOUND / HASH_MATCH`
 
 This file is the ESO load pointer for the imported helper shelf. It is a pointer only. It does not scatter helper files into the repo and does not grant automatic command authority.
 
+For the current outside-agent boot map, load:
+
+`ACTIVE_CHAT_DROPS/07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`
+
+Use that map to decide which helper, ledger, branch board, or receipt to open next. Do not bulk-load the helper shelf by default.
+
 ## Shelf To Load For Reference
 
 For ESO helper and observer behavior, use this imported shelf as reference material:

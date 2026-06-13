@@ -53,6 +53,15 @@ Each photo target needs:
 | `PHOTO-029` | Britannica Columbus control | https://www.britannica.com/biography/Christopher-Columbus | `KEEP / STANDARD-HISTORY BRAKE` | Controls Columbus history against Hall's hidden-plan claim-chain. |
 | `PHOTO-030` | Columbus green-cross banner target | https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt | `KEEP / HALL VISUAL-SYMBOL TARGET / PRIMARY CONTROL NEEDED` | High-value Part 6 clue, but Hall's Templar question is not proof. |
 | `PHOTO-031` | Columbus cryptic-signature / cipher object target | https://archive.org/stream/americas_awd_5025/americas_awd_5025_djvu.txt | `KEEP / OBJECT TARGET / DO NOT OVERREAD` | Hold the signature/cipher lane until primary images and analysis are locked. |
+| `PHOTO-032` | Columbus journal green-cross banner control | https://eada.lib.umd.edu/text-entries/journal/ | `KEEP / SOURCE-DESCRIPTION ROUTE` | Supports green-cross banner wording; does not prove Templar identity or Hall's hidden-plan claim. |
+| `PHOTO-033` | Library of Congress `Book of Privileges` object route | https://www.loc.gov/programs/general-publishing/publications/deep-backlist/item/library-publications/christopher-columbus-book-of-privileges/ | `KEEP / OBJECT-CUSTODY ROUTE` | Supports Columbus legal-document custody and signature/cipher object hunt; does not decode the signature. |
+| `PHOTO-034` | Library of Congress `Book of Privileges` digital image route | https://www.loc.gov/resource/rbc0001.2013gen12566/?st=grid | `KEEP / USER-FACING IMAGE ROUTE` | Use as image surface for the signature object when accessible; tool access may vary. |
+| `PHOTO-035` | Fendler, `New Truths about Columbus` title route | https://openlibrary.org/works/OL7565912W/New_truths_about_Columbus | `KEEP / TITLE ROUTE / OPEN TEXT NOT LOCKED` | Confirms the target title; does not provide full-text support for Hall's quote by itself. |
+| `PHOTO-036` | Staged Part 6 visual page | `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_6FINAL.png` | `KEEP / STORY IMAGE TARGET` | Useful visual staging only; red-cross sail and symbolic objects are not source proof. |
+| `PHOTO-037` | Staged Part 7 Columbus-gate visual page | `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7.png` | `KEEP / PART7 STAGED SUPPORT` | Part 7 support only after Part 6 boundary; still Columbus-gate adjacent. |
+| `PHOTO-038` | Staged Part 7 hidden-current visual page | `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7V.png` | `KEEP / PART7 STAGED SUPPORT / CLAIMS HELD` | Nine Sisters can be source-routed; bloodlines and power-behind-nations labels are held. |
+| `PHOTO-039` | Franklin and Lodge of Nine Sisters route | https://www.srmml.org/benjamin-franklin-and-the-lodge-of-nine-sisters/ | `KEEP / PART7 SOURCE ROUTE CANDIDATE` | Supports a Franklin/Nine Sisters source lane; does not prove hidden-current or bloodline claims. |
+| `PHOTO-040` | American Philosophical Society Franklin/Junto route | https://www.amphilsoc.org/blog/two-franklins-institutions-look-future-greater-collaboration | `KEEP / PART7 CIVIC-KNOWLEDGE CONTROL` | Supports Junto/APS civic knowledge route; not a secret-network proof. |
 
 ## Open Image Targets
 
@@ -80,6 +89,11 @@ Each photo target needs:
 | Exact Mercy frame for Manco Capac / Inka sun-founder | `OPEN / NMAI INKA ROAD ROUTE LOCKED` |
 | Exact Columbus green-cross banner image | `OPEN / HALL TARGET LOCKED / PRIMARY CONTROL NEEDED` |
 | Exact Columbus cryptic-signature image | `OPEN / HALL TARGET LOCKED / PRIMARY CONTROL NEEDED` |
+| Exact Part 6 green-cross banner visual control | `PARTIAL / JOURNAL DESCRIPTION ROUTE ADDED / IMAGE STILL OPEN` |
+| Exact Part 6 Columbus signature/cipher image | `PARTIAL / LOC OBJECT ROUTE ADDED / DECODING BLOCKED` |
+| Exact Part 7 source frame sequence | `OPEN / VIDEO INDEXED / AUTO-ONLY CAPTIONS BLOCKED` |
+| Exact Part 7 Nine Sisters source frame | `OPEN / SOURCE ROUTE CANDIDATE ONLY` |
+| Part 7 bloodlines / power behind nations visual labels | `HELD / UNSOURCED / DO NOT PROMOTE` |
 
 ## Use On Front Page
 

@@ -4,6 +4,12 @@ Status: `ACTIVE_LOAD_SURFACE / GROVE_BRANCH / NOT_FINAL_PROOF`
 
 This packet rebuilds the Bohemian Club / Bohemian Grove work as a clean branch in the same research tree as `HALL_COOP_LEY`.
 
+If entering from outside the repo, load the compact global map first:
+
+`../../ACTIVE_CHAT_DROPS/07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`
+
+Use helper files, ledgers, source-route boards, and receipts to target reads. Do not bulk-load archives or media shelves.
+
 ## Load Order
 
 Load only these files first:
@@ -87,4 +93,3 @@ Every branch gets the same structure:
 Every serious search gets the same method:
 
 `33rd Triple Pass: Walls -> Ceiling -> Roof -> Whole-House Floor Run`
-

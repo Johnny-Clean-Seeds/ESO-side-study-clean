@@ -4,6 +4,24 @@ Status: `ACTIVE_METHOD_SURFACE / SHARED`
 
 Every run uses the house method. Keep the method light enough to move, but strict enough to prevent fog.
 
+## Data-Light Helper-First Rule
+
+Use helper files, maps, indexes, ledgers, manifests, and receipts to reduce data consumption.
+
+Do not bulk-load folders just to know what exists. Start with:
+
+`ACTIVE_CHAT_DROPS/07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`
+
+`ESO_HELPER_LOAD_POINTER_20260612.md`
+
+`ACTIVE_CHAT_DROPS/HELPER_FILES/HOUSE_HELPER_IMPORT_20260612/00_READ_FIRST.md`
+
+Then open only the specific active ledger, branch board, source route, receipt, or helper card needed for the run.
+
+Imported helper scripts and `Desktop\123` scripts are reference/review-before-run material. Inspect and authorize a specific script before execution.
+
+For inventory, prefer `rg --files` targeted to the folder in question. For source lookup, prefer the active route boards before web searching from scratch.
+
 ## Core Law
 
 `33rd Triple Pass = Walls -> Ceiling -> Roof -> Whole-House Floor Run`
@@ -136,4 +154,3 @@ Example method families:
 `photo/caption`
 
 `source text/page image`
-

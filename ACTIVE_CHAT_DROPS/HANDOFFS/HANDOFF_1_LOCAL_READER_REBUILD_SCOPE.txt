@@ -2,6 +2,21 @@ HANDOFF 1 — CURRENT MULE JOB
 ESO / HALL_COOP_LEY LOCAL READER REBUILD
 SCOPE: MAIN PAGE + PARTS 1–5 ONLY
 
+CURRENT NOTE — 2026-06-12
+
+This file is a specific local-reader rebuild handoff, not the current global outside-agent boot path.
+
+For global outside-agent startup, load:
+
+OUTSIDE_AGENT_START_HERE.md
+ACTIVE_CHAT_DROPS/00_AGENT_HANDOFF_LOAD_ORDER.md
+ACTIVE_CHAT_DROPS/07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md
+ESO_HELPER_LOAD_POINTER_20260612.md
+
+Use helper files, maps, ledgers, and receipts to reduce data consumption. Do not bulk-load the repo or helper shelf.
+
+This handoff's public-reader boundary still applies when doing reader work: do not expose Part 6 or Part 7 unless explicitly instructed.
+
 MODE: SITE REBUILD HANDOFF
 ACTIVE OBJECT: ESO / HALL_COOP_LEY index website / local reader
 STATE: PAUSE RESEARCH / FIX THE READER FIRST

@@ -4,6 +4,12 @@ Status: `ACTIVE_LOAD_SURFACE / CLEAN_START / NOT_FINAL_PROOF`
 
 Built from the existing `HALL_COOP_LEY` draft packet, the root run notes, the attached raw `RETRACE-RUN-002` text, and the visible media assets.
 
+If entering from outside the repo, load the compact global map first:
+
+`../../ACTIVE_CHAT_DROPS/07_OUTSIDE_AGENT_PROJECT_MAP_AND_TOOL_ACCESS.md`
+
+Use helper files, ledgers, source-route boards, and receipts to target reads. Do not bulk-load archives or media shelves.
+
 ## Load Order
 
 Load only these files first:

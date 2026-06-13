@@ -71,6 +71,20 @@ New root update custody:
 | `ACTIVE_CHAT_DROPS/RAW_INCOMING/Update_20260611_041416_PART5.txt` | `C7632C6AD11606AF3D6B1B3C34F80D5B41F2048C2C37867E4E475810BACC87B3` | Raw original preserved. Do not overwrite. |
 | `ACTIVE_CHAT_DROPS/RAW_INCOMING/UPDATE_WHEN_READY_20260611_042503_PART5_PART6.txt` | `00C24D4D6CA30967F6B96583CE41FEE05D6D2A7C9AF5F31725C419951ABAD100` | Raw original preserved. Do not overwrite. |
 
+Part 6 + Part 7 bounded-run custody:
+
+| Material | SHA256 / status | Custody rule |
+| --- | --- | --- |
+| `HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/06__Passage_Rewind__Americas_Assignment_Part_6_of_13__cA0b3f2Ne28/INFO.txt` | `VIDEO CUSTODY / BLOCKED_AUTO_CAPTIONS_ONLY` | Part 6 video route only; no auto-caption transcript truth. |
+| `HALL_COOP_LEY/MEDIA/03_DROP_TARGET_FOLDERS/AUDIO_OR_TRANSCRIPTS/PASSAGE_REWIND_AMERICAS_ASSIGNMENT/07__Passage_Rewind__Americas_Assignment_Part_7_of_13__II2dKoOFeb4/INFO.txt` | `VIDEO CUSTODY / BLOCKED_AUTO_CAPTIONS_ONLY` | Part 7 video route only; no auto-caption transcript truth. |
+| `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_6FINAL.png` | `BD5D0A7EAE23D055FAE817D279AE03F1AFCA952F7C32AF7A7838F141572C6414` | Part 6 story image target; not source proof. |
+| `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7.png` | `CE7B5C23E577FC689F4EAADC3C8F39A336B622A0E5C58AFC7137DBFE7A2BBA22` | Part 7 staged support; Part 6-adjacent, not proof. |
+| `ESO_INDEX_SITE_MOCKUP_20260611_152646/outside  agent/INDEX_IMAGES/PART_7V.png` | `B038E85C99305D7C43A086316CCB25ABE7375EB7BDE81FBAB8EF68CCA7F656A8` | Part 7 staged support; broad claims held. |
+
+Part 6 source-route additions now support the green-cross banner description, LOC object-custody route, and Fendler title target. They do not prove Templar identity, a decoded cipher, Columbus as a secret-society agent, or Hall's hidden-plan claim-chain.
+
+Part 7 remains staged until Part 6 is cleanly closed. Franklin/Nine Sisters and civic-knowledge routes may be used as source candidates, but bloodline, power-behind-nations, or global hidden-current claims are held unless direct source control appears.
+
 Root cleanup rule:
 
 `Root = local reader surface only. Loose active docs, raw updates, receipts, and loose media go under ACTIVE_CHAT_DROPS. No raw original file is deleted.`
