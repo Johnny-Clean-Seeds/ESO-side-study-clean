@@ -1023,7 +1023,7 @@ body.top-portion-pass-2 .story-hero::before {
 
 .story-hero.top-portion-pass-2::after,
 body.top-portion-pass-2 .story-hero::after {
-  content: "✕  △  serpent / bird  ◇  cross-in-circle  map?  source?  frame?";
+  content: "ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢  ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â³  serpent / bird  ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡  cross-in-circle  map?  source?  frame?";
   position: absolute;
   right: 2vw;
   bottom: 3vh;
@@ -2022,10 +2022,10 @@ body.aa-image-first-page {
 
 /* Final averaged hero buttons from measured capture. */
 .aa-hotspot-enter {
-  left: 6.45%;
-  top: 45.50%;
-  width: 15.95%;
-  height: 5.60%;
+  left: 6.6687% !important;
+  top: 49.6888% !important;
+  width: 17.5239% !important;
+  height: 6.8465% !important;
 }
 
 .aa-hotspot-parts {
@@ -2419,4 +2419,742 @@ body.aa-image-first-page {
   pointer-events: none !important;
 }
 /* === ESO MAIN TOP FAKE BUTTON MASK END === */
+/* MOCKUP_PICTURE_ONLY_GOLD_OVERLAY_20260613 BEGIN */
+html,
+body.aa-picture-only-index {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  min-height: 100%;
+  background: #020202 !important;
+}
 
+body.aa-picture-only-index {
+  overflow-x: hidden;
+}
+
+body.aa-picture-only-index .aa-picture-only-shell {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.aa-picture-only-index .aa-front-image-stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  background: #020202;
+}
+
+body.aa-picture-only-index .aa-front-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Final fake buttons: invisible until hover/focus. No sticky tool squares. */
+body.aa-picture-only-index .aa-fake-hotspot {
+  position: absolute;
+  z-index: 20;
+  display: block;
+  box-sizing: border-box;
+  background: transparent !important;
+  border: 1.5px solid transparent !important;
+  outline: 0;
+  box-shadow: none !important;
+  color: transparent !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body.aa-picture-only-index .aa-fake-hotspot:hover {
+  border-color: rgba(255, 205, 105, .96) !important;
+  box-shadow: 0 0 0 1px rgba(255, 205, 105, .32), 0 0 16px rgba(226, 164, 62, .30) !important;
+  cursor: pointer;
+}
+
+body.aa-picture-only-index .aa-fake-hotspot:focus-visible {
+  border-color: rgba(255, 226, 148, 1) !important;
+  box-shadow: 0 0 0 2px rgba(255, 226, 148, .55), 0 0 18px rgba(226, 164, 62, .38) !important;
+}
+
+body.aa-picture-only-index .aa-fake-hotspot:active {
+  transform: none !important;
+}
+
+/* FINAL_BUTTON_COORDS_LOCK_20260613 BEGIN */
+.aa-top-hotspot-search {
+  left: 84.9223%;
+  top: 3.138%;
+  width: 6.2667%;
+  height: 2.8528%;
+}
+
+.aa-hotspot-enter {
+  left: 6.6687% !important;
+  top: 49.6888% !important;
+  width: 17.5239% !important;
+  height: 6.8465% !important;
+}
+
+.aa-card-start {
+  left: 6.4274%;
+  top: 64.9481%;
+  width: 13.4172%;
+  height: 28.5277%;
+}
+
+.aa-card-index {
+  left: 20.6481%;
+  top: 64.9481%;
+  width: 13.2566%;
+  height: 28.5277%;
+}
+
+.aa-card-records {
+  left: 34.7081%;
+  top: 64.9481%;
+  width: 12.7745%;
+  height: 28.5277%;
+}
+
+.aa-card-notes {
+  left: 48.3664%;
+  top: 64.9481%;
+  width: 12.6138%;
+  height: 28.5277%;
+}
+
+.aa-card-spine {
+  left: 61.7836%;
+  top: 64.9481%;
+  width: 12.7745%;
+  height: 28.5277%;
+}
+
+.aa-card-parts {
+  left: 75.3615%;
+  top: 64.9481%;
+  width: 13.2566%;
+  height: 28.5277%;
+}
+/* FINAL_BUTTON_COORDS_LOCK_20260613 END */
+/* MOCKUP_PICTURE_ONLY_GOLD_OVERLAY_20260613 END */
+/* FINAL_FAKE_GOLD_STYLE_HOVER_LIGHTS_20260613 BEGIN */
+/* Hover-only light/glow rule:
+   - normal state invisible
+   - glow appears only on mouse-over
+   - outline is thicker than printed image line so hover is obvious
+   - no press-down effect
+*/
+body.aa-picture-only-index .aa-fake-hotspot {
+  border: 2px solid transparent !important;
+  border-radius: 5px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  cursor: pointer;
+  transition:
+    border-color 110ms ease,
+    box-shadow 110ms ease,
+    background 110ms ease;
+}
+
+body.aa-picture-only-index .aa-fake-hotspot::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255, 230, 145, 0.20) 0%,
+      rgba(255, 200, 72, 0.08) 42%,
+      rgba(255, 200, 72, 0.00) 72%
+    );
+  transition: opacity 110ms ease;
+}
+
+body.aa-picture-only-index .aa-fake-hotspot:hover {
+  border-color: rgba(255, 205, 82, 0.98) !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 235, 160, 0.055) 0%,
+      rgba(210, 142, 42, 0.030) 55%,
+      rgba(255, 220, 120, 0.045) 100%
+    ) !important;
+  box-shadow:
+    0 0 0 1px rgba(96, 58, 8, 0.28),
+    0 0 8px rgba(255, 205, 82, 0.52),
+    0 0 18px rgba(255, 184, 42, 0.32),
+    inset 0 0 8px rgba(255, 225, 130, 0.16) !important;
+}
+
+body.aa-picture-only-index .aa-fake-hotspot:hover::before {
+  opacity: 1;
+}
+
+body.aa-picture-only-index .aa-fake-hotspot:active {
+  transform: none !important;
+}
+/* FINAL_FAKE_GOLD_STYLE_HOVER_LIGHTS_20260613 END */
+/* FINAL_PAGE_ORIGINAL_RESPECT_SUBTLE_BG_20260613 BEGIN */
+/* Respect-original pass:
+   - keeps the side compression
+   - does not crop the image
+   - does not move the bottom
+   - does not change button hover/glow
+   - removes the heavy yellow/orange color push
+   - uses only a tiny display lift on the original image
+   - darkens only the outside page field slightly
+*/
+body.aa-picture-only-index {
+  min-height: 100vh !important;
+  background:
+    radial-gradient(circle at center, rgba(18, 19, 28, 0.18) 0%, rgba(9, 10, 15, 0.94) 78%),
+    #0a0b10 !important;
+}
+
+/* Keep the compressed width that worked. No vertical crop. */
+body.aa-picture-only-index main,
+body.aa-picture-only-index .aa-picture-only-shell,
+body.aa-picture-only-index .aa-front-map-shell,
+body.aa-picture-only-index .aa-image-map-shell,
+body.aa-picture-only-index .aa-map-shell,
+body.aa-picture-only-index .aa-index-map-shell,
+body.aa-picture-only-index .aa-front-stage,
+body.aa-picture-only-index .aa-image-stage,
+body.aa-picture-only-index .aa-picture-stage {
+  width: min(76vw, 980px) !important;
+  max-width: 980px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Full original image stays visible. Bottom stays bottom. */
+body.aa-picture-only-index img {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Very small lift only. No orange/yellow push. */
+body.aa-picture-only-index .aa-front-image,
+body.aa-picture-only-index .aa-index-image,
+body.aa-picture-only-index .aa-map-image,
+body.aa-picture-only-index .aa-picture-image,
+body.aa-picture-only-index img[src*="aa-front-original"],
+body.aa-picture-only-index img {
+  filter:
+    brightness(1.008)
+    contrast(1.018)
+    saturate(1.025) !important;
+}
+
+/* Subtle board shadow only. No gold glow push. */
+body.aa-picture-only-index .aa-picture-only-shell,
+body.aa-picture-only-index .aa-front-map-shell,
+body.aa-picture-only-index .aa-image-map-shell,
+body.aa-picture-only-index .aa-map-shell,
+body.aa-picture-only-index .aa-index-map-shell,
+body.aa-picture-only-index .aa-front-stage,
+body.aa-picture-only-index .aa-image-stage,
+body.aa-picture-only-index .aa-picture-stage,
+body.aa-picture-only-index main {
+  box-shadow:
+    0 0 18px rgba(0, 0, 0, 0.46),
+    0 0 58px rgba(0, 0, 0, 0.28) !important;
+}
+
+@media (max-width: 900px) {
+  body.aa-picture-only-index main,
+  body.aa-picture-only-index .aa-picture-only-shell,
+  body.aa-picture-only-index .aa-front-map-shell,
+  body.aa-picture-only-index .aa-image-map-shell,
+  body.aa-picture-only-index .aa-map-shell,
+  body.aa-picture-only-index .aa-index-map-shell,
+  body.aa-picture-only-index .aa-front-stage,
+  body.aa-picture-only-index .aa-image-stage,
+  body.aa-picture-only-index .aa-picture-stage {
+    width: 94vw !important;
+    max-width: 94vw !important;
+  }
+}
+/* FINAL_PAGE_ORIGINAL_RESPECT_SUBTLE_BG_20260613 END */
+/* AA_TRUE_CONTAIN_SNAP_FIT_20260613 BEGIN */
+/* Browser-native contain fit:
+   - CSS owns the picture sizing, not a resize script
+   - fills as much of the viewport as possible
+   - preserves the 1672 / 941 image ratio
+   - keeps the same pushed-in side/top/bottom edge gap
+   - no crop, no coordinate edits, no resize debounce work
+*/
+:root {
+  --aa-edge-gap: 6px;
+  --aa-stage-width-from-viewport: calc(100vw - 12px);
+  --aa-stage-width-from-height: calc(177.6833svh - 21.322px);
+  --aa-stage-width: min(var(--aa-stage-width-from-viewport), var(--aa-stage-width-from-height));
+}
+
+html,
+body.aa-picture-only-index {
+  min-height: 100svh !important;
+  margin: 0 !important;
+}
+
+body.aa-picture-only-index {
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: var(--aa-edge-gap) !important;
+}
+
+body.aa-picture-only-index main,
+body.aa-picture-only-index .aa-picture-only-shell,
+body.aa-picture-only-index .aa-front-map-shell,
+body.aa-picture-only-index .aa-image-map-shell,
+body.aa-picture-only-index .aa-map-shell,
+body.aa-picture-only-index .aa-index-map-shell,
+body.aa-picture-only-index .aa-front-stage,
+body.aa-picture-only-index .aa-image-stage,
+body.aa-picture-only-index .aa-picture-stage,
+body.aa-picture-only-index .aa-front-image-stage {
+  width: var(--aa-stage-width) !important;
+  max-width: var(--aa-stage-width-from-viewport) !important;
+  margin: 0 auto !important;
+  top: auto !important;
+  aspect-ratio: 1672 / 941 !important;
+  transform: none !important;
+  transform-origin: center center !important;
+}
+
+body.aa-picture-only-index img,
+body.aa-picture-only-index picture,
+body.aa-picture-only-index .aa-front-image {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+body.aa-picture-only-index .aa-front-image-stage {
+  height: auto !important;
+  max-height: calc(100svh - 12px) !important;
+}
+/* AA_TRUE_CONTAIN_SNAP_FIT_20260613 END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FINAL_BUTTON_COORDS_LOCK_20260614_R8_EXPORT BEGIN */
+/* R16_JOURNALED_COORD_BRIDGE_APPLY_20260615
+   Applied by R16 journaled clipboard bridge at 2026-06-15 05:34:34.
+   Mockup-only write. */
+
+.aa-top-hotspot-search {
+  left: 83.7469% !important;
+  top: 2.0513% !important;
+  width: 6.6377% !important;
+  height: 3.3068% !important;
+}
+
+.aa-hotspot-enter {
+  left: 6.6377% !important;
+  top: 50.8818% !important;
+  width: 17.6178% !important;
+  height: 7.3851% !important;
+}
+
+.aa-card-start {
+  left: 6.5136% !important;
+  top: 64.8132% !important;
+  width: 13.3374% !important;
+  height: 28.8733% !important;
+}
+
+.aa-card-index {
+  left: 20.7196% !important;
+  top: 64.8132% !important;
+  width: 13.0893% !important;
+  height: 28.8733% !important;
+}
+
+.aa-card-records {
+  left: 34.6774% !important;
+  top: 64.8132% !important;
+  width: 12.9032% !important;
+  height: 28.8733% !important;
+}
+
+.aa-card-notes {
+  left: 48.4491% !important;
+  top: 64.8132% !important;
+  width: 12.4689% !important;
+  height: 28.8733% !important;
+}
+
+.aa-card-spine {
+  left: 61.7866% !important;
+  top: 64.8132% !important;
+  width: 12.7171% !important;
+  height: 28.8733% !important;
+}
+
+.aa-card-parts {
+  left: 75.4342% !important;
+  top: 64.8132% !important;
+  width: 13.1513% !important;
+  height: 28.8733% !important;
+}
+
+/* FINAL_BUTTON_COORDS_LOCK_20260614_R8_EXPORT END */
+
+/* R8_HOTSPOT_VISUAL_FRAME_LOCK_20260614 BEGIN */
+/* Keeps visible hover/click frames in the same coordinate plane as .aa-front-image-stage.
+   Does not change measured left/top/width/height coordinates. */
+
+body.aa-picture-only-index .aa-front-image-stage {
+  position: relative !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
+}
+
+body.aa-picture-only-index .aa-front-image-stage > img,
+body.aa-picture-only-index .aa-front-image-stage .aa-front-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+body.aa-picture-only-index .aa-top-hotspot-search,
+body.aa-picture-only-index .aa-hotspot-enter,
+body.aa-picture-only-index .aa-card-start,
+body.aa-picture-only-index .aa-card-index,
+body.aa-picture-only-index .aa-card-records,
+body.aa-picture-only-index .aa-card-notes,
+body.aa-picture-only-index .aa-card-spine,
+body.aa-picture-only-index .aa-card-parts {
+  position: absolute !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  transform: none !important;
+  transform-origin: center center !important;
+}
+
+body.aa-picture-only-index .aa-top-hotspot-search::before,
+body.aa-picture-only-index .aa-top-hotspot-search::after,
+body.aa-picture-only-index .aa-hotspot-enter::before,
+body.aa-picture-only-index .aa-hotspot-enter::after,
+body.aa-picture-only-index .aa-card-start::before,
+body.aa-picture-only-index .aa-card-start::after,
+body.aa-picture-only-index .aa-card-index::before,
+body.aa-picture-only-index .aa-card-index::after,
+body.aa-picture-only-index .aa-card-records::before,
+body.aa-picture-only-index .aa-card-records::after,
+body.aa-picture-only-index .aa-card-notes::before,
+body.aa-picture-only-index .aa-card-notes::after,
+body.aa-picture-only-index .aa-card-spine::before,
+body.aa-picture-only-index .aa-card-spine::after,
+body.aa-picture-only-index .aa-card-parts::before,
+body.aa-picture-only-index .aa-card-parts::after {
+  box-sizing: border-box !important;
+  transform: none !important;
+  transform-origin: center center !important;
+}
+
+/* R8_HOTSPOT_VISUAL_FRAME_LOCK_20260614 END */
+
+/* R8_HOVER_FRAME_CLAMP_20260614 BEGIN */
+/* Visual-only correction.
+   Keeps hover glow inside the measured hotspot rectangle.
+   Does not change final R8 coordinates. */
+
+body.aa-picture-only-index .aa-top-hotspot-search,
+body.aa-picture-only-index .aa-hotspot-enter,
+body.aa-picture-only-index .aa-card-start,
+body.aa-picture-only-index .aa-card-index,
+body.aa-picture-only-index .aa-card-records,
+body.aa-picture-only-index .aa-card-notes,
+body.aa-picture-only-index .aa-card-spine,
+body.aa-picture-only-index .aa-card-parts {
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+
+body.aa-picture-only-index .aa-top-hotspot-search::before,
+body.aa-picture-only-index .aa-top-hotspot-search::after,
+body.aa-picture-only-index .aa-hotspot-enter::before,
+body.aa-picture-only-index .aa-hotspot-enter::after,
+body.aa-picture-only-index .aa-card-start::before,
+body.aa-picture-only-index .aa-card-start::after,
+body.aa-picture-only-index .aa-card-index::before,
+body.aa-picture-only-index .aa-card-index::after,
+body.aa-picture-only-index .aa-card-records::before,
+body.aa-picture-only-index .aa-card-records::after,
+body.aa-picture-only-index .aa-card-notes::before,
+body.aa-picture-only-index .aa-card-notes::after,
+body.aa-picture-only-index .aa-card-spine::before,
+body.aa-picture-only-index .aa-card-spine::after,
+body.aa-picture-only-index .aa-card-parts::before,
+body.aa-picture-only-index .aa-card-parts::after {
+  inset: 0 !important;
+  left: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+/* R8_HOVER_FRAME_CLAMP_20260614 END */
+
+/* BUTTON_HAIRLINE_THICKNESS_LOCK_20260615 BEGIN
+   Adds a slight visual thickness to all main overlay buttons.
+   Coordinates are untouched. Shape-specific overrides can follow below. */
+.aa-top-hotspot-search,
+.aa-hotspot-enter,
+.aa-card-start,
+.aa-card-index,
+.aa-card-records,
+.aa-card-notes,
+.aa-card-spine,
+.aa-card-parts {
+  box-sizing: border-box !important;
+  border-width: 2px !important;
+  outline: 1px solid rgba(238, 198, 107, 0.42) !important;
+  outline-offset: -1px !important;
+}
+
+.aa-top-hotspot-search::before,
+.aa-top-hotspot-search::after,
+.aa-hotspot-enter::before,
+.aa-hotspot-enter::after,
+.aa-card-start::before,
+.aa-card-start::after,
+.aa-card-index::before,
+.aa-card-index::after,
+.aa-card-records::before,
+.aa-card-records::after,
+.aa-card-notes::before,
+.aa-card-notes::after,
+.aa-card-spine::before,
+.aa-card-spine::after,
+.aa-card-parts::before,
+.aa-card-parts::after {
+  border-width: 2px !important;
+}
+/* BUTTON_HAIRLINE_THICKNESS_LOCK_20260615 END */
+
+/* SEARCH_BUTTON_SHAPE_LOCK_20260615 BEGIN
+   Search hotspot gets its own pill/capsule profile:
+   flat top/bottom span, heavily rounded left/right ends.
+   Coordinates are untouched. */
+.aa-top-hotspot-search,
+.aa-top-hotspot-search:link,
+.aa-top-hotspot-search:visited {
+  border-radius: 999px !important;
+  clip-path: inset(0 round 999px) !important;
+  overflow: hidden !important;
+}
+
+.aa-top-hotspot-search:hover,
+.aa-top-hotspot-search:focus-visible {
+  border-radius: 999px !important;
+  clip-path: inset(0 round 999px) !important;
+}
+
+/* Keep any inner glow/border layer following the same search-only shape. */
+.aa-top-hotspot-search::before,
+.aa-top-hotspot-search::after {
+  border-radius: 999px !important;
+}
+/* SEARCH_BUTTON_SHAPE_LOCK_20260615 END */
+
+/* R16D13_SEARCH_EMPTY_HOVER_PILL_20260615 BEGIN
+   Search button only.
+   The anchor is the invisible shop/coordinate/click box.
+   The visible pill is smaller than that box and drawn by ::after.
+   Default: no visible pill.
+   Hover/focus: empty gold pill outline appears.
+   No text, no fill, no glow, no transform. */
+
+html body.aa-picture-only-index .aa-top-hotspot-search,
+html body.aa-picture-only-index .aa-top-hotspot-search:link,
+html body.aa-picture-only-index .aa-top-hotspot-search:visited,
+body.aa-picture-only-index .aa-top-hotspot-search,
+body.aa-picture-only-index .aa-top-hotspot-search:link,
+body.aa-picture-only-index .aa-top-hotspot-search:visited,
+.aa-top-hotspot-search,
+.aa-top-hotspot-search:link,
+.aa-top-hotspot-search:visited {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  overflow: visible !important;
+  transform: none !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+/* Kill any old search pseudo-shape except the new controlled ::after below. */
+html body.aa-picture-only-index .aa-top-hotspot-search::before,
+body.aa-picture-only-index .aa-top-hotspot-search::before,
+.aa-top-hotspot-search::before {
+  content: none !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Smaller empty pill, hidden until hover. */
+html body.aa-picture-only-index .aa-top-hotspot-search::after,
+body.aa-picture-only-index .aa-top-hotspot-search::after,
+.aa-top-hotspot-search::after {
+  content: "" !important;
+  pointer-events: none !important;
+  position: absolute !important;
+
+  left: 14% !important;
+  right: 14% !important;
+  top: 25% !important;
+  bottom: 25% !important;
+
+  border-radius: 9999px !important;
+  border-style: solid !important;
+  border-width: 1.45px !important;
+  border-top-color: rgba(255, 224, 124, .98) !important;
+  border-right-color: rgba(198, 150, 45, .98) !important;
+  border-bottom-color: rgba(136, 93, 22, .98) !important;
+  border-left-color: rgba(231, 186, 72, .98) !important;
+
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+
+  opacity: 0 !important;
+  transition:
+    opacity 120ms ease,
+    border-top-color 120ms ease,
+    border-right-color 120ms ease,
+    border-bottom-color 120ms ease,
+    border-left-color 120ms ease !important;
+}
+
+/* Hover/focus on the larger invisible box reveals the smaller empty pill. */
+html body.aa-picture-only-index .aa-top-hotspot-search:hover::after,
+html body.aa-picture-only-index .aa-top-hotspot-search:focus::after,
+html body.aa-picture-only-index .aa-top-hotspot-search:focus-visible::after,
+body.aa-picture-only-index .aa-top-hotspot-search:hover::after,
+body.aa-picture-only-index .aa-top-hotspot-search:focus::after,
+body.aa-picture-only-index .aa-top-hotspot-search:focus-visible::after,
+.aa-top-hotspot-search:hover::after,
+.aa-top-hotspot-search:focus::after,
+.aa-top-hotspot-search:focus-visible::after {
+  opacity: 1 !important;
+  border-top-color: rgba(255, 239, 160, 1) !important;
+  border-right-color: rgba(222, 172, 56, 1) !important;
+  border-bottom-color: rgba(162, 110, 25, 1) !important;
+  border-left-color: rgba(255, 207, 86, 1) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+/* R16D13_SEARCH_EMPTY_HOVER_PILL_20260615 END */
