@@ -1,0 +1,2247 @@
+<!-- COORD_MARK_TOOL_20260613_R8 BEGIN -->
+<!-- ESO_WORKSHOP_SYNC_AND_COORD_TOOL_RULE -->
+<!-- ESO_WORKSHOP_SMART_ADJUST_FIX_START -->
+<script>
+(function () {
+  "use strict";
+
+  const STAGE_SELECTOR = ".aa-front-image-stage";
+  const SOURCE_MOCKUP_HINT = "ESO_INDEX_SITE_MOCKUP_20260611_152646/reader/index/public.html";
+  const TOOL_VERSION = "R15B_COPY_ADJUST_TOP_ROW_CLEAN_20260615";
+  const STORE_STATE = "coordWorkshopR9SideRailStateV1";
+  const STORE_UNDO = "coordWorkshopR9SideRailUndoV1";
+  const STORE_REDO = "coordWorkshopR9SideRailRedoV1";
+  const OLD_ROWS = "coordRowsR9LegacyDisabled";
+  const OLD_SELECTED = "coordSelectedR9LegacyDisabled";
+  const MAX_HISTORY = 200;
+  const RIGHT_CLICK_DOUBLE_MS = 320;
+
+  const stage = document.querySelector(STAGE_SELECTOR);
+  if (!stage) return;
+
+  const targets = [
+    { id: "search", name: "search", row: "top", column: 1, selector: ".aa-top-hotspot-search" },
+    { id: "enter_index", name: "enter_index", row: "hero", column: 1, selector: ".aa-hotspot-enter" },
+    { id: "start_here", name: "start_here", row: "cards", column: 1, selector: ".aa-card-start" },
+    { id: "research_index", name: "research_index", row: "cards", column: 2, selector: ".aa-card-index" },
+    { id: "source_records", name: "source_records", row: "cards", column: 3, selector: ".aa-card-records" },
+    { id: "visual_notes", name: "visual_notes", row: "cards", column: 4, selector: ".aa-card-notes" },
+    { id: "documentary_spine", name: "documentary_spine", row: "cards", column: 5, selector: ".aa-card-spine" },
+    { id: "part_index", name: "part_index", row: "cards", column: 6, selector: ".aa-card-parts" }
+  ].map(function (t) {
+    return Object.assign({}, t, {
+      selectors: [t.selector],
+      lockedName: true
+    });
+  });
+
+  const targetById = new Map(targets.map(function (t) { return [t.id, t]; }));
+  const targetByName = new Map(targets.map(function (t) { return [t.name, t]; }));
+
+  document.body.classList.add("coord-map-mode");
+
+  if (!stage.querySelector(".coord-grid-layer")) {
+    const grid = document.createElement("div");
+    grid.className = "coord-grid-layer";
+    stage.appendChild(grid);
+  }
+
+  function clone(value) {
+    return JSON.parse(JSON.stringify(value));
+  }
+
+  function readJson(text, fallback) {
+    if (!text) return fallback;
+    try {
+      return JSON.parse(text);
+    } catch (e) {
+      return fallback;
+    }
+  }
+
+  function pct(value) {
+    return Number(Number(value).toFixed(4));
+  }
+
+  function nowStamp() {
+    return new Date().toISOString();
+  }
+
+  function stageRect() {
+    return stage.getBoundingClientRect();
+  }
+
+  function targetOrder(id) {
+    const idx = targets.findIndex(function (t) { return t.id === id; });
+    return idx < 0 ? 999 : idx;
+  }
+
+  function sortedBoxes(boxes) {
+    return boxes.slice().sort(function (a, b) {
+      return targetOrder(a.id) - targetOrder(b.id);
+    });
+  }
+
+  function findTarget(row) {
+    return targetById.get(row.id) || targetByName.get(row.name) || null;
+  }
+
+  function normalizeBox(row) {
+    const target = findTarget(row);
+    if (!target) return null;
+
+    return {
+      id: target.id,
+      name: target.name,
+      selector: target.selector,
+      selectors: target.selectors.slice(),
+      row: target.row,
+      column: target.column,
+      left: pct(Number(row.left) || 0),
+      top: pct(Number(row.top) || 0),
+      width: pct(Number(row.width) || 0),
+      height: pct(Number(row.height) || 0),
+      color: row.color || "cyan",
+      label: row.label || target.name,
+      lockedName: true,
+      marked: Boolean(row.marked),
+      lockedSetId: row.lockedSetId || "",
+      lockedOrder: Number(row.lockedOrder) || 0,
+      notes: row.notes || "",
+      source: row.source || "workshop"
+    };
+  }
+
+  function normalizeBoxes(rows) {
+    return (Array.isArray(rows) ? rows : [])
+      .map(normalizeBox)
+      .filter(Boolean);
+  }
+
+  function domCoordsForTarget(target) {
+    const el = stage.querySelector(target.selector) || document.querySelector(target.selector);
+    if (!el) return null;
+    const sr = stageRect();
+    const r = el.getBoundingClientRect();
+    if (!sr.width || !sr.height || !r.width || !r.height) return null;
+
+    return {
+      left: pct(((r.left - sr.left) / sr.width) * 100),
+      top: pct(((r.top - sr.top) / sr.height) * 100),
+      width: pct((r.width / sr.width) * 100),
+      height: pct((r.height / sr.height) * 100)
+    };
+  }
+
+  function boxFromTarget(target) {
+    const c = domCoordsForTarget(target) || { left: 0, top: 0, width: 0, height: 0 };
+    return normalizeBox(Object.assign({}, target, c, {
+      color: "cyan",
+      label: target.name,
+      source: "live-mockup-hotspot"
+    }));
+  }
+
+  function seedBoxes() {
+    const stored = readJson(localStorage.getItem(STORE_STATE), null);
+    if (stored && Array.isArray(stored.boxes)) {
+      return normalizeBoxes(stored.boxes);
+    }
+
+    const oldRows = readJson(localStorage.getItem(OLD_ROWS), []);
+    const migrated = normalizeBoxes(oldRows);
+    if (migrated.length) return migrated;
+
+    return targets.map(boxFromTarget).filter(Boolean);
+  }
+
+  function defaultState() {
+    const stored = readJson(localStorage.getItem(STORE_STATE), null);
+    const boxes = seedBoxes();
+    const selectedId = stored && targetById.has(stored.selectedId) ? stored.selectedId :
+      localStorage.getItem(OLD_SELECTED) || (boxes[0] ? boxes[0].id : targets[0].id);
+
+    return {
+      boxes: boxes,
+      selectedId: targetById.has(selectedId) ? selectedId : targets[0].id,
+      gridOn: stored ? stored.gridOn !== false : true,
+      gridDensity: stored && stored.gridDensity ? stored.gridDensity : "normal",
+      activeColor: stored && stored.activeColor ? stored.activeColor : (localStorage.getItem("coordColorR8") || "cyan"),
+      labelsOn: stored ? stored.labelsOn !== false : true,
+      showExisting: stored ? stored.showExisting !== false : true,
+      lockedSet: stored && stored.lockedSet ? stored.lockedSet : null,
+      lastExportAt: stored && stored.lastExportAt ? stored.lastExportAt : "",
+      dirty: stored ? Boolean(stored.dirty) : true,
+      manualTargetLock: stored ? Boolean(stored.manualTargetLock) : false,
+      lastAction: "R9 ready. Use FORGET MEMORY if boxes/labels drift. Use TARGET LOCK when manually choosing a target."
+    };
+  }
+
+  let state = defaultState();
+  let undoStack = readJson(localStorage.getItem(STORE_UNDO), []);
+  let redoStack = readJson(localStorage.getItem(STORE_REDO), []);
+  if (!Array.isArray(undoStack)) undoStack = [];
+  if (!Array.isArray(redoStack)) redoStack = [];
+
+  let drag = null;
+  let liveRect = null;
+  let rightClickTimer = null;
+
+  const oldPanel = document.querySelector(".coord-panel");
+  if (oldPanel) oldPanel.remove();
+
+  const panel = document.createElement("div");
+  panel.className = "coord-panel";
+  panel.innerHTML = `
+    <div><strong>ESO ${(String(TOOL_VERSION).match(/^R\d+/) || ["VERSIONED"])[0]} COORD SHOP</strong></div>
+    <div class="coord-small">Relay version: <code>${TOOL_VERSION}</code></div>
+    <div class="coord-status">
+      Target:
+      <select id="coord-target"></select>
+      <span id="coord-counts"></span>
+    </div>
+    <div class="coord-row">
+      <button id="coord-grid-toggle" type="button">GRID ON/OFF</button>
+      <button data-density="light" type="button">GRID LIGHT</button>
+      <button data-density="normal" type="button">GRID NORMAL</button>
+      <button data-density="tight" type="button">GRID TIGHT</button>
+    </div>
+    <div class="coord-row">
+      <button class="coord-color-btn coord-color-cyan" data-color="cyan" type="button">CYAN</button>
+      <button class="coord-color-btn coord-color-magenta" data-color="magenta" type="button">MAGENTA</button>
+      <button class="coord-color-btn coord-color-lime" data-color="lime" type="button">LIME</button>
+      <button class="coord-color-btn coord-color-white" data-color="white" type="button">WHITE</button>
+      <button class="coord-color-btn coord-color-red" data-color="red" type="button">RED</button>
+      <button class="coord-color-btn coord-color-orange" data-color="orange" type="button">ORANGE</button>
+      <button class="coord-color-btn coord-color-black" data-color="black" type="button">BLACK</button>
+    </div>
+    <div class="coord-row">
+      <button id="coord-lock-marked" type="button">SAVE ADJUST SET</button>
+      <button id="coord-smart-adjust" type="button">SMART ADJUST MARKED</button>
+      <button id="coord-clear-markers" type="button">CLEAR MARKERS</button>
+      <button id="coord-forget-memory" type="button">FORGET MEMORY</button>
+      <button id="coord-target-lock" type="button">TARGET LOCK OFF</button>
+      <button id="coord-undo" type="button">UNDO</button>
+      <button id="coord-redo" type="button">REDO</button>
+      <button id="coord-export" type="button">EXPORT COORDS</button>
+      <button id="coord-copy" type="button">COPY COORDS</button>
+      <button id="coord-reset-view" type="button">RESET VIEW</button>
+    </div>
+    <div class="coord-row">
+      <button id="coord-toggle-labels" type="button">SHOW/HIDE LABELS</button>
+      <button id="coord-toggle-existing" type="button">SHOW/HIDE EXISTING HOTSPOTS</button>
+      <button id="coord-clear-boxes" type="button">CLEAR BOXES</button>
+    </div>
+    <div class="coord-small" id="coord-message"></div>
+    <textarea id="coord-output" spellcheck="false"></textarea>
+  `;
+  const pictureShell = stage.closest(".aa-picture-only-shell") || stage.parentElement || stage;
+  pictureShell.insertAdjacentElement("afterend", panel);
+
+  const targetEl = document.getElementById("coord-target");
+  const countsEl = document.getElementById("coord-counts");
+  const messageEl = document.getElementById("coord-message");
+  const outputEl = document.getElementById("coord-output");
+
+  function flash(btn, text) {
+    if (!btn) return;
+    const old = btn.textContent;
+    btn.classList.add("is-clicked");
+    if (text) btn.textContent = text;
+    window.setTimeout(function () {
+      btn.classList.remove("is-clicked");
+      if (text) btn.textContent = old;
+    }, 700);
+  }
+
+  function saveStacks() {
+    localStorage.setItem(STORE_UNDO, JSON.stringify(undoStack));
+    localStorage.setItem(STORE_REDO, JSON.stringify(redoStack));
+  }
+
+  function snapshotState() {
+    return clone(state);
+  }
+
+  function recordUndo(snapshot) {
+    undoStack.push(snapshot);
+    while (undoStack.length > MAX_HISTORY) undoStack.shift();
+    redoStack = [];
+    saveStacks();
+  }
+
+  function beforeChange() {
+    return snapshotState();
+  }
+
+  function commitChange(before, action, dirty) {
+    recordUndo(before);
+    state.dirty = dirty !== false;
+    state.lastAction = action;
+    update();
+  }
+
+  function saveState() {
+    localStorage.setItem(STORE_STATE, JSON.stringify(state));
+    localStorage.setItem("coordColorR8", state.activeColor);
+  }
+
+  function currentTarget() {
+    return targetById.get(state.selectedId) || targets[0];
+  }
+
+  function advanceTargetAfterDraw(id) {
+    /* R9_TARGET_LOCK_ADVANCE_GUARD_20260615 */
+    if (state.manualTargetLock) {
+      state.selectedId = id || state.selectedId;
+      state.lastAction = "TARGET LOCK held. Next draw stays on: " + currentTarget().name;
+      return;
+    }
+    const index = targets.findIndex(function (target) { return target.id === id; });
+    if (index < 0 || !targets.length) return;
+
+    const next = targets[(index + 1) % targets.length];
+    state.selectedId = next.id;
+
+    if (targetEl) {
+      targetEl.value = next.id;
+    }
+
+    state.lastAction = "placed " + id + " / next target: " + next.name;
+    saveState();
+    update();
+  }
+
+  function findBox(id) {
+    return state.boxes.find(function (b) { return b.id === id; }) || null;
+  }
+
+  function selectedSet() {
+    if (state.lockedSet && Array.isArray(state.lockedSet.items) && state.lockedSet.items.length) {
+      const ids = new Set(state.lockedSet.items.map(function (item) { return item.id; }));
+      return sortedBoxes(state.boxes.filter(function (box) { return ids.has(box.id); }));
+    }
+
+    return sortedBoxes(state.boxes.filter(function (box) { return box.marked; }));
+  }
+
+  function markedCount() {
+    return state.boxes.filter(function (box) { return box.marked; }).length;
+  }
+
+  function lockedCount() {
+    if (!state.lockedSet || !Array.isArray(state.lockedSet.items)) return 0;
+    const ids = new Set(state.lockedSet.items.map(function (item) { return item.id; }));
+    return state.boxes.filter(function (box) { return ids.has(box.id); }).length;
+  }
+
+  function colorValues(name) {
+    const colors = {
+      cyan:    ["#00e5ff", "rgba(0,229,255,.26)", "rgba(0,189,255,.095)", "rgba(0,229,255,.08)"],
+      magenta: ["#ff4dff", "rgba(255,77,255,.30)", "rgba(255,77,255,.11)", "rgba(255,77,255,.09)"],
+      lime:    ["#60ff60", "rgba(96,255,96,.26)", "rgba(96,255,96,.095)", "rgba(96,255,96,.08)"],
+      white:   ["#f4f4f4", "rgba(244,244,244,.24)", "rgba(244,244,244,.085)", "rgba(244,244,244,.07)"],
+      red:     ["#ff4545", "rgba(255,69,69,.30)", "rgba(255,69,69,.105)", "rgba(255,69,69,.08)"],
+      orange:  ["#ff8a00", "rgba(255,138,0,.28)", "rgba(255,138,0,.10)", "rgba(255,138,0,.08)"],
+      black:   ["#050505", "rgba(0,0,0,.34)", "rgba(0,0,0,.12)", "rgba(0,0,0,.08)"]
+    };
+
+    return colors[name] || colors.cyan;
+  }
+
+  function applyColorToBody() {
+    const c = colorValues(state.activeColor);
+    document.body.style.setProperty("--coord-color", c[0]);
+    document.body.style.setProperty("--coord-grid-major", c[1]);
+    document.body.style.setProperty("--coord-grid-minor", c[2]);
+    document.body.style.setProperty("--coord-fill", c[3]);
+  }
+
+  function applyToolClasses() {
+    document.body.classList.toggle("coord-grid-off", !state.gridOn);
+    document.body.classList.toggle("coord-density-light", state.gridDensity === "light");
+    document.body.classList.toggle("coord-density-normal", state.gridDensity === "normal");
+    document.body.classList.toggle("coord-density-tight", state.gridDensity === "tight");
+    document.body.classList.toggle("coord-hide-labels", !state.labelsOn);
+    document.body.classList.toggle("coord-hide-existing", !state.showExisting);
+    applyColorToBody();
+  }
+
+  function pointFromEvent(ev) {
+    const sr = stageRect();
+    return {
+      x: pct(((ev.clientX - sr.left) / sr.width) * 100),
+      y: pct(((ev.clientY - sr.top) / sr.height) * 100)
+    };
+  }
+
+  function boxContains(box, point) {
+    return point.x >= box.left &&
+      point.x <= box.left + box.width &&
+      point.y >= box.top &&
+      point.y <= box.top + box.height;
+  }
+
+  function boxAtPoint(point) {
+    const hits = state.boxes.filter(function (box) { return boxContains(box, point); });
+    hits.sort(function (a, b) { return (a.width * a.height) - (b.width * b.height); });
+    return hits[0] || null;
+  }
+
+  function edgeHit(box, point) {
+    const threshold = Math.max(.6, Math.min(1.4, Math.min(box.width, box.height) * .18));
+    return {
+      left: Math.abs(point.x - box.left) <= threshold,
+      right: Math.abs(point.x - (box.left + box.width)) <= threshold,
+      top: Math.abs(point.y - box.top) <= threshold,
+      bottom: Math.abs(point.y - (box.top + box.height)) <= threshold
+    };
+  }
+
+  function setBoxGeometry(box, next) {
+    box.left = pct(Math.max(0, Math.min(100, next.left)));
+    box.top = pct(Math.max(0, Math.min(100, next.top)));
+    box.width = pct(Math.max(.1, Math.min(100 - box.left, next.width)));
+    box.height = pct(Math.max(.1, Math.min(100 - box.top, next.height)));
+  }
+
+  function removeDrawLayer() {
+    stage.querySelectorAll(".coord-live-rect,.coord-rect,.coord-delete,.coord-label").forEach(function (el) {
+      el.remove();
+    });
+  }
+
+  /* R11_EDGE_RESIZE_DRAG_MOVE_CONTROLS_20260615 BEGIN
+     Adds manual one-edge resize handles and a drag handle to drawn boxes.
+     This does not change public page CSS.
+     This does not replace COPY COORDS or the clipboard bridge.
+     It only gives the operator direct correction controls after a box exists. */
+
+  function r11FindBox(boxId) {
+    return state.boxes.find(function (box) {
+      return box && box.id === boxId;
+    }) || null;
+  }
+
+  function r11StagePointFromEvent(ev) {
+    const r = stage.getBoundingClientRect();
+    return {
+      x: round4(clamp(((ev.clientX - r.left) / r.width) * 100, 0, 100)),
+      y: round4(clamp(((ev.clientY - r.top) / r.height) * 100, 0, 100))
+    };
+  }
+
+  function r11NormalizeIntoBox(box, next) {
+    const minW = 0.12;
+    const minH = 0.12;
+
+    next.left = Number(next.left);
+    next.top = Number(next.top);
+    next.width = Number(next.width);
+    next.height = Number(next.height);
+
+    next.width = clamp(next.width, minW, 100);
+    next.height = clamp(next.height, minH, 100);
+    next.left = clamp(next.left, 0, 100 - next.width);
+    next.top = clamp(next.top, 0, 100 - next.height);
+
+    const normalized = normalizeBox(Object.assign({}, box, {
+      left: round4(next.left),
+      top: round4(next.top),
+      width: round4(next.width),
+      height: round4(next.height)
+    }));
+
+    Object.keys(normalized).forEach(function (key) {
+      box[key] = normalized[key];
+    });
+  }
+
+  function r11PaintRectOnly(rect, box) {
+    if (!rect || !box) return;
+    rect.style.left = box.left + "%";
+    rect.style.top = box.top + "%";
+    rect.style.width = box.width + "%";
+    rect.style.height = box.height + "%";
+  }
+
+  function r11BeginBoxAdjust(ev, boxId, mode, rect) {
+    if (ev.button !== undefined && ev.button !== 0) return;
+
+    ev.preventDefault();
+    ev.stopPropagation();
+
+    const box = r11FindBox(boxId);
+    if (!box) return;
+
+    const before = beforeChange();
+    const startBox = Object.assign({}, box);
+    const startPoint = r11StagePointFromEvent(ev);
+    const minW = 0.12;
+    const minH = 0.12;
+
+    state.selectedId = box.id;
+    state.lockedSet = null;
+
+    const sourceEl = ev.currentTarget;
+    try {
+      if (sourceEl && sourceEl.setPointerCapture && ev.pointerId !== undefined) {
+        sourceEl.setPointerCapture(ev.pointerId);
+      }
+    } catch (e) {}
+
+    function onMove(moveEv) {
+      moveEv.preventDefault();
+      moveEv.stopPropagation();
+
+      const p = r11StagePointFromEvent(moveEv);
+      const dx = p.x - startPoint.x;
+      const dy = p.y - startPoint.y;
+
+      const next = {
+        left: startBox.left,
+        top: startBox.top,
+        width: startBox.width,
+        height: startBox.height
+      };
+
+      if (mode === "move") {
+        next.left = startBox.left + dx;
+        next.top = startBox.top + dy;
+      }
+
+      if (mode === "w") {
+        const maxLeft = startBox.left + startBox.width - minW;
+        next.left = clamp(startBox.left + dx, 0, maxLeft);
+        next.width = startBox.width + (startBox.left - next.left);
+      }
+
+      if (mode === "e") {
+        next.width = clamp(startBox.width + dx, minW, 100 - startBox.left);
+      }
+
+      if (mode === "n") {
+        const maxTop = startBox.top + startBox.height - minH;
+        next.top = clamp(startBox.top + dy, 0, maxTop);
+        next.height = startBox.height + (startBox.top - next.top);
+      }
+
+      if (mode === "s") {
+        next.height = clamp(startBox.height + dy, minH, 100 - startBox.top);
+      }
+
+      r11NormalizeIntoBox(box, next);
+      r11PaintRectOnly(rect, box);
+
+      state.dirty = true;
+      state.lastAction = "manual " + mode + " adjust " + box.name;
+      saveState();
+    }
+
+    function onUp(upEv) {
+      upEv.preventDefault();
+      upEv.stopPropagation();
+
+      window.removeEventListener("pointermove", onMove, true);
+      window.removeEventListener("pointerup", onUp, true);
+      window.removeEventListener("pointercancel", onUp, true);
+
+      try {
+        if (sourceEl && sourceEl.releasePointerCapture && ev.pointerId !== undefined) {
+          sourceEl.releasePointerCapture(ev.pointerId);
+        }
+      } catch (e) {}
+
+      r11NormalizeIntoBox(box, box);
+      commitChange(before, "manual " + mode + " adjust " + box.name, true);
+      setMessage("manual " + mode + " adjusted " + box.name);
+      update();
+    }
+
+    window.addEventListener("pointermove", onMove, true);
+    window.addEventListener("pointerup", onUp, true);
+    window.addEventListener("pointercancel", onUp, true);
+  }
+
+  function r11MakeEdgeHandle(box, rect, mode, label) {
+    const handle = document.createElement("button");
+    handle.type = "button";
+    handle.className = "coord-r11-edge coord-r11-edge-" + mode;
+    handle.dataset.edge = mode;
+    handle.title = label + " edge: drag to push/pull this side";
+    handle.setAttribute("aria-label", label + " edge resize " + box.name);
+    handle.addEventListener("pointerdown", function (ev) {
+      r11BeginBoxAdjust(ev, box.id, mode, rect);
+    }, true);
+    return handle;
+  }
+
+  function r11AttachBoxAdjusters(rect, box) {
+    if (!rect || !box || rect.dataset.r11Adjusters === "1") return;
+
+    rect.dataset.r11Adjusters = "1";
+    rect.dataset.boxId = box.id;
+    rect.classList.add("r11-adjustable");
+
+    rect.appendChild(r11MakeEdgeHandle(box, rect, "n", "top"));
+    rect.appendChild(r11MakeEdgeHandle(box, rect, "e", "right"));
+    rect.appendChild(r11MakeEdgeHandle(box, rect, "s", "bottom"));
+    rect.appendChild(r11MakeEdgeHandle(box, rect, "w", "left"));
+
+    const move = document.createElement("button");
+    move.type = "button";
+    move.className = "coord-r11-move coord-r16-center-drag";
+    move.textContent = ""; move.setAttribute("data-r16-center-drag", "1");
+    move.title = "center dot: drag this whole box";
+    move.setAttribute("aria-label", "center dot drag move " + box.name);
+    move.addEventListener("pointerdown", function (ev) {
+      r11BeginBoxAdjust(ev, box.id, "move", rect);
+    }, true);
+    rect.appendChild(move);
+  }
+
+  function r11ArrangeControls() {
+    if (!panel || panel.dataset.r11Controls === "done") return;
+
+    const undo = document.getElementById("coord-undo");
+    const redo = document.getElementById("coord-redo");
+    const copy = document.getElementById("coord-copy");
+
+    if (undo && redo) {
+      const historyRow = document.createElement("div");
+      historyRow.className = "coord-row coord-row-r11-history";
+      historyRow.appendChild(undo);
+      historyRow.appendChild(redo);
+
+      const statusRow = panel.querySelector(".coord-status");
+      if (statusRow && statusRow.parentElement) {
+        statusRow.parentElement.insertBefore(historyRow, statusRow.nextSibling);
+      } else {
+        panel.insertBefore(historyRow, panel.firstChild);
+      }
+    }
+
+    if (copy) {
+      const copyRow = document.createElement("div");
+      copyRow.className = "coord-row coord-row-r11-bottom-copy";
+      copyRow.appendChild(copy);
+      panel.appendChild(copyRow);
+    }
+
+    panel.dataset.r11Controls = "done";
+  }
+
+  window.setTimeout(function () {
+    r11ArrangeControls();
+    draw();
+  }, 0);
+
+  /* R11_EDGE_RESIZE_DRAG_MOVE_CONTROLS_20260615 END */
+  /* R12_SURFACE_PINCH_RESIZE_MOVE_20260615 BEGIN
+     No visual bars. No separate handle buttons.
+     The rectangle itself is the control surface:
+     - near edge/corner = resize cursor and resize live
+     - inside body = move cursor and drag live
+     - right-click marking remains available */
+
+  function r12FindBox(boxId) {
+    return state.boxes.find(function (box) {
+      return box && box.id === boxId;
+    }) || null;
+  }
+
+  function r12StagePointFromEvent(ev) {
+    const r = stage.getBoundingClientRect();
+    return {
+      x: round4(clamp(((ev.clientX - r.left) / r.width) * 100, 0, 100)),
+      y: round4(clamp(((ev.clientY - r.top) / r.height) * 100, 0, 100))
+    };
+  }
+
+  function r12ModeFromRectEvent(ev, rect) {
+    const r = rect.getBoundingClientRect();
+    const x = ev.clientX - r.left;
+    const y = ev.clientY - r.top;
+    const edge = Math.max(7, Math.min(16, Math.min(r.width, r.height) * 0.22));
+
+    const n = y <= edge;
+    const s = y >= r.height - edge;
+    const w = x <= edge;
+    const e = x >= r.width - edge;
+
+    if (n && w) return "nw";
+    if (n && e) return "ne";
+    if (s && w) return "sw";
+    if (s && e) return "se";
+    if (n) return "n";
+    if (s) return "s";
+    if (w) return "w";
+    if (e) return "e";
+    return "move";
+  }
+
+  function r12CursorForMode(mode) {
+    if (mode === "n" || mode === "s") return "ns-resize";
+    if (mode === "e" || mode === "w") return "ew-resize";
+    if (mode === "nw" || mode === "se") return "nwse-resize";
+    if (mode === "ne" || mode === "sw") return "nesw-resize";
+    return "move";
+  }
+
+  function r12NormalizeIntoBox(box, next) {
+    const minW = 0.12;
+    const minH = 0.12;
+
+    next.left = Number(next.left);
+    next.top = Number(next.top);
+    next.width = Number(next.width);
+    next.height = Number(next.height);
+
+    next.width = clamp(next.width, minW, 100);
+    next.height = clamp(next.height, minH, 100);
+    next.left = clamp(next.left, 0, 100 - next.width);
+    next.top = clamp(next.top, 0, 100 - next.height);
+
+    const normalized = normalizeBox(Object.assign({}, box, {
+      left: round4(next.left),
+      top: round4(next.top),
+      width: round4(next.width),
+      height: round4(next.height)
+    }));
+
+    Object.keys(normalized).forEach(function (key) {
+      box[key] = normalized[key];
+    });
+  }
+
+  function r12PaintRectOnly(rect, box) {
+    rect.style.left = box.left + "%";
+    rect.style.top = box.top + "%";
+    rect.style.width = box.width + "%";
+    rect.style.height = box.height + "%";
+  }
+
+  /* R12B_DELETE_X_PROTECTION_20260615 BEGIN
+     The top-right delete X must beat the pinch surface.
+     If pointer is on/near the X zone, surface pinch does not start. */
+  function r12bIsDeleteZone(ev, rect) {
+    if (!rect) return false;
+
+    if (ev.target && ev.target.closest && ev.target.closest(".coord-delete")) {
+      return true;
+    }
+
+    const r = rect.getBoundingClientRect();
+    const x = ev.clientX - r.left;
+    const y = ev.clientY - r.top;
+
+    /* Protect a small top-right corner pocket around the X. */
+    const zone = Math.max(18, Math.min(30, Math.min(r.width, r.height) * 0.35));
+    return x >= (r.width - zone) && y <= zone;
+  }
+  /* R12B_DELETE_X_PROTECTION_20260615 END */
+  function r12BeginSurfacePinch(ev, boxId, rect) {
+    if (ev.button !== undefined && ev.button !== 0) return;
+    if (ev.target && ev.target.closest && ev.target.closest("button")) return;
+    if (r12bIsDeleteZone(ev, rect)) return;
+
+    ev.preventDefault();
+    ev.stopPropagation();
+
+    const box = r12FindBox(boxId);
+    if (!box) return;
+
+    const mode = r12ModeFromRectEvent(ev, rect);
+    const before = beforeChange();
+    const startBox = Object.assign({}, box);
+    const startPoint = r12StagePointFromEvent(ev);
+    const minW = 0.12;
+    const minH = 0.12;
+
+    state.selectedId = box.id;
+    state.lockedSet = null;
+
+    rect.style.cursor = r12CursorForMode(mode);
+    rect.classList.add("r12-active-pinch");
+
+    try {
+      if (rect.setPointerCapture && ev.pointerId !== undefined) {
+        rect.setPointerCapture(ev.pointerId);
+      }
+    } catch (e) {}
+
+    function onMove(moveEv) {
+      moveEv.preventDefault();
+      moveEv.stopPropagation();
+
+      const p = r12StagePointFromEvent(moveEv);
+      const dx = p.x - startPoint.x;
+      const dy = p.y - startPoint.y;
+
+      const next = {
+        left: startBox.left,
+        top: startBox.top,
+        width: startBox.width,
+        height: startBox.height
+      };
+
+      if (mode === "move") {
+        next.left = startBox.left + dx;
+        next.top = startBox.top + dy;
+      }
+
+      if (mode.indexOf("w") !== -1) {
+        const maxLeft = startBox.left + startBox.width - minW;
+        next.left = clamp(startBox.left + dx, 0, maxLeft);
+        next.width = startBox.width + (startBox.left - next.left);
+      }
+
+      if (mode.indexOf("e") !== -1) {
+        next.width = clamp(startBox.width + dx, minW, 100 - startBox.left);
+      }
+
+      if (mode.indexOf("n") !== -1) {
+        const maxTop = startBox.top + startBox.height - minH;
+        next.top = clamp(startBox.top + dy, 0, maxTop);
+        next.height = startBox.height + (startBox.top - next.top);
+      }
+
+      if (mode.indexOf("s") !== -1) {
+        next.height = clamp(startBox.height + dy, minH, 100 - startBox.top);
+      }
+
+      r12NormalizeIntoBox(box, next);
+      r12PaintRectOnly(rect, box);
+
+      state.dirty = true;
+      state.lastAction = "surface " + mode + " pinch " + box.name;
+      saveState();
+    }
+
+    function onUp(upEv) {
+      upEv.preventDefault();
+      upEv.stopPropagation();
+
+      window.removeEventListener("pointermove", onMove, true);
+      window.removeEventListener("pointerup", onUp, true);
+      window.removeEventListener("pointercancel", onUp, true);
+
+      try {
+        if (rect.releasePointerCapture && ev.pointerId !== undefined) {
+          rect.releasePointerCapture(ev.pointerId);
+        }
+      } catch (e) {}
+
+      rect.classList.remove("r12-active-pinch");
+      r12NormalizeIntoBox(box, box);
+      commitChange(before, "surface " + mode + " pinch " + box.name, true);
+      setMessage("surface " + mode + " adjusted " + box.name);
+      update();
+    }
+
+    window.addEventListener("pointermove", onMove, true);
+    window.addEventListener("pointerup", onUp, true);
+    window.addEventListener("pointercancel", onUp, true);
+  }
+
+  function r12AttachSurfacePinch(rect, box) {
+    if (!rect || !box || rect.dataset.r12SurfacePinch === "1") return;
+
+    rect.dataset.r12SurfacePinch = "1";
+    rect.dataset.boxId = box.id;
+    rect.classList.add("r12-surface-pinch");
+
+    rect.addEventListener("pointermove", function (ev) {
+      if (ev.target && ev.target.closest && ev.target.closest("button")) return;
+    if (r12bIsDeleteZone(ev, rect)) return;
+      rect.style.cursor = r12CursorForMode(r12ModeFromRectEvent(ev, rect));
+    }, false);
+
+    rect.addEventListener("pointerleave", function () {
+      rect.style.cursor = "";
+    }, false);
+
+    rect.addEventListener("pointerdown", function (ev) {
+      r12BeginSurfacePinch(ev, box.id, rect);
+    }, true);
+  }
+
+  function r12ArrangeControls() {
+    if (!panel || panel.dataset.r12Controls === "done") return;
+
+    const undo = document.getElementById("coord-undo");
+    const redo = document.getElementById("coord-redo");
+    const copy = document.getElementById("coord-copy");
+
+    if (undo && redo) {
+      const historyRow = document.createElement("div");
+      historyRow.className = "coord-row coord-row-r12-history";
+      historyRow.appendChild(undo);
+      historyRow.appendChild(redo);
+
+      const statusRow = panel.querySelector(".coord-status");
+      if (statusRow && statusRow.parentElement) {
+        statusRow.parentElement.insertBefore(historyRow, statusRow.nextSibling);
+      } else {
+        panel.insertBefore(historyRow, panel.firstChild);
+      }
+    }
+
+    if (copy) {
+      const copyRow = document.createElement("div");
+      copyRow.className = "coord-row coord-row-r12-bottom-copy";
+      copyRow.appendChild(copy);
+      panel.appendChild(copyRow);
+    }
+
+    panel.dataset.r12Controls = "done";
+  }
+
+  window.setTimeout(function () {
+    r12ArrangeControls();
+    draw();
+  }, 0);
+
+  /* R12_SURFACE_PINCH_RESIZE_MOVE_20260615 END */
+  /* R13_STALE_WORKSHOP_TAB_GUARD_20260615 BEGIN
+     Fresh workshop tabs claim the active launch.
+     Older temp workshop tabs self-disable, block copy/clicks, and try to close.
+     Ctrl+F5 on an old temp file will not make it current. */
+
+  (function r13InstallStaleWorkshopGuard() {
+    const ACTIVE_KEY = "ESO_COORD_WORKSHOP_ACTIVE_LAUNCH_V1";
+
+    function parseRank(version) {
+      const m = String(version || "").match(/^R(\d+)/);
+      return m ? Number(m[1]) : 0;
+    }
+
+    function parseLaunchStamp() {
+      const href = decodeURIComponent(String(location.href || ""));
+      const m = href.match(/ESO_WORKSHOP_R8_(\d{8}_\d{6})_/);
+      return m ? m[1] : "00000000_000000";
+    }
+
+    function metaForThisTab() {
+      const version = String(TOOL_VERSION || "UNKNOWN_TOOL_VERSION");
+      const stamp = parseLaunchStamp();
+      return {
+        id: version + "|" + stamp + "|" + String(location.href || ""),
+        version: version,
+        rank: parseRank(version),
+        stamp: stamp,
+        href: String(location.href || ""),
+        claimedAt: new Date().toISOString()
+      };
+    }
+
+    function readActive() {
+      try {
+        const raw = localStorage.getItem(ACTIVE_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function isFresher(active, mine) {
+      if (!active || !mine) return false;
+
+      const activeRank = Number(active.rank || parseRank(active.version));
+      const mineRank = Number(mine.rank || parseRank(mine.version));
+
+      if (activeRank > mineRank) return true;
+      if (activeRank < mineRank) return false;
+
+      return String(active.stamp || "") > String(mine.stamp || "");
+    }
+
+    function blockIfStale(ev) {
+      if (!document.body || !document.body.classList.contains("coord-workshop-stale")) return;
+
+      const overlay = document.getElementById("coord-stale-workshop-overlay");
+      if (overlay && overlay.contains(ev.target)) return;
+
+      ev.preventDefault();
+      ev.stopPropagation();
+      ev.stopImmediatePropagation();
+    }
+
+    function markStale(active) {
+      if (!document.body || document.body.classList.contains("coord-workshop-stale")) return;
+
+      document.body.classList.add("coord-workshop-stale");
+      document.body.setAttribute("data-stale-because", "newer-workshop-opened");
+
+      const overlay = document.createElement("div");
+      overlay.id = "coord-stale-workshop-overlay";
+      overlay.innerHTML =
+        '<div class="coord-stale-card">' +
+          '<strong>STALE WORKSHOP TAB</strong>' +
+          '<p>This temp workshop is not the active version anymore.</p>' +
+          '<p>Active: <code>' + String((active && active.version) || "newer version") + '</code></p>' +
+          '<p>Close this tab. Use the newest workshop tab only.</p>' +
+        '</div>';
+
+      document.body.appendChild(overlay);
+
+      ["click", "pointerdown", "mousedown", "mouseup", "contextmenu", "keydown", "copy"].forEach(function (type) {
+        document.addEventListener(type, blockIfStale, true);
+      });
+
+      try {
+        window.setTimeout(function () { window.close(); }, 250);
+      } catch (e) {}
+    }
+
+    function claimOrStale() {
+      const mine = metaForThisTab();
+      const active = readActive();
+
+      if (isFresher(active, mine)) {
+        markStale(active);
+        return;
+      }
+
+      try {
+        localStorage.setItem(ACTIVE_KEY, JSON.stringify(mine));
+      } catch (e) {}
+    }
+
+    claimOrStale();
+
+    window.addEventListener("storage", function (ev) {
+      if (ev.key !== ACTIVE_KEY) return;
+
+      const mine = metaForThisTab();
+      const active = readActive();
+
+      if (isFresher(active, mine) && active.id !== mine.id) {
+        markStale(active);
+      }
+    });
+
+    window.addEventListener("focus", claimOrStale);
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) claimOrStale();
+    });
+  })();
+
+  /* R13_STALE_WORKSHOP_TAB_GUARD_20260615 END */
+  /* R14_CONTROLS_LAYOUT_ONLY_20260615 BEGIN
+     Layout only. Does not touch geometry.
+     Keeps Undo/Redo together and moves COPY COORDS to the bottom. */
+  function r14ArrangeControlsOnly() {
+    if (!panel || panel.dataset.r14Controls === "done") return;
+
+    const undo = document.getElementById("coord-undo");
+    const redo = document.getElementById("coord-redo");
+    const copy = document.getElementById("coord-copy");
+
+    if (undo && redo) {
+      const historyRow = document.createElement("div");
+      historyRow.className = "coord-row coord-row-r14-history";
+      historyRow.appendChild(undo);
+      historyRow.appendChild(redo);
+
+      const statusRow = panel.querySelector(".coord-status");
+      if (statusRow && statusRow.parentElement) {
+        statusRow.parentElement.insertBefore(historyRow, statusRow.nextSibling);
+      } else {
+        panel.insertBefore(historyRow, panel.firstChild);
+      }
+    }
+
+    if (copy) {
+      const copyRow = document.createElement("div");
+      copyRow.className = "coord-row coord-row-r14-bottom-copy";
+      copyRow.appendChild(copy);
+      panel.appendChild(copyRow);
+    }
+
+    panel.dataset.r14Controls = "done";
+  }
+
+  window.setTimeout(function () {
+    r14ArrangeControlsOnly();
+  }, 0);
+  /* R14_CONTROLS_LAYOUT_ONLY_20260615 END */
+  /* R15B_COPY_ADJUST_TOP_ROW_CLEAN_20260615 BEGIN
+     The native geometry engine stays in charge.
+     ADJUST BOXES toggles whether existing boxes move/resize.
+     When OFF: clicking an existing box selects it only.
+     When ON: clicking inside moves; clicking near edges resizes.
+     Layout: COPY top full-width, UNDO/REDO under it, CLEAR/RESET together, SHOW/HIDE bottom. */
+
+  function r15EnsureAdjustModeDefault() {
+    if (typeof state.adjustMode !== "boolean") {
+      state.adjustMode = false;
+    }
+  }
+
+  function r15CursorForEdge(edge) {
+    if (!edge) return "move";
+    if ((edge.left && edge.top) || (edge.right && edge.bottom)) return "nwse-resize";
+    if ((edge.right && edge.top) || (edge.left && edge.bottom)) return "nesw-resize";
+    if (edge.left || edge.right) return "ew-resize";
+    if (edge.top || edge.bottom) return "ns-resize";
+    return "move";
+  }
+
+  function r15UpdateAdjustButton(btn) {
+    if (!btn) return;
+    r15EnsureAdjustModeDefault();
+
+    btn.textContent = state.adjustMode ? "ADJUST ON" : "ADJUST OFF";
+    btn.classList.toggle("is-on", !!state.adjustMode);
+    btn.setAttribute("aria-pressed", state.adjustMode ? "true" : "false");
+    btn.title = state.adjustMode
+      ? "adjust mode on: existing boxes move/resize"
+      : "adjust mode off: existing boxes select only; draw mode stays clean";
+  }
+
+  function r15MakeRow(className) {
+    let row = panel.querySelector("." + className);
+    if (!row) {
+      row = document.createElement("div");
+      row.className = "coord-row " + className;
+    }
+    return row;
+  }
+
+  function r15InsertAfter(node, ref) {
+    if (!node || !ref || !ref.parentElement) return;
+    ref.parentElement.insertBefore(node, ref.nextSibling);
+  }
+
+  function r15RemoveEmptyRows() {
+    panel.querySelectorAll(".coord-row").forEach(function (row) {
+      if (
+        !row.classList.contains("coord-row-r15-copy-top") &&
+        !row.classList.contains("coord-row-r15-history") &&
+        !row.classList.contains("coord-row-r15-adjust") &&
+        !row.classList.contains("coord-row-r15-clear-reset") &&
+        !row.classList.contains("coord-row-r15-show-hide") &&
+        row.children.length === 0
+      ) {
+        row.remove();
+      }
+    });
+  }
+
+  function r15ArrangePanelControls() {
+    if (!panel || panel.dataset.r15Controls === "done") return;
+
+    r15EnsureAdjustModeDefault();
+
+    const copy = document.getElementById("coord-copy");
+    const undo = document.getElementById("coord-undo");
+    const redo = document.getElementById("coord-redo");
+    const reset = document.getElementById("coord-reset-view");
+    const clearBoxes = document.getElementById("coord-clear-boxes");
+    const toggleLabels = document.getElementById("coord-toggle-labels");
+    const toggleExisting = document.getElementById("coord-toggle-existing");
+
+    let adjust = document.getElementById("coord-adjust-mode");
+    if (!adjust) {
+      adjust = document.createElement("button");
+      adjust.id = "coord-adjust-mode";
+      adjust.type = "button";
+      adjust.addEventListener("click", function () {
+        r15EnsureAdjustModeDefault();
+        state.adjustMode = !state.adjustMode;
+        state.lockedSet = null;
+        state.lastAction = state.adjustMode ? "adjust boxes mode on" : "adjust boxes mode off";
+        saveState();
+        r15UpdateAdjustButton(adjust);
+        setMessage(state.lastAction);
+        update();
+      });
+    }
+
+    r15UpdateAdjustButton(adjust);
+
+    const statusRow = panel.querySelector(".coord-status") || panel.firstElementChild;
+
+    const copyRow = r15MakeRow("coord-row-r15-copy-top");
+    if (copy) copyRow.appendChild(copy);
+    copyRow.appendChild(adjust);
+
+    const historyRow = r15MakeRow("coord-row-r15-history");
+    if (undo) historyRow.appendChild(undo);
+    if (redo) historyRow.appendChild(redo);
+
+    const adjustRow = r15MakeRow("coord-row-r15-adjust");
+
+    const clearResetRow = r15MakeRow("coord-row-r15-clear-reset");
+    if (clearBoxes) clearResetRow.appendChild(clearBoxes);
+    if (reset) clearResetRow.appendChild(reset);
+
+    const showHideRow = r15MakeRow("coord-row-r15-show-hide");
+    if (toggleLabels) showHideRow.appendChild(toggleLabels);
+    if (toggleExisting) showHideRow.appendChild(toggleExisting);
+
+    if (statusRow) {
+      r15InsertAfter(copyRow, statusRow);
+      r15InsertAfter(historyRow, copyRow);
+      r15InsertAfter(clearResetRow, historyRow);
+    } else {
+      panel.insertBefore(copyRow, panel.firstChild);
+      r15InsertAfter(historyRow, copyRow);
+      r15InsertAfter(clearResetRow, historyRow);
+    }
+
+    panel.appendChild(showHideRow);
+
+    r15RemoveEmptyRows();
+    panel.dataset.r15Controls = "done";
+  }
+
+  window.setTimeout(function () {
+    r15ArrangePanelControls();
+  }, 0);
+
+  /* R15B_COPY_ADJUST_TOP_ROW_CLEAN_20260615 END */
+  function draw() {
+    removeDrawLayer();
+    const lockedIds = new Set(
+      state.lockedSet && Array.isArray(state.lockedSet.items)
+        ? state.lockedSet.items.map(function (item) { return item.id; })
+        : []
+    );
+
+    sortedBoxes(state.boxes).forEach(function (box) {
+      const rect = document.createElement("div");
+      rect.className = "coord-rect";
+      if (box.id === state.selectedId) rect.classList.add("is-active");
+      if (box.marked) rect.classList.add("is-marked");
+      if (lockedIds.has(box.id)) rect.classList.add("is-locked");
+      rect.style.left = box.left + "%";
+      rect.style.top = box.top + "%";
+      rect.style.width = box.width + "%";
+      rect.style.height = box.height + "%";
+      stage.appendChild(rect);const del = document.createElement("button");
+      del.className = "coord-delete";
+      del.type = "button";
+      del.textContent = "x";
+      del.title = "delete " + box.name;
+      del.style.left = (box.left + box.width) + "%";
+      del.style.top = box.top + "%";
+      del.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
+        const before = beforeChange();
+        state.boxes = state.boxes.filter(function (item) { return item.id !== box.id; });
+        if (state.lockedSet) {
+          state.lockedSet.items = state.lockedSet.items.filter(function (item) { return item.id !== box.id; });
+        }
+        state.selectedId = box.id;
+        commitChange(before, "deleted " + box.name, true);
+      }, true);
+      stage.appendChild(del);
+
+      const label = document.createElement("div");
+      label.className = "coord-label";
+      label.textContent = box.label + (box.marked ? " marked" : "") + (lockedIds.has(box.id) ? " locked" : "");
+      label.style.left = box.left + "%";
+      label.style.top = box.top + "%";
+      stage.appendChild(label);
+    });
+
+    if (drag && liveRect) stage.appendChild(liveRect);
+  }
+
+  function renderTargetOptions() {
+    targetEl.innerHTML = "";
+    const drawn = new Set(state.boxes.map(function (box) { return box.id; }));
+    targets.forEach(function (target) {
+      const option = document.createElement("option");
+      option.value = target.id;
+      option.textContent = target.name + " [" + target.row + " c" + target.column + "]" + (drawn.has(target.id) ? " - drawn" : " - missing");
+      targetEl.appendChild(option);
+    });
+    targetEl.value = state.selectedId;
+  }
+
+  function buildCss() {
+    return sortedBoxes(state.boxes).map(function (box) {
+      return `${box.selectors.join(", ")} {
+  left: ${box.left}%;
+  top: ${box.top}%;
+  width: ${box.width}%;
+  height: ${box.height}%;
+}`;
+    }).join("\n\n");
+  }
+
+  function exportObject() {
+    const img = stage.querySelector("img, picture img");
+    return {
+      tool: "ESO R8 coordinate workshop",
+      toolVersion: TOOL_VERSION,
+      timestamp: nowStamp(),
+      sourceMockupPathHint: SOURCE_MOCKUP_HINT,
+      sourceDocument: document.location.href,
+      sourceStageSelector: STAGE_SELECTOR,
+      sourceImagePath: img ? (img.getAttribute("src") || img.currentSrc || "") : "",
+      coordinateUnits: "percent of .aa-front-image-stage",
+      sizingAuthority: "live local mockup public.html + styles.css",
+      grid: {
+        on: state.gridOn,
+        density: state.gridDensity,
+        activeColor: state.activeColor
+      },
+      dirtyBeforeExport: state.dirty,
+      lockedSet: state.lockedSet,
+      boxes: sortedBoxes(state.boxes).map(function (box, index) {
+        return {
+          id: box.id,
+          name: box.name,
+          selector: box.selector,
+          selectors: box.selectors,
+          row: box.row,
+          column: box.column,
+          leftPercent: box.left,
+          topPercent: box.top,
+          widthPercent: box.width,
+          heightPercent: box.height,
+          color: box.color,
+          label: box.label,
+          marked: box.marked,
+          lockedSetId: box.lockedSetId,
+          order: box.lockedOrder || index + 1,
+          notes: box.notes
+        };
+      })
+    };
+  }
+
+  function buildOutputText() {
+    return JSON.stringify(exportObject(), null, 2) + "\n\n/* CSS */\n" + buildCss();
+  }
+
+  function setMessage(text) {
+    state.lastAction = text;
+    messageEl.textContent = text;
+  }
+
+  function refreshButtons() {
+    panel.querySelectorAll("[data-density]").forEach(function (btn) {
+      btn.classList.toggle("is-active", btn.dataset.density === state.gridDensity);
+    });
+    panel.querySelectorAll("[data-color]").forEach(function (btn) {
+      btn.classList.toggle("is-active", btn.dataset.color === state.activeColor);
+    });
+    document.getElementById("coord-grid-toggle").classList.toggle("is-active", state.gridOn);
+    document.getElementById("coord-toggle-labels").classList.toggle("is-active", state.labelsOn);
+    document.getElementById("coord-toggle-existing").classList.toggle("is-active", state.showExisting);
+  }
+
+  function update() {
+    applyToolClasses();
+    renderTargetOptions();
+    draw();
+    countsEl.textContent =
+      " | boxes: " + state.boxes.length +
+      " | marked: " + markedCount() +
+      " | locked: " + lockedCount() +
+      " | grid: " + (state.gridOn ? state.gridDensity : "off") +
+      " | color: " + state.activeColor +
+      " | " + (state.dirty ? "dirty" : "exported");
+    messageEl.textContent = state.lastAction;
+    outputEl.value = buildOutputText();
+    refreshButtons();
+    saveState();
+  }
+
+  function createOrReplaceBoxFromPixels(x1, y1, x2, y2) {
+    const sr = stageRect();
+    const leftPx = Math.min(x1, x2) - sr.left;
+    const topPx = Math.min(y1, y2) - sr.top;
+    const rightPx = Math.max(x1, x2) - sr.left;
+    const bottomPx = Math.max(y1, y2) - sr.top;
+    const target = currentTarget();
+    const before = beforeChange();
+    const previous = findBox(target.id);
+
+    state.boxes = state.boxes.filter(function (box) { return box.id !== target.id; });
+    state.boxes.push(normalizeBox(Object.assign({}, target, {
+      left: pct((leftPx / sr.width) * 100),
+      top: pct((topPx / sr.height) * 100),
+      width: pct(((rightPx - leftPx) / sr.width) * 100),
+      height: pct(((bottomPx - topPx) / sr.height) * 100),
+      color: state.activeColor,
+      label: target.name,
+      marked: previous ? previous.marked : false,
+      lockedSetId: previous ? previous.lockedSetId : "",
+      lockedOrder: previous ? previous.lockedOrder : 0,
+      source: "workshop-drawn"
+    })));
+    state.selectedId = target.id;
+    commitChange(before, (previous ? "redrew " : "created ") + target.name, true);
+  }
+
+  function toggleMarkerById(id) {
+    const box = findBox(id);
+    if (!box) {
+      setMessage("blocked: no box under right-click");
+      update();
+      return;
+    }
+
+    const before = beforeChange();
+    box.marked = !box.marked;
+    state.selectedId = box.id;
+    commitChange(before, (box.marked ? "marked " : "unmarked ") + box.name, true);
+  }
+
+  function clearMarkers() {
+    const count = markedCount();
+    if (!count) {
+      setMessage("blocked: no markers to clear");
+      update();
+      return;
+    }
+
+    const before = beforeChange();
+    state.boxes.forEach(function (box) { box.marked = false; });
+    commitChange(before, "cleared " + count + " markers", true);
+  }
+
+  function lockMarkedSet() {
+    const marked = sortedBoxes(state.boxes.filter(function (box) { return box.marked; }));
+    if (!marked.length) {
+      setMessage("blocked: no marked boxes to lock");
+      update();
+      return;
+    }
+
+    const before = beforeChange();
+    const lockedSetId = "locked-" + Date.now();
+    state.lockedSet = {
+      id: lockedSetId,
+      timestamp: nowStamp(),
+      items: marked.map(function (box, index) {
+        box.lockedSetId = lockedSetId;
+        box.lockedOrder = index + 1;
+        return {
+          id: box.id,
+          name: box.name,
+          order: index + 1,
+          left: box.left,
+          top: box.top,
+          width: box.width,
+          height: box.height
+        };
+      })
+    };
+    commitChange(before, "locked " + marked.length + " boxes", true);
+  }
+
+  function smartAdjustMarked() {
+    const set = selectedSet();
+    if (set.length < 2) {
+      setMessage("blocked: mark or lock at least 2 boxes");
+      update();
+      return;
+    }
+
+    const before = beforeChange();
+    const avgTop = pct(set.reduce(function (sum, box) { return sum + box.top; }, 0) / set.length);
+    const avgHeight = pct(set.reduce(function (sum, box) { return sum + box.height; }, 0) / set.length);
+    const ids = new Set(set.map(function (box) { return box.id; }));
+    let changed = 0;
+
+    state.boxes.forEach(function (box) {
+      if (!ids.has(box.id)) return;
+      if (Math.abs(box.top - avgTop) > .0001) {
+        box.top = avgTop;
+        changed += 1;
+      }
+      if (Math.abs(box.height - avgHeight) > .0001) {
+        box.height = avgHeight;
+        changed += 1;
+      }
+    });
+
+    if (!changed) {
+      setMessage("smart adjust found no top/height change");
+      update();
+      return;
+    }
+
+    commitChange(before, "smart adjusted " + set.length + " boxes top/height only", true);
+  }
+
+  function undo() {
+    if (!undoStack.length) {
+      setMessage("undo stack empty");
+      update();
+      return;
+    }
+
+    redoStack.push(snapshotState());
+    while (redoStack.length > MAX_HISTORY) redoStack.shift();
+    state = undoStack.pop();
+    state.lastAction = "undo";
+    saveStacks();
+    update();
+  }
+
+  function redo() {
+    if (!redoStack.length) {
+      setMessage("redo stack empty");
+      update();
+      return;
+    }
+
+    undoStack.push(snapshotState());
+    while (undoStack.length > MAX_HISTORY) undoStack.shift();
+    state = redoStack.pop();
+    state.lastAction = "redo";
+    saveStacks();
+    update();
+  }
+
+  function markExported(before, action) {
+    recordUndo(before);
+
+    const lockedSetId = "final-export-" + Date.now();
+    const finalItems = sortedBoxes(state.boxes).map(function (box, index) {
+      box.lockedSetId = lockedSetId;
+      box.lockedOrder = index + 1;
+
+      return {
+        id: box.id,
+        name: box.name,
+        left: box.left,
+        top: box.top,
+        width: box.width,
+        height: box.height
+      };
+    });
+
+    state.lockedSet = {
+      id: lockedSetId,
+      createdAt: nowStamp(),
+      final: true,
+      reason: action,
+      items: finalItems
+    };
+
+    state.lastExportAt = nowStamp();
+    state.dirty = false;
+    state.lastAction = action + " / FINAL LOCKED " + finalItems.length + " boxes";
+    update();
+  }
+
+  function exportCoords() {
+    markExported(beforeChange(), "export prepared");
+  }
+
+    async function copyCoords(btn) {
+    const before = beforeChange();
+
+    /* R10_COPY_EXPORT_THEN_CLEAR_ADJUST_BASE_20260615
+       Copy still exports the full final-lock text to clipboard.
+       After clipboard write, lockedSet is cleared so future smart-adjust
+       cannot reuse stale old row/box positions. */
+    markExported(before, "export copied");
+    const text = buildOutputText();
+
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (e) {
+      outputEl.select();
+      document.execCommand("copy");
+    }
+
+    state.lockedSet = null;
+    state.lastExportAt = nowStamp();
+    state.dirty = false;
+    state.lastAction = "copied to clipboard; adjust base cleared";
+    saveState();
+    draw();
+    outputEl.value = text;
+
+    flash(btn, "COPIED + RESET");
+  }
+
+  function resetView() {
+    const before = beforeChange();
+    state.gridOn = true;
+    state.gridDensity = "normal";
+    state.activeColor = "cyan";
+    state.labelsOn = true;
+    state.showExisting = true;
+    commitChange(before, "reset view to cyan normal grid", false);
+    stage.scrollIntoView({ block: "start", inline: "nearest" });
+  }
+
+  stage.addEventListener("contextmenu", function (ev) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    const point = pointFromEvent(ev);
+    const hit = boxAtPoint(point);
+
+    if (rightClickTimer) {
+      window.clearTimeout(rightClickTimer);
+      rightClickTimer = null;
+      clearMarkers();
+      return;
+    }
+
+    rightClickTimer = window.setTimeout(function () {
+      rightClickTimer = null;
+      if (!hit) {
+        setMessage("right-click missed: no box under pointer");
+        update();
+        return;
+      }
+      toggleMarkerById(hit.id);
+    }, RIGHT_CLICK_DOUBLE_MS);
+  }, true);
+
+  stage.addEventListener("mousedown", function (ev) {
+    if (ev.button !== 0) return;
+    if (ev.target && ev.target.classList && ev.target.classList.contains("coord-delete")) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+
+    const point = pointFromEvent(ev);
+    const hit = boxAtPoint(point);
+
+    r15EnsureAdjustModeDefault();
+
+    if (hit && !state.adjustMode) {
+      state.selectedId = hit.id;
+      setMessage("selected " + hit.name + " — turn ADJUST BOXES on to move/resize");
+      update();
+      return;
+    }
+
+    if (hit && state.adjustMode) {
+      const edge = edgeHit(hit, point);
+      const isResizeEdge = !!(edge.left || edge.right || edge.top || edge.bottom);
+      const fromCenterHandle = !!(ev.target && ev.target.closest && ev.target.closest(".coord-r16-center-drag,.coord-r11-move"));
+
+      if (!isResizeEdge && !fromCenterHandle) {
+        state.selectedId = hit.id;
+        state.lastAction = "selected " + hit.name + " — use center dot to move";
+        saveState();
+        setMessage("selected " + hit.name + " — use center dot to move");
+        update();
+        return;
+      }
+
+      const mode = isResizeEdge ? "resize" : "move";
+      drag = {
+        mode: mode,
+        id: hit.id,
+        before: beforeChange(),
+        startPoint: point,
+        startClientX: ev.clientX,
+        startClientY: ev.clientY,
+        original: clone(hit),
+        edge: edge,
+        moved: false
+      };
+      state.selectedId = hit.id;
+      setMessage(mode + " " + hit.name);
+      update();
+      return;
+    }
+
+    drag = {
+      mode: "create",
+      x1: ev.clientX,
+      y1: ev.clientY,
+      x2: ev.clientX,
+      y2: ev.clientY
+    };
+    liveRect = document.createElement("div");
+    liveRect.className = "coord-live-rect";
+    draw();
+  }, true);
+
+  window.addEventListener("mousemove", function (ev) {
+    if (!drag) {
+      r15EnsureAdjustModeDefault();
+
+      if (state.adjustMode) {
+        const point = pointFromEvent(ev);
+        const hit = boxAtPoint(point);
+        stage.style.cursor = hit ? r15CursorForEdge(edgeHit(hit, point)) : "crosshair";
+      } else {
+        stage.style.cursor = "crosshair";
+      }
+
+      return;
+    }
+
+    const sr = stageRect();
+    if (drag.mode === "create") {
+      if (!liveRect) return;
+      drag.x2 = ev.clientX;
+      drag.y2 = ev.clientY;
+      const leftPx = Math.min(drag.x1, drag.x2) - sr.left;
+      const topPx = Math.min(drag.y1, drag.y2) - sr.top;
+      const widthPx = Math.abs(drag.x2 - drag.x1);
+      const heightPx = Math.abs(drag.y2 - drag.y1);
+      liveRect.style.left = pct((leftPx / sr.width) * 100) + "%";
+      liveRect.style.top = pct((topPx / sr.height) * 100) + "%";
+      liveRect.style.width = pct((widthPx / sr.width) * 100) + "%";
+      liveRect.style.height = pct((heightPx / sr.height) * 100) + "%";
+      return;
+    }
+
+    const box = findBox(drag.id);
+    if (!box) return;
+    const dx = pct(((ev.clientX - drag.startClientX) / sr.width) * 100);
+    const dy = pct(((ev.clientY - drag.startClientY) / sr.height) * 100);
+    const original = drag.original;
+    let next = {
+      left: original.left,
+      top: original.top,
+      width: original.width,
+      height: original.height
+    };
+
+    if (drag.mode === "move") {
+      next.left = original.left + dx;
+      next.top = original.top + dy;
+    } else {
+      if (drag.edge.left) {
+        next.left = original.left + dx;
+        next.width = original.width - dx;
+      }
+      if (drag.edge.right) {
+        next.width = original.width + dx;
+      }
+      if (drag.edge.top) {
+        next.top = original.top + dy;
+        next.height = original.height - dy;
+      }
+      if (drag.edge.bottom) {
+        next.height = original.height + dy;
+      }
+    }
+
+    setBoxGeometry(box, next);
+    drag.moved = true;
+    state.dirty = true;
+    draw();
+    outputEl.value = buildOutputText();
+  }, true);
+
+  window.addEventListener("mouseup", function (ev) {
+    if (!drag) return;
+
+    if (drag.mode === "create") {
+      const dx = Math.abs(ev.clientX - drag.x1);
+      const dy = Math.abs(ev.clientY - drag.y1);
+      if (dx >= 4 && dy >= 4) {
+        const drawnTargetId = state.selectedId;
+        createOrReplaceBoxFromPixels(drag.x1, drag.y1, ev.clientX, ev.clientY);
+        advanceTargetAfterDraw(drawnTargetId);
+      }
+    } else if (drag.moved) {
+      const box = findBox(drag.id);
+      recordUndo(drag.before);
+      state.dirty = true;
+      state.lastAction = drag.mode + " " + (box ? box.name : "box");
+      update();
+    }
+
+    drag = null;
+    liveRect = null;
+    draw();
+    update();
+  }, true);
+
+  targetEl.addEventListener("change", function () {
+    state.selectedId = this.value;
+    state.lastAction = "selected " + currentTarget().name;
+    update();
+  });
+
+  document.getElementById("coord-grid-toggle").addEventListener("click", function () {
+    const before = beforeChange();
+    state.gridOn = !state.gridOn;
+    commitChange(before, "grid " + (state.gridOn ? "on" : "off"), false);
+    flash(this);
+  });
+
+  panel.querySelectorAll("[data-density]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const before = beforeChange();
+      state.gridDensity = this.dataset.density;
+      commitChange(before, "grid " + state.gridDensity, false);
+      flash(this);
+    });
+  });
+
+  panel.querySelectorAll("[data-color]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const before = beforeChange();
+      state.activeColor = this.dataset.color;
+      commitChange(before, "color " + state.activeColor, false);
+      flash(this);
+    });
+  });
+
+  document.getElementById("coord-lock-marked").addEventListener("click", function () {
+    lockMarkedSet();
+    flash(this);
+  });
+
+  document.getElementById("coord-smart-adjust").addEventListener("click", function () {
+    smartAdjustMarked();
+    flash(this);
+  });
+
+  document.getElementById("coord-clear-markers").addEventListener("click", function () {
+    clearMarkers();
+    flash(this);
+  });
+
+  document.getElementById("coord-undo").addEventListener("click", function () {
+    undo();
+    flash(this);
+  });
+
+  document.getElementById("coord-redo").addEventListener("click", function () {
+    redo();
+    flash(this);
+  });
+
+  document.getElementById("coord-export").addEventListener("click", function () {
+    exportCoords();
+    flash(this, "EXPORTED");
+  });
+
+  document.getElementById("coord-copy").addEventListener("click", function () {
+    copyCoords(this);
+  });
+
+  document.getElementById("coord-reset-view").addEventListener("click", function () {
+    resetView();
+    flash(this);
+  });
+
+  document.getElementById("coord-toggle-labels").addEventListener("click", function () {
+    const before = beforeChange();
+    state.labelsOn = !state.labelsOn;
+    commitChange(before, "labels " + (state.labelsOn ? "shown" : "hidden"), false);
+    flash(this);
+  });
+
+  document.getElementById("coord-toggle-existing").addEventListener("click", function () {
+    const before = beforeChange();
+    state.showExisting = !state.showExisting;
+    commitChange(before, "existing hotspots " + (state.showExisting ? "shown" : "hidden"), false);
+    flash(this);
+  });
+
+  document.getElementById("coord-clear-boxes").addEventListener("click", function () {
+    const before = beforeChange();
+    state.boxes = [];
+    state.lockedSet = null;
+    commitChange(before, "cleared boxes", true);
+    flash(this);
+  });
+
+  update();
+
+  /* R9_FORGET_MEMORY_AND_TARGET_LOCK_CONTROLS_20260615 */
+  function r9ForgetMemoryAndReload() {
+    [
+      STORE_STATE,
+      STORE_UNDO,
+      STORE_REDO,
+      OLD_ROWS,
+      OLD_SELECTED,
+      "coordWorkshopR8StateV2",
+      "coordWorkshopR8UndoV2",
+      "coordWorkshopR8RedoV2",
+      "coordRowsR8",
+      "coordSelectedR8",
+      "coordColorR8",
+      "coordWorkshopR9SideRailStateV1",
+      "coordWorkshopR9SideRailUndoV1",
+      "coordWorkshopR9SideRailRedoV1"
+    ].forEach(function (key) {
+      try { localStorage.removeItem(key); } catch (e) {}
+    });
+
+    try { sessionStorage.removeItem(STORE_STATE); } catch (e) {}
+    location.reload();
+  }
+
+  function r9UpdateTargetLockButton() {
+    const btn = document.getElementById("coord-target-lock");
+    if (!btn) return;
+    btn.textContent = state.manualTargetLock ? "TARGET LOCK ON" : "TARGET LOCK OFF";
+    btn.setAttribute("aria-pressed", state.manualTargetLock ? "true" : "false");
+  }
+
+  document.addEventListener("click", function (ev) {
+    const forget = ev.target && ev.target.closest ? ev.target.closest("#coord-forget-memory") : null;
+    if (forget) {
+      ev.preventDefault();
+      r9ForgetMemoryAndReload();
+      return;
+    }
+
+    const lock = ev.target && ev.target.closest ? ev.target.closest("#coord-target-lock") : null;
+    if (lock) {
+      ev.preventDefault();
+      state.manualTargetLock = !state.manualTargetLock;
+      state.lastAction = state.manualTargetLock
+        ? "TARGET LOCK ON. Dropdown target will not auto-advance after draw."
+        : "TARGET LOCK OFF. Tool will auto-advance after draw.";
+      if (typeof saveState === "function") saveState();
+      if (typeof render === "function") render();
+      r9UpdateTargetLockButton();
+    }
+  });
+
+  document.addEventListener("change", function (ev) {
+    if (!ev.target || ev.target.id !== "coord-target") return;
+    if (targetById.has(ev.target.value)) {
+      state.selectedId = ev.target.value;
+      state.lastAction = "Selected target: " + currentTarget().name;
+      if (typeof saveState === "function") saveState();
+      if (typeof render === "function") render();
+      r9UpdateTargetLockButton();
+    }
+  });
+  /* R16E3_NUDGE_INTEGRATED_REAL_STATE_20260615 BEGIN
+     Integrated nudge mode.
+     Uses real tool state.selectedId and findBox().
+     NUDGE and ADJUST are mutually exclusive.
+     Button text stays clean: NUDGE only.
+     Closing without COPY restores the load-time baseline from localStorage. */
+
+  const R16E3_NUDGE_BUMP_PX = 4;
+  let r16e3CopyCommitted = false;
+  let r16e3NudgeButton = null;
+
+  const r16e3BaselineStateRaw = localStorage.getItem(STORE_STATE);
+  const r16e3BaselineUndoRaw = localStorage.getItem(STORE_UNDO);
+  const r16e3BaselineRedoRaw = localStorage.getItem(STORE_REDO);
+  const r16e3BaselineColorRaw = localStorage.getItem("coordColorR8");
+
+  state.nudgeMode = false;
+
+  function r16e3RestoreRaw(key, value) {
+    try {
+      if (value === null || value === undefined) {
+        localStorage.removeItem(key);
+      } else {
+        localStorage.setItem(key, value);
+      }
+    } catch (e) {}
+  }
+
+  function r16e3RestoreIfNoCopy() {
+    if (r16e3CopyCommitted) return;
+    r16e3RestoreRaw(STORE_STATE, r16e3BaselineStateRaw);
+    r16e3RestoreRaw(STORE_UNDO, r16e3BaselineUndoRaw);
+    r16e3RestoreRaw(STORE_REDO, r16e3BaselineRedoRaw);
+    r16e3RestoreRaw("coordColorR8", r16e3BaselineColorRaw);
+  }
+
+  window.addEventListener("beforeunload", r16e3RestoreIfNoCopy);
+
+  function r16e3Clamp(n, min, max) {
+    return Math.max(min, Math.min(max, n));
+  }
+
+  function r16e3AdjustButton() {
+    return document.getElementById("coord-adjust-mode");
+  }
+
+  function r16e3UpdateNudgeButton() {
+    if (!r16e3NudgeButton) return;
+    r16e3NudgeButton.textContent = "NUDGE";
+    r16e3NudgeButton.classList.toggle("is-on", !!state.nudgeMode);
+    r16e3NudgeButton.setAttribute("aria-pressed", state.nudgeMode ? "true" : "false");
+  }
+
+  function r16e3SyncAdjustButton() {
+    const adjust = r16e3AdjustButton();
+    if (!adjust) return;
+
+    if (typeof r15UpdateAdjustButton === "function") {
+      r15UpdateAdjustButton(adjust);
+      return;
+    }
+
+    adjust.classList.toggle("is-on", !!state.adjustMode);
+    adjust.setAttribute("aria-pressed", state.adjustMode ? "true" : "false");
+    adjust.textContent = state.adjustMode ? "ADJUST ON" : "ADJUST OFF";
+  }
+
+  function r16e3SetNudgeMode(on) {
+    r15EnsureAdjustModeDefault();
+
+    state.nudgeMode = !!on;
+
+    if (state.nudgeMode) {
+      state.adjustMode = false;
+      state.lastAction = "nudge mode on";
+    } else {
+      state.lastAction = "nudge mode off";
+    }
+
+    r16e3SyncAdjustButton();
+    r16e3UpdateNudgeButton();
+    saveState();
+    update();
+  }
+
+  function r16e3InstallButton() {
+    const existing = document.querySelector(".coord-r16-nudge-row");
+    if (existing) existing.remove();
+
+    const copyRow =
+      document.querySelector(".coord-row-r15-copy-top") ||
+      (document.getElementById("coord-copy") ? document.getElementById("coord-copy").closest(".coord-row") : null);
+
+    const panelEl = document.querySelector(".coord-panel");
+
+    if (!copyRow || !copyRow.parentNode || !panelEl) return false;
+
+    const row = document.createElement("div");
+    row.className = "coord-row coord-r16-nudge-row";
+
+    const btn = document.createElement("button");
+    btn.id = "coord-nudge-mode";
+    btn.type = "button";
+    btn.className = "coord-r16-nudge-toggle";
+    btn.textContent = "NUDGE";
+    btn.title = "NUDGE";
+    btn.setAttribute("aria-pressed", "false");
+
+    btn.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+      r16e3SetNudgeMode(!state.nudgeMode);
+    });
+
+    row.appendChild(btn);
+    copyRow.parentNode.insertBefore(row, copyRow);
+
+    r16e3NudgeButton = btn;
+    r16e3UpdateNudgeButton();
+    return true;
+  }
+
+  function r16e3BoxRect(id) {
+    const nodes = Array.prototype.slice.call(document.querySelectorAll("[data-box-id]"));
+    return nodes.find(function (el) {
+      return el && el.dataset && el.dataset.boxId === id;
+    }) || null;
+  }
+
+  function r16e3Flash(id) {
+    const rect = r16e3BoxRect(id);
+    if (!rect || !rect.classList) return;
+
+    rect.classList.remove("coord-r16-nudge-flash");
+    void rect.offsetWidth;
+    rect.classList.add("coord-r16-nudge-flash");
+
+    window.setTimeout(function () {
+      if (rect && rect.classList) rect.classList.remove("coord-r16-nudge-flash");
+    }, 130);
+  }
+
+  function r16e3Nudge(dxPx, dyPx) {
+    const box = findBox(state.selectedId);
+
+    if (!box) {
+      state.lastAction = "nudge missed: selected target has no drawn box";
+      setMessage(state.lastAction);
+      update();
+      return;
+    }
+
+    const sr = stageRect();
+
+    if (!sr.width || !sr.height) {
+      state.lastAction = "nudge blocked: stage size unavailable";
+      setMessage(state.lastAction);
+      update();
+      return;
+    }
+
+    const before = beforeChange();
+
+    const dx = (dxPx / sr.width) * 100;
+    const dy = (dyPx / sr.height) * 100;
+
+    box.left = pct(r16e3Clamp(box.left + dx, 0, 100 - box.width));
+    box.top = pct(r16e3Clamp(box.top + dy, 0, 100 - box.height));
+
+    state.selectedId = box.id;
+    state.lastAction = "nudged " + box.name;
+
+    commitChange(before, state.lastAction, true);
+    r16e3Flash(box.id);
+  }
+
+  document.addEventListener("click", function (ev) {
+    const copy = ev.target && ev.target.closest ? ev.target.closest("#coord-copy") : null;
+    if (copy) {
+      r16e3CopyCommitted = true;
+      return;
+    }
+
+    const forget = ev.target && ev.target.closest ? ev.target.closest("#coord-forget-memory") : null;
+    if (forget) {
+      r16e3CopyCommitted = true;
+      return;
+    }
+  }, true);
+
+  document.addEventListener("click", function (ev) {
+    const adjust = ev.target && ev.target.closest ? ev.target.closest("#coord-adjust-mode") : null;
+    if (!adjust) return;
+
+    window.setTimeout(function () {
+      r15EnsureAdjustModeDefault();
+
+      if (state.adjustMode && state.nudgeMode) {
+        state.nudgeMode = false;
+        state.lastAction = "adjust mode on; nudge mode off";
+        r16e3UpdateNudgeButton();
+        saveState();
+      }
+    }, 0);
+  }, false);
+
+  document.addEventListener("keydown", function (ev) {
+    if (!state.nudgeMode) return;
+    if (ev.repeat) return;
+
+    if (ev.target && ev.target.closest && ev.target.closest("input, textarea, [contenteditable='true']")) return;
+
+    let dx = 0;
+    let dy = 0;
+
+    if (ev.key === "ArrowUp") dy = -R16E3_NUDGE_BUMP_PX;
+    else if (ev.key === "ArrowDown") dy = R16E3_NUDGE_BUMP_PX;
+    else if (ev.key === "ArrowLeft") dx = -R16E3_NUDGE_BUMP_PX;
+    else if (ev.key === "ArrowRight") dx = R16E3_NUDGE_BUMP_PX;
+    else return;
+
+    ev.preventDefault();
+    ev.stopPropagation();
+
+    r16e3Nudge(dx, dy);
+  }, true);
+
+  document.addEventListener("change", function (ev) {
+    if (!ev.target || ev.target.id !== "coord-target") return;
+    window.setTimeout(function () {
+      r16e3UpdateNudgeButton();
+    }, 0);
+  }, false);
+
+  r16e3InstallButton();
+
+  setInterval(function () {
+    r16e3UpdateNudgeButton();
+  }, 300);
+
+  window.ESO_R16E3_NUDGE_STATUS = function () {
+    return {
+      version: "R16E3_INTEGRATED_REAL_STATE",
+      selectedId: state.selectedId,
+      selectedBox: !!findBox(state.selectedId),
+      nudgeMode: !!state.nudgeMode,
+      adjustMode: !!state.adjustMode,
+      copyCommitted: !!r16e3CopyCommitted,
+      rule: "COPY keeps/export-locks; close without COPY restores load-time localStorage baseline"
+    };
+  };
+
+  /* R16E3_NUDGE_INTEGRATED_REAL_STATE_20260615 END */
+
+
+  setInterval(r9UpdateTargetLockButton, 300);
+})();
+</script>
+<!-- ESO_WORKSHOP_SMART_ADJUST_FIX_V2 -->
+<!-- COORD_MARK_TOOL_20260613_R8 END -->
+
+<script>
+/* R16B_CENTER_HANDLE_MOVE_AND_CENTERED_STROKE_20260615 BEGIN
+   Guard against accidental body-drag. Move starts only from center marker. */
+(function(){
+  "use strict";
+
+  const MARKER = "R16B_CENTER_HANDLE_MOVE_AND_CENTERED_STROKE_20260615";
+  if (window[MARKER]) return;
+  window[MARKER] = true;
+
+  const allowedMoveOrResize = [
+    ".coord-r16-center-drag",
+    ".coord-r11-move",
+    ".coord-r11-edge",
+    ".coord-r11-corner",
+    ".coord-r12-handle",
+    ".coord-r12-surface-pinch",
+    ".coord-delete"
+  ].join(",");
+
+  function ensureCenterHandles(){
+    document.querySelectorAll(".coord-rect").forEach(function(rect){
+      let handle = rect.querySelector(".coord-r11-move, .coord-r16-center-drag");
+      if (!handle) {
+        handle = document.createElement("div");
+        handle.className = "coord-r11-move coord-r16-center-drag";
+        handle.setAttribute("data-r16b-center-drag", "1");
+        handle.title = "center drag handle";
+        rect.appendChild(handle);
+      } else {
+        handle.classList.add("coord-r16-center-drag");
+        handle.setAttribute("data-r16b-center-drag", "1");
+        handle.title = "center drag handle";
+      }
+    });
+  }
+
+  function blockAccidentalBodyDrag(ev){
+    const target = ev.target;
+    if (!target || !target.closest) return;
+
+    const rect = target.closest(".coord-rect");
+    if (!rect) return;
+
+    if (target.closest(allowedMoveOrResize)) return;
+
+    ev.stopImmediatePropagation();
+  }
+
+  ["pointerdown", "mousedown", "touchstart"].forEach(function(type){
+    document.addEventListener(type, blockAccidentalBodyDrag, true);
+  });
+
+  ensureCenterHandles();
+
+  const obs = new MutationObserver(function(){
+    ensureCenterHandles();
+  });
+
+  obs.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+
+  window.addEventListener("load", ensureCenterHandles);
+})();
+ /* R16B_CENTER_HANDLE_MOVE_AND_CENTERED_STROKE_20260615 END */
+</script>

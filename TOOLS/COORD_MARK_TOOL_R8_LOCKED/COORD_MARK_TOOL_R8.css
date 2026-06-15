@@ -1,0 +1,1030 @@
+/* COORD_MARK_TOOL_20260613_R8 BEGIN */
+body.coord-map-mode {
+  --coord-color: #00e5ff;
+  --coord-grid-major: rgba(0, 229, 255, .26);
+  --coord-grid-minor: rgba(0, 189, 255, .095);
+  --coord-fill: rgba(0, 229, 255, .08);
+  --coord-marker: #ff4dff;
+  --coord-marker-fill: rgba(255, 77, 255, .10);
+  --coord-locked: #00e5ff;
+  --coord-danger: #ff4545;
+  --coord-major-size: 10%;
+  --coord-minor-size: 2%;
+  --coord-panel-bg: rgba(1, 8, 13, .97);
+  --coord-panel-border: #00bfe8;
+  background: #020202 !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-rows: calc(100svh - 12px) auto !important;
+  place-items: center !important;
+  align-content: start !important;
+  min-height: 100svh !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: var(--aa-edge-gap, 6px) !important;
+}
+
+body.coord-map-mode .aa-picture-only-shell {
+  grid-row: 1 !important;
+  align-self: center !important;
+  justify-self: center !important;
+}
+
+body.coord-map-mode .aa-picture-only-shell,
+body.coord-map-mode .aa-front-image-stage {
+  width: var(--aa-stage-width) !important;
+  max-width: var(--aa-stage-width-from-viewport, calc(100vw - 12px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body.coord-map-mode .aa-front-image-stage {
+  aspect-ratio: 1672 / 941 !important;
+  position: relative !important;
+  cursor: crosshair !important;
+  overflow: visible !important;
+}
+
+body.coord-map-mode .aa-front-image {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+}
+
+body.coord-map-mode .aa-fake-hotspot,
+body.coord-map-mode .aa-hotspot,
+body.coord-map-mode .aa-top-hotspot,
+body.coord-map-mode .aa-card-start,
+body.coord-map-mode .aa-card-index,
+body.coord-map-mode .aa-card-records,
+body.coord-map-mode .aa-card-notes,
+body.coord-map-mode .aa-card-spine,
+body.coord-map-mode .aa-card-parts {
+  background: rgba(0, 229, 255, .025) !important;
+  border: 1px dotted rgba(0, 229, 255, .36) !important;
+  box-shadow: none !important;
+  color: transparent !important;
+  outline: 0 !important;
+  pointer-events: none !important;
+}
+
+body.coord-hide-existing .aa-fake-hotspot,
+body.coord-hide-existing .aa-hotspot,
+body.coord-hide-existing .aa-top-hotspot,
+body.coord-hide-existing .aa-card-start,
+body.coord-hide-existing .aa-card-index,
+body.coord-hide-existing .aa-card-records,
+body.coord-hide-existing .aa-card-notes,
+body.coord-hide-existing .aa-card-spine,
+body.coord-hide-existing .aa-card-parts {
+  border-color: transparent !important;
+  background: transparent !important;
+}
+
+.coord-grid-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--coord-grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--coord-grid-major) 1px, transparent 1px),
+    linear-gradient(var(--coord-grid-minor) 1px, transparent 1px),
+    linear-gradient(90deg, var(--coord-grid-minor) 1px, transparent 1px);
+  background-size:
+    var(--coord-major-size) var(--coord-major-size),
+    var(--coord-major-size) var(--coord-major-size),
+    var(--coord-minor-size) var(--coord-minor-size),
+    var(--coord-minor-size) var(--coord-minor-size);
+}
+
+body.coord-grid-off .coord-grid-layer {
+  display: none;
+}
+
+body.coord-density-light {
+  --coord-grid-major: rgba(0, 229, 255, .18);
+  --coord-grid-minor: rgba(0, 0, 0, 0);
+  --coord-major-size: 10%;
+  --coord-minor-size: 10%;
+}
+
+body.coord-density-normal {
+  --coord-grid-major: rgba(0, 229, 255, .26);
+  --coord-grid-minor: rgba(0, 189, 255, .095);
+  --coord-major-size: 10%;
+  --coord-minor-size: 2%;
+}
+
+body.coord-density-tight {
+  --coord-grid-major: rgba(0, 229, 255, .32);
+  --coord-grid-minor: rgba(0, 189, 255, .13);
+  --coord-major-size: 5%;
+  --coord-minor-size: 1%;
+}
+
+.coord-live-rect,
+.coord-rect {
+  position: absolute;
+  z-index: 35;
+  border: 1px solid var(--coord-color);
+  border-radius: 0 !important;
+  background: var(--coord-fill);
+  box-shadow: none !important;
+  pointer-events: none;
+}
+
+.coord-live-rect {
+  z-index: 45;
+}
+
+.coord-rect.is-active {
+  box-shadow: 0 0 0 1px rgba(255,255,255,.55) !important;
+}
+
+.coord-rect.is-marked {
+  z-index: 41;
+  border: 2px solid var(--coord-marker);
+  background: var(--coord-marker-fill);
+  box-shadow: 0 0 0 1px rgba(255,77,255,.42), 0 0 12px rgba(255,77,255,.28) !important;
+}
+
+.coord-rect.is-locked {
+  z-index: 43;
+  border-color: var(--coord-locked);
+  outline: 2px dashed var(--coord-locked);
+  outline-offset: 2px;
+}
+
+.coord-delete {
+  position: absolute;
+  z-index: 80;
+  width: 18px;
+  height: 18px;
+  transform: translate(calc(-100% - 2px), 2px);
+  border: 1px solid var(--coord-danger);
+  background: #160000;
+  color: #fff0f0;
+  font: 700 13px/16px Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.coord-delete:hover {
+  background: #4b0000;
+}
+
+.coord-delete:active {
+  transform: translate(calc(-100% - 2px), 3px) scale(.94);
+}
+
+.coord-label {
+  position: absolute;
+  z-index: 51;
+  transform: translateY(-115%);
+  max-width: 180px;
+  overflow: hidden;
+  padding: 2px 5px;
+  background: rgba(0,0,0,.86);
+  color: #e6fbff;
+  border: 1px solid rgba(0, 229, 255, .58);
+  font: 10px/1.2 Consolas, monospace;
+  pointer-events: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.coord-hide-labels .coord-label {
+  display: none;
+}
+
+.coord-panel {
+  grid-row: 2;
+  position: static !important;
+  z-index: auto !important;
+  width: min(1500px, calc(100vw - 28px));
+  margin: 18px auto 48px auto;
+  background: var(--coord-panel-bg);
+  color: #e9fbff;
+  border: 1px solid var(--coord-panel-border);
+  box-shadow: 0 12px 40px rgba(0,0,0,.65);
+  padding: 14px;
+  font: 13px/1.35 Consolas, monospace;
+}
+
+.coord-panel strong {
+  color: #9ff4ff;
+}
+
+.coord-panel button {
+  margin: 4px 4px 6px 0;
+  padding: 7px 10px;
+  background: #08222d;
+  color: #e9fbff;
+  border: 1px solid rgba(0, 229, 255, .42);
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 80ms ease, filter 80ms ease, box-shadow 80ms ease, background 80ms ease;
+}
+
+.coord-panel button:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 0 1px rgba(0,229,255,.32), 0 0 10px rgba(0,229,255,.20);
+}
+
+.coord-panel button:active,
+.coord-panel button.is-clicked,
+.coord-panel button.is-active {
+  transform: translateY(2px) scale(.985);
+  filter: brightness(.96);
+  box-shadow: inset 0 2px 8px rgba(0,0,0,.45);
+}
+
+.coord-panel button.is-active {
+  background: #005870;
+  color: #ffffff;
+}
+
+.coord-panel button:disabled {
+  cursor: not-allowed;
+  filter: grayscale(.6) brightness(.65);
+  opacity: .58;
+}
+
+.coord-panel button:focus-visible,
+.coord-panel select:focus-visible,
+.coord-panel textarea:focus-visible {
+  outline: 2px solid var(--coord-color);
+  outline-offset: 2px;
+}
+
+.coord-panel select {
+  max-width: 280px;
+  margin: 2px 6px;
+  padding: 5px 8px;
+  background: #02070a;
+  color: #e9fbff;
+  border: 1px solid rgba(0, 229, 255, .42);
+  font: 12px/1.35 Consolas, monospace;
+}
+
+.coord-panel .coord-row {
+  margin: 8px 0 6px 0;
+}
+
+.coord-panel .coord-color-btn {
+  min-width: 74px;
+}
+
+.coord-panel .coord-color-cyan { background: #00e5ff; color: #001014; }
+.coord-panel .coord-color-magenta { background: #ff4dff; color: #160016; }
+.coord-panel .coord-color-lime { background: #60ff60; color: #001500; }
+.coord-panel .coord-color-white { background: #f4f4f4; color: #050505; }
+.coord-panel .coord-color-red { background: #ff4545; color: #180000; }
+.coord-panel .coord-color-orange { background: #ff8a00; color: #1a0800; }
+.coord-panel .coord-color-black { background: #050505; color: #f4f4f4; }
+
+.coord-panel textarea {
+  width: 100%;
+  height: 280px;
+  margin-top: 8px;
+  background: #02070a;
+  color: #dffbff;
+  border: 1px solid rgba(0, 229, 255, .34);
+  padding: 8px;
+  resize: vertical;
+  font: 12px/1.35 Consolas, monospace;
+}
+
+.coord-panel .coord-small {
+  color: #9fdce7;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.coord-panel .coord-status {
+  margin: 8px 0 4px 0;
+  color: #f7feff;
+}
+/* COORD_MARK_TOOL_20260613_R8 END */
+
+/* R9_SIDE_RAIL_COMPACT_TOOL_20260615 BEGIN */
+/* Tool lives in right side rail. No bottom tool row. No panel over picture.
+   The stage stays the coordinate authority. */
+
+body.coord-map-mode {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  grid-template-rows: minmax(0, calc(100svh - 12px)) !important;
+  gap: 8px !important;
+  width: 100vw !important;
+  height: 100svh !important;
+  min-height: 100svh !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  overflow: hidden !important;
+  background: #050505 !important;
+}
+
+body.coord-map-mode main,
+body.coord-map-mode .aa-picture-only-shell,
+body.coord-map-mode .aa-front-map-shell,
+body.coord-map-mode .aa-image-map-shell,
+body.coord-map-mode .aa-map-shell,
+body.coord-map-mode .aa-index-map-shell,
+body.coord-map-mode .aa-front-stage,
+body.coord-map-mode .aa-image-stage,
+body.coord-map-mode .aa-picture-stage,
+body.coord-map-mode .aa-front-image-stage {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  align-self: center !important;
+  justify-self: center !important;
+  width: min(100%, calc((100svh - 12px) * 1.776833)) !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: calc(100svh - 12px) !important;
+  aspect-ratio: 1672 / 941 !important;
+  margin: 0 !important;
+  transform: none !important;
+  transform-origin: center center !important;
+}
+
+body.coord-map-mode .aa-front-image-stage {
+  position: relative !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
+}
+
+body.coord-map-mode .aa-front-image-stage > img,
+body.coord-map-mode .aa-front-image-stage .aa-front-image,
+body.coord-map-mode img[src*="aa-front-original"] {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.coord-map-mode .coord-panel {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  position: relative !important;
+  inset: auto !important;
+  align-self: stretch !important;
+  justify-self: stretch !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 10px !important;
+  border: 1px solid rgba(0,229,255,.28) !important;
+  border-radius: 10px !important;
+  background: rgba(5, 7, 9, .96) !important;
+  box-shadow: 0 0 24px rgba(0,0,0,.55) !important;
+  z-index: 999999 !important;
+  font-size: 12px !important;
+  line-height: 1.25 !important;
+}
+
+body.coord-map-mode .coord-panel strong {
+  font-size: 12px !important;
+  letter-spacing: .08em !important;
+}
+
+body.coord-map-mode .coord-small {
+  font-size: 10px !important;
+  opacity: .78 !important;
+  margin: 4px 0 6px !important;
+}
+
+body.coord-map-mode .coord-status {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 5px !important;
+  margin: 6px 0 !important;
+}
+
+body.coord-map-mode .coord-status select {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+body.coord-map-mode .coord-row {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 5px !important;
+  margin: 5px 0 !important;
+}
+
+body.coord-map-mode .coord-row button,
+body.coord-map-mode .coord-panel button,
+body.coord-map-mode .coord-panel select {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  padding: 6px 7px !important;
+  font-size: 10px !important;
+  line-height: 1.1 !important;
+  white-space: normal !important;
+}
+
+body.coord-map-mode .coord-color-btn {
+  min-height: 26px !important;
+}
+
+body.coord-map-mode .coord-output,
+body.coord-map-mode textarea,
+body.coord-map-mode pre {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  font-size: 10px !important;
+}
+
+@media (max-width: 980px) {
+  body.coord-map-mode {
+    grid-template-columns: minmax(0, 1fr) 220px !important;
+  }
+
+  body.coord-map-mode .coord-panel {
+    padding: 8px !important;
+  }
+
+  body.coord-map-mode .coord-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* R9_SIDE_RAIL_COMPACT_TOOL_20260615 END */
+
+/* R11_EDGE_RESIZE_DRAG_MOVE_CONTROLS_20260615 BEGIN
+   Manual correction handles for existing drawn boxes. */
+.coord-rect.r11-adjustable {
+  pointer-events: auto !important;
+}
+
+.coord-r11-edge,
+.coord-r11-move {
+  position: absolute !important;
+  z-index: 8 !important;
+  pointer-events: auto !important;
+  border: 1px solid rgba(255, 255, 255, .75) !important;
+  background: rgba(0, 0, 0, .76) !important;
+  color: #fff !important;
+  box-shadow: 0 0 8px rgba(0, 229, 255, .35) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.coord-r11-edge {
+  opacity: .78 !important;
+}
+
+.coord-r11-edge:hover,
+.coord-r11-edge:focus-visible,
+.coord-r11-move:hover,
+.coord-r11-move:focus-visible {
+  opacity: 1 !important;
+  background: rgba(0, 229, 255, .26) !important;
+  outline: 1px solid rgba(255, 255, 255, .92) !important;
+}
+
+.coord-r11-edge-n {
+  left: 8px !important;
+  right: 8px !important;
+  top: -6px !important;
+  height: 12px !important;
+  cursor: ns-resize !important;
+}
+
+.coord-r11-edge-s {
+  left: 8px !important;
+  right: 8px !important;
+  bottom: -6px !important;
+  height: 12px !important;
+  cursor: ns-resize !important;
+}
+
+.coord-r11-edge-w {
+  top: 8px !important;
+  bottom: 8px !important;
+  left: -6px !important;
+  width: 12px !important;
+  cursor: ew-resize !important;
+}
+
+.coord-r11-edge-e {
+  top: 8px !important;
+  bottom: 8px !important;
+  right: -6px !important;
+  width: 12px !important;
+  cursor: ew-resize !important;
+}
+
+.coord-r11-move {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  min-width: 38px !important;
+  height: 18px !important;
+  border-radius: 999px !important;
+  font: 700 9px/16px ui-monospace, SFMono-Regular, Consolas, monospace !important;
+  letter-spacing: .08em !important;
+  cursor: move !important;
+}
+
+.coord-delete {
+  z-index: 12 !important;
+}
+
+.coord-row-r11-history {
+  gap: 6px !important;
+}
+
+.coord-row-r11-history #coord-undo,
+.coord-row-r11-history #coord-redo {
+  flex: 1 1 0 !important;
+}
+
+.coord-row-r11-bottom-copy {
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid rgba(0, 229, 255, .18) !important;
+}
+
+.coord-row-r11-bottom-copy #coord-copy {
+  flex: 1 1 100% !important;
+  min-height: 38px !important;
+  font-weight: 800 !important;
+  letter-spacing: .08em !important;
+}
+/* R11_EDGE_RESIZE_DRAG_MOVE_CONTROLS_20260615 END */
+
+/* R12_SURFACE_PINCH_RESIZE_MOVE_20260615 BEGIN
+   No resize bars. No drag button. No added measuring lines.
+   The rectangle itself is the interactive surface.
+   Cursor is the only cue. */
+.coord-rect.r12-surface-pinch {
+  pointer-events: auto !important;
+  touch-action: none !important;
+}
+
+.coord-rect.r12-surface-pinch .coord-r11-edge,
+.coord-rect.r12-surface-pinch .coord-r11-move,
+.coord-r11-edge,
+.coord-r11-move {
+  display: none !important;
+}
+
+/* Keep delete X above the surface behavior. */
+.coord-delete {
+  z-index: 12 !important;
+}
+
+.coord-row-r12-history {
+  gap: 6px !important;
+}
+
+.coord-row-r12-history #coord-undo,
+.coord-row-r12-history #coord-redo {
+  flex: 1 1 0 !important;
+}
+
+.coord-row-r12-bottom-copy {
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid rgba(0, 229, 255, .18) !important;
+}
+
+.coord-row-r12-bottom-copy #coord-copy {
+  flex: 1 1 100% !important;
+  min-height: 38px !important;
+  font-weight: 800 !important;
+  letter-spacing: .08em !important;
+}
+/* R12_SURFACE_PINCH_RESIZE_MOVE_20260615 END */
+
+/* R13_STALE_WORKSHOP_TAB_GUARD_20260615 BEGIN */
+body.coord-workshop-stale .coord-stage,
+body.coord-workshop-stale .coord-panel {
+  pointer-events: none !important;
+  filter: grayscale(.85) brightness(.45) !important;
+}
+
+#coord-stale-workshop-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: grid !important;
+  place-items: center !important;
+  background: rgba(0, 0, 0, .82) !important;
+  color: #fff !important;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace !important;
+  pointer-events: auto !important;
+}
+
+#coord-stale-workshop-overlay .coord-stale-card {
+  width: min(560px, calc(100vw - 40px)) !important;
+  border: 2px solid rgba(255, 195, 80, .95) !important;
+  background: rgba(12, 9, 4, .96) !important;
+  box-shadow: 0 0 34px rgba(255, 195, 80, .24) !important;
+  padding: 22px !important;
+  text-align: center !important;
+}
+
+#coord-stale-workshop-overlay strong {
+  display: block !important;
+  margin-bottom: 12px !important;
+  color: #ffc350 !important;
+  font-size: 18px !important;
+  letter-spacing: .12em !important;
+}
+
+#coord-stale-workshop-overlay p {
+  margin: 8px 0 !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+}
+
+#coord-stale-workshop-overlay code {
+  color: #77eaff !important;
+  white-space: normal !important;
+}
+/* R13_STALE_WORKSHOP_TAB_GUARD_20260615 END */
+
+/* R12B_DELETE_X_PROTECTION_20260615 BEGIN
+   Delete X sits above surface pinch and keeps normal click behavior. */
+.coord-rect.r12-surface-pinch .coord-delete,
+.coord-delete {
+  pointer-events: auto !important;
+  z-index: 2147483000 !important;
+  cursor: pointer !important;
+}
+
+.coord-rect.r12-surface-pinch .coord-delete:hover,
+.coord-delete:hover {
+  filter: brightness(1.25) !important;
+}
+/* R12B_DELETE_X_PROTECTION_20260615 END */
+
+/* R14_CONTROLS_LAYOUT_ONLY_20260615 BEGIN
+   Layout only. No geometry/pinch/drag CSS. */
+.coord-row-r14-history {
+  gap: 6px !important;
+}
+
+.coord-row-r14-history #coord-undo,
+.coord-row-r14-history #coord-redo {
+  flex: 1 1 0 !important;
+}
+
+.coord-row-r14-bottom-copy {
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid rgba(0, 229, 255, .18) !important;
+}
+
+.coord-row-r14-bottom-copy #coord-copy {
+  flex: 1 1 100% !important;
+  min-height: 38px !important;
+  font-weight: 800 !important;
+  letter-spacing: .08em !important;
+}
+/* R14_CONTROLS_LAYOUT_ONLY_20260615 END */
+
+/* R15_NATIVE_ADJUST_MODE_BUTTON_PANEL_LAYOUT_20260615 BEGIN
+   Panel layout only. Geometry stays native JS. */
+.coord-row-r15-copy-top #coord-copy {
+  flex: 1 1 100% !important;
+  min-height: 38px !important;
+  font-weight: 800 !important;
+  letter-spacing: .08em !important;
+}
+
+.coord-row-r15-history {
+  gap: 6px !important;
+}
+
+.coord-row-r15-history #coord-undo,
+.coord-row-r15-history #coord-redo {
+  flex: 1 1 0 !important;
+}
+
+.coord-row-r15-adjust #coord-adjust-mode {
+  flex: 1 1 100% !important;
+  min-height: 34px !important;
+  font-weight: 800 !important;
+  letter-spacing: .06em !important;
+}
+
+#coord-adjust-mode.is-on {
+  outline: 2px solid rgba(255, 195, 80, .88) !important;
+  box-shadow: 0 0 14px rgba(255, 195, 80, .22) inset !important;
+}
+
+.coord-row-r15-clear-reset {
+  gap: 6px !important;
+}
+
+.coord-row-r15-clear-reset #coord-clear-boxes,
+.coord-row-r15-clear-reset #coord-reset-view {
+  flex: 1 1 0 !important;
+}
+
+.coord-row-r15-show-hide {
+  gap: 6px !important;
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid rgba(0, 229, 255, .18) !important;
+}
+
+.coord-row-r15-show-hide #coord-toggle-labels,
+.coord-row-r15-show-hide #coord-toggle-existing {
+  flex: 1 1 0 !important;
+}
+/* R15_NATIVE_ADJUST_MODE_BUTTON_PANEL_LAYOUT_20260615 END */
+
+/* R15B_COPY_ADJUST_TOP_ROW_CLEAN_20260615 BEGIN
+   Top row: COPY beside ADJUST. No ugly stacked adjust button. */
+.coord-row-r15-copy-top {
+  gap: 6px !important;
+}
+
+.coord-row-r15-copy-top #coord-copy,
+.coord-row-r15-copy-top #coord-adjust-mode {
+  flex: 1 1 0 !important;
+  min-height: 38px !important;
+  font-weight: 800 !important;
+  letter-spacing: .06em !important;
+  white-space: nowrap !important;
+}
+
+.coord-row-r15-copy-top #coord-copy {
+  letter-spacing: .08em !important;
+}
+
+#coord-adjust-mode {
+  font-size: 11px !important;
+}
+
+#coord-adjust-mode.is-on {
+  outline: 2px solid rgba(255, 195, 80, .88) !important;
+  box-shadow: 0 0 14px rgba(255, 195, 80, .22) inset !important;
+}
+
+.coord-row-r15-history {
+  gap: 6px !important;
+}
+
+.coord-row-r15-history #coord-undo,
+.coord-row-r15-history #coord-redo {
+  flex: 1 1 0 !important;
+}
+
+.coord-row-r15-clear-reset {
+  gap: 6px !important;
+}
+
+.coord-row-r15-clear-reset #coord-clear-boxes,
+.coord-row-r15-clear-reset #coord-reset-view {
+  flex: 1 1 0 !important;
+}
+
+.coord-row-r15-show-hide {
+  gap: 6px !important;
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid rgba(0, 229, 255, .18) !important;
+}
+
+.coord-row-r15-show-hide #coord-toggle-labels,
+.coord-row-r15-show-hide #coord-toggle-existing {
+  flex: 1 1 0 !important;
+}
+/* R15B_COPY_ADJUST_TOP_ROW_CLEAN_20260615 END */
+
+/* R16B_CENTER_HANDLE_MOVE_AND_CENTERED_STROKE_20260615 BEGIN
+   Intent:
+   - box body does not drag by accident
+   - only the small dead-center handle moves the box
+   - thicker visual stroke is centered/visual-only, not geometry-changing
+*/
+
+.coord-rect,
+.coord-live-rect {
+  box-sizing: border-box !important;
+}
+
+.coord-rect.r11-adjustable {
+  pointer-events: none !important;
+}
+
+.coord-rect.r11-adjustable .coord-delete,
+.coord-rect.r11-adjustable .coord-r11-edge,
+.coord-rect.r11-adjustable .coord-r11-corner,
+.coord-rect.r11-adjustable .coord-r12-handle,
+.coord-rect.r11-adjustable .coord-r12-surface-pinch,
+.coord-rect.r11-adjustable .coord-r11-move,
+.coord-rect.r11-adjustable .coord-r16-center-drag {
+  pointer-events: auto !important;
+}
+
+.coord-r11-move,
+.coord-r16-center-drag {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 15px !important;
+  height: 15px !important;
+  min-width: 15px !important;
+  min-height: 15px !important;
+  max-width: 15px !important;
+  max-height: 15px !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 90 !important;
+  border: 1px solid rgba(255, 230, 120, .95) !important;
+  outline: 1px solid rgba(0, 0, 0, .85) !important;
+  outline-offset: 1px !important;
+  border-radius: 50% !important;
+  background:
+    radial-gradient(circle at 50% 50%,
+      rgba(255,255,255,.98) 0 2px,
+      rgba(255,214,90,.92) 3px 6px,
+      rgba(55,28,0,.95) 7px 100%) !important;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,.75),
+    0 0 10px rgba(255,210,80,.35) !important;
+  cursor: move !important;
+}
+
+.coord-r11-move::before,
+.coord-r16-center-drag::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 2px !important;
+  bottom: 2px !important;
+  width: 1px !important;
+  transform: translateX(-50%) !important;
+  background: rgba(0,0,0,.75) !important;
+}
+
+.coord-r11-move::after,
+.coord-r16-center-drag::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 2px !important;
+  right: 2px !important;
+  height: 1px !important;
+  transform: translateY(-50%) !important;
+  background: rgba(0,0,0,.75) !important;
+}
+
+.coord-rect.is-marked {
+  border: 1px solid var(--coord-marker) !important;
+  box-shadow:
+    0 0 0 1px var(--coord-marker),
+    0 0 0 2px rgba(0,0,0,.48),
+    0 0 12px rgba(255,77,255,.28) !important;
+}
+
+.coord-rect.is-active {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.55),
+    0 0 0 2px rgba(0,0,0,.45) !important;
+}
+
+/* R16B_CENTER_HANDLE_MOVE_AND_CENTERED_STROKE_20260615 END */
+
+/* R16B2_REAL_CENTER_HANDLE_CUTOVER_20260615 BEGIN
+   This is the real cutover: inside-box body click selects only.
+   Only the center dot should start whole-box move. */
+
+.coord-rect.r11-adjustable,
+.coord-rect.r12-surface-pinch {
+  pointer-events: auto !important;
+}
+
+.coord-r11-move,
+.coord-r16-center-drag {
+  display: block !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 999 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  border: 1px solid rgba(255, 230, 120, .98) !important;
+  outline: 1px solid rgba(0, 0, 0, .9) !important;
+  outline-offset: 1px !important;
+  border-radius: 50% !important;
+  background:
+    radial-gradient(circle at 50% 50%,
+      rgba(255,255,255,1) 0 2px,
+      rgba(255,214,90,.98) 3px 6px,
+      rgba(45,22,0,.98) 7px 100%) !important;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,.85),
+    0 0 12px rgba(255,210,80,.45) !important;
+  cursor: move !important;
+  pointer-events: auto !important;
+}
+
+.coord-r11-move::before,
+.coord-r16-center-drag::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 2px !important;
+  bottom: 2px !important;
+  width: 1px !important;
+  transform: translateX(-50%) !important;
+  background: rgba(0,0,0,.78) !important;
+}
+
+.coord-r11-move::after,
+.coord-r16-center-drag::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 2px !important;
+  right: 2px !important;
+  height: 1px !important;
+  transform: translateY(-50%) !important;
+  background: rgba(0,0,0,.78) !important;
+}
+
+.coord-rect.is-marked {
+  border: 1px solid var(--coord-marker) !important;
+  box-shadow:
+    0 0 0 1px var(--coord-marker),
+    0 0 0 2px rgba(0,0,0,.48),
+    0 0 12px rgba(255,77,255,.28) !important;
+}
+
+/* R16B2_REAL_CENTER_HANDLE_CUTOVER_20260615 END */
+
+/* R16E3_NUDGE_INTEGRATED_REAL_STATE_20260615 BEGIN
+   Top-row nudge mode. Full-width row above Copy. */
+
+.coord-r16-nudge-row {
+  box-sizing: border-box !important;
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: none !important;
+  flex: 0 0 100% !important;
+  display: block !important;
+  margin: 6px 0 8px 0 !important;
+  padding: 0 !important;
+  clear: both !important;
+}
+
+.coord-r16-nudge-toggle {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-height: 34px !important;
+  display: block !important;
+  cursor: pointer !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 176, 38, .75) !important;
+  background: rgba(35, 20, 5, .95) !important;
+  color: rgba(255, 210, 122, .95) !important;
+  font-weight: 900 !important;
+  letter-spacing: .12em !important;
+  text-align: center !important;
+}
+
+.coord-r16-nudge-toggle.is-on {
+  border-color: rgba(255, 217, 104, 1) !important;
+  background: rgba(92, 50, 5, .98) !important;
+  color: rgba(255, 239, 170, 1) !important;
+}
+
+.coord-r16-nudge-flash {
+  box-shadow:
+    0 0 0 3px rgba(255, 215, 92, .72),
+    0 0 16px rgba(255, 215, 92, .40) !important;
+}
+
+/* R16E3_NUDGE_INTEGRATED_REAL_STATE_20260615 END */
