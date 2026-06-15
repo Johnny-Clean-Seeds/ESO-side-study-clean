@@ -232,3 +232,13 @@ Do not merge adjacent fraternal symbolism into lineage without direct source lin
 Do not treat media images as proof until route, capture, label, timestamp/order when relevant, and claim boundary are logged.
 
 Do not promote inference without naming it as inference.
+
+## Runtime Tool Journaling Rule
+
+When working on the coordinate workshop, bridge, shell lifecycle, or runtime tools, load:
+
+ACTIVE_CHAT_DROPS/08_RUNTIME_TOOL_JOURNALING_RULE.md
+
+Current rule:
+
+NO UNLOGGED WORKER SHELLS / LOG FIRST THEN ACT
